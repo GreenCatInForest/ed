@@ -10,7 +10,10 @@ export default function Hero() {
         Comply with Awaab&#39;s Law. <span className="text-accent">In 14 days.</span>
       </h1>
       <p className="text-base text-fg-muted max-w-lg text-center md:text-left">
-        Rent sensors. Monitor any property. Generate court-ready reports. Protect yourself from Housing Ombudsman rulings — for £149, not £15,000.
+        Rent sensors. Monitor any property. Get an evidence of timestamped actions due to the official timeline. Generate court-ready reports. Protect yourself from Housing Ombudsman rulings — for £149, not £15,000.
+      </p>
+      <p className="text-base text-fg-muted max-w-lg text-center md:text-left">
+        Custom bespoke solution based on 3 scientific researches. Developed in collaboration with UK Property Care Association. Trusted by surveyors, landlords, letting agencies across the UK. 
       </p>
       <div className="flex flex-col sm:flex-row gap-3">
         <a

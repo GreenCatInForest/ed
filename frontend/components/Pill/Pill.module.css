@@ -1,7 +1,36 @@
 @reference "../../app/globals.css";
 
+@property --border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.pillWrapper {
+  @apply max-w-sm;
+  border-radius: 9999px;
+  padding: 1px;
+  /* background: conic-gradient(
+    from var(--border-angle),
+    var(--color-accent-tint) 0%,
+    var(--color-accent) 20%,
+    var(--color-accent-light) 25%,
+    var(--color-accent) 30%,
+    var(--color-accent-tint) 50%,
+    var(--color-accent-tint) 100%
+  ); */
+  /* animation: borderSpin 3s linear infinite; */
+}
+/* 
+@keyframes borderSpin {
+  to {
+    --border-angle: 360deg;
+  }
+} */
+
 .pill {
-  @apply pl-8 pr-4 py-[1px] max-w-sm border border-accent rounded-full bg-(--color-accent-tint);
+  @apply pl-8 pr-4 py-px rounded-full border-accent border-[1px];
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg));
 }
 
 .pillText {
@@ -10,5 +39,19 @@
 
 .pillDot {
   content: "";
-  @apply block w-[6px] h-[6px] mx-2 bg-accent rounded-full absolute left-[-2em] top-1/2 -translate-y-1/2;
+  @apply block w-[6px] h-[6px] mx-2 bg-success rounded-full absolute left-[-2em] top-1/2 -translate-y-1/2;
+}
+
+.pillDot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--color-success);
+  animation: dotPing 2s ease-out infinite;
+}
+
+@keyframes dotPing {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  100% { transform: scale(3.5); opacity: 0;   }
 }
