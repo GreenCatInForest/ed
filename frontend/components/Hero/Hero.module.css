@@ -1,5 +1,36 @@
 @reference "../../app/globals.css";
 
+@property --border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.spinBorderWrapper {
+  border-radius: 0.5rem;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.spinBorderWrapper:hover {
+  background: conic-gradient(
+    from var(--border-angle),
+    var(--color-accent-tint) 0%,
+    var(--color-accent) 20%,
+    var(--color-accent-light) 25%,
+    var(--color-accent) 30%,
+    var(--color-accent-tint) 50%,
+    var(--color-accent-tint) 100%
+  );
+  animation: borderSpin 3s linear infinite;
+}
+
+@keyframes borderSpin {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
 .hero {
   @apply max-w-6xl mx-auto text-center md:text-left flex flex-col items-center md:items-start relative gap-6;
 }

@@ -1,1 +1,42 @@
 @reference "../../app/globals.css";
+
+
+
+
+@property --border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.iconWrapper {
+  border-radius: 9999px;
+  padding: 1px;
+  flex-shrink: 0;
+}
+
+.iconWrapper:hover {
+  background: conic-gradient(
+    from var(--border-angle),
+    var(--color-accent-tint) 0%,
+    var(--color-accent) 20%,
+    var(--color-accent-light) 25%,
+    var(--color-accent) 30%,
+    var(--color-accent-tint) 50%,
+    var(--color-accent-tint) 100%
+  );
+  animation: borderSpin 3s linear infinite;
+}
+
+.iconInner {
+  border-radius: 9999px;
+  background: var(--color-bg);
+  padding: 4px;
+  display: flex;
+}
+
+@keyframes borderSpin {
+  to {
+    --border-angle: 360deg;
+  }
+}

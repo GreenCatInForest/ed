@@ -24,9 +24,11 @@ export default function Hero() {
                     >
                     Order your compliance kit
                     </a>
-                    <button className="inline-flex items-center justify-center border border-(--color-border-strong) text-fg px-6 py-3 rounded-lg font-medium hover:bg-(--color-surface-hover) transition-colors">
-                    Watch how it works (2 min)
-                    </button>
+                    <div className={styles.spinBorderWrapper}>
+                      <button className="inline-flex items-center justify-center border border-(--color-border-strong) text-fg px-6 py-3 rounded-lg font-medium hover:bg-(--color-surface-hover) transition-colors w-full">
+                      Watch how it works (2 min)
+                      </button>
+                    </div>
                 </div>
                 <p className="text-sm text-fg-subtle text-center md:text-left">
                     From £149 — cheaper than one solicitor letter.{" "}
