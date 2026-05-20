@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import TrustBar from "@/components/TrustBar/TrustBar";
+import RiskStats from "@/components/RiskStats/RiskStats";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </header>
       <Hero />
       <TrustBar />
+      <RiskStats />
       {/* Features */}
       <section id="features" className="bg-surface py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">

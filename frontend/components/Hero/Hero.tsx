@@ -20,7 +20,7 @@ export default function Hero() {
                 <div className="flex flex-col sm:flex-row gap-3">
                     <a
                     href="/order"
-                    className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white text-center px-6 py-3 rounded-lg font-medium transition-colors"
                     >
                     Order your compliance kit
                     </a>
