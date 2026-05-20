@@ -7,7 +7,7 @@
 }
 
 .pillWrapper {
-  @apply max-w-sm;
+  @apply max-w-sm px-10;
   border-radius: 9999px;
   padding: 1px;
   cursor: pointer;
@@ -43,9 +43,13 @@ background: conic-gradient(
   @apply text-accent-light text-xs font-bold relative flex justify-between;
 }
 
+.pillTextInfo {
+  @apply uppercase tracking-widest leading-relaxed;
+}
+
 .pillDot {
   content: "";
-  @apply block w-[6px] h-[6px] mx-2 bg-success rounded-full absolute left-[-2em] top-1/2 -translate-y-1/2;
+  @apply block w-[6px] h-[6px] mx-2 rounded-full absolute left-[-2em] top-1/2 -translate-y-1/2;
 }
 
 .pillDot::after {
@@ -53,7 +57,7 @@ background: conic-gradient(
   position: absolute;
   inset: 0;
   border-radius: 9999px;
-  background: var(--color-success);
+  background: inherit;
   animation: dotPing 2s ease-out infinite;
 }
 

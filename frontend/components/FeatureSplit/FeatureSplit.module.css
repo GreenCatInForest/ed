@@ -1,0 +1,5 @@
+@reference "../../app/globals.css";
+
+.featureSplit {
+  @apply max-w-6xl mx-auto px-6 py-4 flex flex-col items-center justify-between gap-8;
+}

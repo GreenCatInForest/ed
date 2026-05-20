@@ -1,11 +1,23 @@
 import styles from "./Pill.module.css";
 
-export default function Pill() {
+interface PillProps {
+  text: string;
+  type?: "live" | "warning" | "info";
+  className?: string;
+}
+
+const dotColor: Record<NonNullable<PillProps["type"]>, string> = {
+  live: "bg-success",
+  warning: "bg-amber-400",
+  info: "bg-blue-400",
+};
+
+export default function Pill({ text, type = "live", className }: PillProps) {
   return (
-    <div className={styles.pillWrapper}>
+    <div className={`${styles.pillWrapper}${className ? ` ${className}` : ""}`}>
       <div className={styles.pill}>
         <p className={styles.pillText}>
-          <span className={styles.pillDot}></span>Awaab&#39;s Law Phase 1 — live since Oct 2025
+          <span className={`${styles.pillDot} ${dotColor[type]}`}></span>{text}
         </p>
       </div>
     </div>

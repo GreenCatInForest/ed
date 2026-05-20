@@ -7,7 +7,7 @@ export default function Hero() {
     <section className={styles.hero}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <article className={styles.heroHomeMarketingWrapper}>
-                <Pill />
+                <Pill text="Awaab's Law Phase 1 — live since Oct 2025" type="live" />
                 <h1 className="text-4xl md:text-5xl text-center md:text-left max-w-xl font-bold ">
                     Comply with Awaab&#39;s Law. <span className="text-accent">In 14 days.</span>
                 </h1>
