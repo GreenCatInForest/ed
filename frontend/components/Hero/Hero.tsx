@@ -25,7 +25,7 @@ export default function Hero() {
                     Order your compliance kit
                     </a>
                     <div className={styles.spinBorderWrapper}>
-                      <button className="inline-flex items-center justify-center border border-(--color-border-strong) text-fg px-6 py-3 rounded-lg font-medium hover:bg-(--color-surface-hover) transition-colors w-full">
+                      <button className="inline-flex items-center justify-center bg-(--color-bg) border-0 text-fg px-6 py-3 rounded-[calc(0.5rem-1px)] font-medium w-full">
                       Watch how it works (2 min)
                       </button>
                     </div>

@@ -10,6 +10,27 @@
   border-radius: 0.5rem;
   padding: 1px;
   cursor: pointer;
+  background: var(--color-border-strong);
+}
+
+.spinBorderWrapper:hover {
+  background: conic-gradient(
+    from var(--border-angle),
+    var(--color-accent-tint) 0%,
+    var(--color-accent) 20%,
+    var(--color-accent-light) 25%,
+    var(--color-accent) 30%,
+    var(--color-accent-tint) 50%,
+    var(--color-accent-tint) 100%
+  );
+  animation: borderSpin 3s linear infinite;
+  box-shadow: 0 0 12px var(--color-accent-tint), 0 0 24px var(--color-accent-tint);
+}
+
+@keyframes borderSpin {
+  to {
+    --border-angle: 360deg;
+  }
 }
 
 
