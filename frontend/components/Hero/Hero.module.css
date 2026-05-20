@@ -1,5 +1,20 @@
 @reference "../../app/globals.css";
 
 .hero {
-  @apply max-w-6xl mx-auto px-6 py-16 md:py-24 text-center md:text-left flex flex-col items-center md:items-start relative gap-6;
+  @apply max-w-6xl mx-auto py-16 md:py-24 text-center md:text-left flex flex-col items-center md:items-start relative gap-6;
+}
+
+.heroHomeMarketingWrapper {
+  @apply flex flex-col items-center md:items-start gap-6 px-6;
+}
+
+.card {
+  @apply w-full h-full flex justify-center items-center border rounded-lg transition-all duration-300 ease-out cursor-default select-none;
+  background: var(--card-bg);
+}
+
+.card:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 28px var(--card-glow), 0 8px 24px rgba(0, 0, 0, 0.3);
+  background: var(--card-glow-bg);
 }

@@ -10,7 +10,11 @@
   @apply max-w-sm;
   border-radius: 9999px;
   padding: 1px;
-  /* background: conic-gradient(
+  cursor: pointer;
+}
+
+.pillWrapper:hover {
+background: conic-gradient(
     from var(--border-angle),
     var(--color-accent-tint) 0%,
     var(--color-accent) 20%,
@@ -18,15 +22,17 @@
     var(--color-accent) 30%,
     var(--color-accent-tint) 50%,
     var(--color-accent-tint) 100%
-  ); */
-  /* animation: borderSpin 3s linear infinite; */
+  ); 
+   animation: borderSpin 3s linear infinite; 
 }
-/* 
+
+
+
 @keyframes borderSpin {
   to {
     --border-angle: 360deg;
   }
-} */
+} 
 
 .pill {
   @apply pl-8 pr-4 py-px rounded-full border-accent border-[1px];
