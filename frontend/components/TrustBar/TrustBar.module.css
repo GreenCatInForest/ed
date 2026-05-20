@@ -2,7 +2,7 @@
 
 
 .trustBar {
-  @apply bg-fg-faint/10 rounded-lg p-4 flex items-center gap-4 justify-center;
+  @apply bg-fg-faint/10 rounded-lg p-4 flex items-center gap-4 justify-center border border-(--color-border-strong);
 }
 
 @property --border-angle {
