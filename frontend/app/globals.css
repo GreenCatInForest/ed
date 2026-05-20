@@ -158,3 +158,16 @@ table,
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-fg-faint);
 }
+
+@layer components {
+  .eyebrow {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    display: block;
+  }
+}
