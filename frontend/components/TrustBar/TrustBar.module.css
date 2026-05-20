@@ -1,7 +1,9 @@
 @reference "../../app/globals.css";
 
 
-
+.trustBar {
+  @apply bg-fg-faint/10 rounded-lg p-4 flex items-center gap-4 justify-center;
+}
 
 @property --border-angle {
   syntax: '<angle>';
