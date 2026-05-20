@@ -1,7 +1,11 @@
 @reference "../../app/globals.css";
 
-.nav {
-  @apply max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-8;
+.footer {
+  @apply border-t border-(--color-border) mt-auto;
+}
+
+.inner {
+  @apply max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4;
 }
 
 .logo {

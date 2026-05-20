@@ -1,35 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto, Montserrat, Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -42,10 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${montserrat.variable} ${openSans.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
