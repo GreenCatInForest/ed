@@ -1,16 +1,17 @@
 // app/page.tsx
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
+import TrustBar from "@/components/TrustBar/TrustBar";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen flex flex-col gap-8 md:gap-24">
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>
       <Hero />
-
+      <TrustBar />
       {/* Features */}
       <section id="features" className="bg-surface py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">

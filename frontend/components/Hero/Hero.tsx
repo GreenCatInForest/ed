@@ -5,7 +5,7 @@ import Pill from "../Pill/Pill";
 export default function Hero() {
   return (
     <section className={styles.hero}>
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <article className={styles.heroHomeMarketingWrapper}>
                 <Pill />
                 <h1 className="text-4xl md:text-5xl text-center md:text-left max-w-xl font-bold ">
@@ -36,7 +36,7 @@ export default function Hero() {
                 </p>
             </article>
 
-            <article className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <article className="grid grid-cols-1 md:grid-cols-2 gap-4 m-4">
                 <div className={`${styles.card} border-blue-400`} style={{ "--card-bg": "var(--glow-blue)", "--card-glow": "rgba(59,130,246,0.35)", "--card-glow-bg": "rgba(59,130,246,0.1)" } as React.CSSProperties}>Landlords</div>
                 <div className={`${styles.card} border-amber-400`} style={{ "--card-bg": "var(--glow-amber)", "--card-glow": "rgba(251,191,36,0.35)", "--card-glow-bg": "rgba(251,191,36,0.1)" } as React.CSSProperties}>Housing Associations</div>
                 <div className={`${styles.card} border-green-400`} style={{ "--card-bg": "var(--glow-green)", "--card-glow": "rgba(74,222,128,0.35)", "--card-glow-bg": "rgba(74,222,128,0.1)" } as React.CSSProperties}>Surveyours</div>

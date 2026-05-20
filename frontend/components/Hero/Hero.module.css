@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .hero {
-  @apply max-w-6xl mx-auto py-16 md:py-24 text-center md:text-left flex flex-col items-center md:items-start relative gap-6;
+  @apply max-w-6xl mx-auto text-center md:text-left flex flex-col items-center md:items-start relative gap-6;
 }
 
 .heroHomeMarketingWrapper {
