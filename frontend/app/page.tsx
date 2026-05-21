@@ -5,6 +5,7 @@ import HeroCard from "@/components/Hero/HeroCard";
 import TrustBar from "@/components/TrustBar/TrustBar";
 import StatBlock from "@/components/StatBlock/StatBlock";
 import FeatureSplit from "@/components/FeatureSplit/FeatureSplit";
+import ProcessSteps from "@/components/ProcessSteps/ProcessSteps";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -44,6 +45,30 @@ export default function Home() {
           ]}
         />
       <FeatureSplit />
+      <ProcessSteps
+          eyebrow="How md_app works"
+          heading="Three steps. Evidence trail. One court-ready report."
+          steps={[
+            {
+              num: 1,
+              icon: "📦",
+              title: "Rent the kit",
+              body: "Choose the sensor kit for your property type. Ships next day — no installation engineer needed.",
+            },
+            {
+              num: 2,
+              icon: "📡",
+              title: "Monitor",
+              body: "Sensors log temperature and humidity 24/7. The dashboard flags issues and timestamps every reading automatically.",
+            },
+            {
+              num: 3,
+              icon: "📄",
+              title: "Get the report",
+              body: "One click generates a court-ready PDF with your full evidence trail — ready for the Housing Ombudsman if you need it.",
+            },
+          ]}
+        />
       {/* Features */}
       <section id="features" className="bg-surface py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
