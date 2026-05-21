@@ -161,6 +161,7 @@ table,
 
 @layer components {
   .eyebrow {
+    @apply text-center;
     font-size: 14px;
     font-weight: 500;
     color: var(--color-accent);

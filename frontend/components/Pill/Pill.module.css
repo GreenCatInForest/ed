@@ -40,7 +40,7 @@ background: conic-gradient(
 }
 
 .pillText {
-  @apply text-accent-light text-xs font-bold relative flex justify-between;
+  @apply text-accent-light text-xs font-bold relative block md:flex justify-between;
 }
 
 .pillTextInfo {

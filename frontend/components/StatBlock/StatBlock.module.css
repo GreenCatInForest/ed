@@ -1,0 +1,13 @@
+@reference "../../app/globals.css";
+
+.statBlock {
+  @apply max-w-6xl mx-auto px-6 flex flex-col items-center gap-4;
+}
+
+.grid {
+  @apply w-full grid grid-cols-1 md:grid-cols-3 gap-8 mt-4;
+}
+
+.statCard {
+  @apply bg-fg-faint/10 border border-fg-faint/20 rounded-lg p-6 flex flex-col items-center gap-4;
+}
