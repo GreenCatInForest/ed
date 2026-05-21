@@ -8,6 +8,7 @@ import FeatureSplit from "@/components/FeatureSplit/FeatureSplit";
 import ProcessSteps from "@/components/ProcessSteps/ProcessSteps";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import PricingTiers from "@/components/PricingTiers/PricingTiers";
+import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import { IconPackage, IconActivity, IconFileCheck } from "@tabler/icons-react";
 import Footer from "@/components/Footer/Footer";
 
@@ -149,6 +150,12 @@ export default function Home() {
           </>
         }
       />
+       <CtaBanner
+        heading="The landlord who gets a complaint today needs evidence by Friday."
+        body="Order your kit now. Sensors dispatched same day."
+        primaryCta={{ label: "Order kit — £149", href: "/order" }}
+        secondaryCta={{ label: "Download sample report", href: "#" }}
+      />
       {/* Features */}
       <section id="features" className="bg-surface py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -166,6 +173,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+     
       <Footer />
     </main>
   );

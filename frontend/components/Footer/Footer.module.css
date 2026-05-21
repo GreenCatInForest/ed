@@ -5,14 +5,60 @@
 }
 
 .inner {
-  @apply max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4;
+  @apply max-w-6xl mx-auto px-6 py-12 grid gap-10;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    @apply gap-8 items-start;
+  }
+}
+
+/* Brand column */
+.brand {
+  @apply flex flex-col gap-3;
 }
 
 .logo {
-  @apply font-bold text-sm uppercase leading-tight relative pl-5 flex-shrink-0;
+  @apply font-bold text-sm uppercase leading-tight relative pl-5 inline-flex items-center shrink-0;
 }
 
 .logo::before {
   content: "";
   @apply block w-2.5 h-2.5 bg-accent rounded-full absolute left-0 top-1/2 -translate-y-1/2;
+}
+
+.tagline {
+  @apply text-sm text-fg-muted leading-relaxed max-w-[220px];
+}
+
+.location {
+  @apply text-sm text-fg-subtle;
+}
+
+.pills {
+  @apply flex flex-wrap gap-2 mt-1;
+}
+
+.pill {
+  @apply text-xs text-fg-muted border border-(--color-border) rounded px-2.5 py-1;
+}
+
+/* Nav columns */
+.column {
+  @apply flex flex-col gap-3;
+}
+
+.heading {
+  @apply text-sm font-semibold text-fg;
+}
+
+.list {
+  @apply flex flex-col gap-2.5 list-none p-0 m-0;
+}
+
+.link {
+  @apply text-sm text-fg-muted hover:text-fg transition-colors;
 }

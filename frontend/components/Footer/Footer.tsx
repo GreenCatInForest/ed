@@ -1,27 +1,66 @@
 import styles from "./Footer.module.css";
 
-const links = [
-  { href: "#features", label: "Awaab's Law" },
-  { href: "#social-housing", label: "Social Housing" },
-  { href: "/landlords", label: "Landlords" },
-  { href: "/agents", label: "Agents" },
-  { href: "/how-it-works", label: "How it works" },
-  { href: "/pricing", label: "Pricing" },
+const columns = [
+  {
+    heading: "Product",
+    links: [
+      { href: "/how-it-works", label: "How it works" },
+      { href: "/pricing", label: "Pricing" },
+      { href: "/sample-report", label: "Sample report" },
+      { href: "/sensor-specs", label: "Sensor specs" },
+    ],
+  },
+  {
+    heading: "Solutions",
+    links: [
+      { href: "/social-housing", label: "Social housing" },
+      { href: "/landlords", label: "Private landlords" },
+      { href: "/agents", label: "Letting agents" },
+      { href: "/surveyors", label: "Surveyors" },
+    ],
+  },
+  {
+    heading: "Resources",
+    links: [
+      { href: "/awaabs-law-guide", label: "Awaab's Law guide" },
+      { href: "/compliance-checklist", label: "Compliance checklist" },
+      { href: "/blog", label: "Blog" },
+      { href: "/contact", label: "Contact" },
+    ],
+  },
 ];
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <span className={styles.logo}>Maple Diagnostics</span>
-        <nav className="flex flex-wrap gap-x-6 gap-y-2">
-          {links.map((link) => (
-            <a key={link.label} href={link.href} className="text-sm text-fg-muted hover:text-fg transition-colors">
-              {link.label}
-            </a>
-          ))}
-        </nav>
-        <p className="text-sm text-fg-subtle shrink-0">© {new Date().getFullYear()} Maple Diagnostics</p>
+        <div className={styles.brand}>
+          <span className={styles.logo}>Maple Diagnostics</span>
+          <p className={styles.tagline}>
+            Awaab&apos;s Law compliance through objective environmental data.
+          </p>
+          <p className={styles.location}>Huntingdon · Cambridgeshire</p>
+          <div className={styles.pills}>
+            <span className={styles.pill}>RICS aligned</span>
+            <span className={styles.pill}>Ombudsman ready</span>
+            <span className={styles.pill}>Co. No. 12345678</span>
+          </div>
+        </div>
+
+        {columns.map((col) => (
+          <div key={col.heading} className={styles.column}>
+            <p className={styles.heading}>{col.heading}</p>
+            <ul className={styles.list}>
+              {col.links.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className={styles.link}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </footer>
   );
