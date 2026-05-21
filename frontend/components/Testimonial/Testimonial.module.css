@@ -1,0 +1,102 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply max-w-4xl mx-auto px-6 w-full;
+}
+
+.card {
+  @apply flex flex-col bg-surface border border-accent/20 rounded-xl p-8 cursor-grab select-none;
+  touch-action: pan-y;
+}
+
+.dragging {
+  cursor: grabbing;
+}
+
+.quoteIcon {
+  @apply text-accent/60 text-4xl font-bold leading-none;
+}
+
+.quoteIconRight {
+  @apply text-accent/60 text-4xl font-bold leading-none self-end;
+}
+
+.quote {
+  @apply text-fg text-lg leading-relaxed;
+}
+
+.footer {
+  @apply flex flex-col sm:flex-row sm:items-center justify-between gap-4;
+}
+
+.author {
+  @apply flex items-center gap-3;
+}
+
+.avatar {
+  @apply w-10 h-10 rounded-full bg-accent/20 text-accent-light text-sm font-semibold flex items-center justify-center shrink-0 overflow-hidden;
+}
+
+.avatar img {
+  @apply w-full h-full object-cover;
+}
+
+.meta {
+  @apply flex flex-col;
+}
+
+.name {
+  @apply text-fg text-sm font-semibold;
+}
+
+.role {
+  @apply text-fg-muted text-xs;
+}
+
+.stat {
+  @apply flex flex-col items-start sm:items-end;
+}
+
+.statValue {
+  @apply text-accent text-2xl font-bold;
+}
+
+.statLabel {
+  @apply text-fg-muted text-xs uppercase tracking-widest mt-0.5;
+}
+
+@keyframes testimonialIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideContent {
+  @apply flex flex-col pb-2;
+  animation: testimonialIn 0.7s ease;
+}
+
+.controls {
+  @apply flex items-center justify-center gap-4 pt-2;
+}
+
+.arrow {
+  @apply text-accent/60 hover:text-accent text-3xl leading-none transition-colors cursor-pointer bg-transparent border-none p-1;
+}
+
+.dots {
+  @apply flex items-center gap-2;
+}
+
+.dot {
+  @apply w-2 h-2 rounded-full bg-accent/20 border-none cursor-pointer transition-colors p-0;
+}
+
+.dotActive {
+  @apply w-2 h-2 rounded-full bg-accent border-none cursor-pointer transition-colors p-0;
+}

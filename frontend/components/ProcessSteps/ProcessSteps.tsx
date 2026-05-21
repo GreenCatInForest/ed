@@ -1,5 +1,6 @@
 import styles from "./ProcessSteps.module.css";
 
+
 interface Step {
   num: number;
   icon: React.ReactNode;
@@ -21,12 +22,15 @@ export default function ProcessSteps({ eyebrow, heading, steps }: ProcessStepsPr
       <div className={styles.grid}>
         {steps.map((step) => (
           <div key={step.num} className={styles.stepCard}>
+            <div className="flex flex-col justify-center items-center gap-2">
             <div className={styles.numBadge}>
-              <div className={styles.numBadgeInner}>{step.num}</div>
+              <div className={styles.numBadgeInner}>0{step.num}</div>
             </div>
+            
             <div className={styles.icon}>{step.icon}</div>
-            <h3 className="text-xl font-semibold text-center">{step.title}</h3>
-            <p className="text-fg-muted text-center text-sm">{step.body}</p>
+            </div>
+            <h3 className="text-xl font-semibold text-left">{step.title}</h3>
+            <p className="text-fg-muted text-left text-sm">{step.body}</p>
           </div>
         ))}
       </div>

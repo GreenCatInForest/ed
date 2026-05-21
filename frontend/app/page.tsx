@@ -6,6 +6,8 @@ import TrustBar from "@/components/TrustBar/TrustBar";
 import StatBlock from "@/components/StatBlock/StatBlock";
 import FeatureSplit from "@/components/FeatureSplit/FeatureSplit";
 import ProcessSteps from "@/components/ProcessSteps/ProcessSteps";
+import Testimonial from "@/components/Testimonial/Testimonial";
+import { IconPackage, IconActivity, IconFileCheck } from "@tabler/icons-react";
 import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
@@ -37,7 +39,7 @@ export default function Home() {
       <StatBlock
           eyebrow="The clock starts the moment a tenant complains"
           heading="10 working days. That's all a landlord has."
-          body="Awaab's Law gives every social landlord a hard deadline to investigate damp and mould complaints. No data means losing in front of the Housing Ombudsman — by default."
+          body="Awaab's Law gives every social landlord a hard deadline to investigate damp and mould complaints. No data means losing in front of the Housing Ombudsman - by default."
           stats={[
             { value: "10", label: "working days to investigate" },
             { value: "3", label: "days for written findings" },
@@ -51,24 +53,46 @@ export default function Home() {
           steps={[
             {
               num: 1,
-              icon: "📦",
+              icon: <IconPackage size={28} stroke={1.5} />,
               title: "Rent the kit",
-              body: "Choose the sensor kit for your property type. Ships next day — no installation engineer needed.",
+              body: "Sensors dispatched same day. Plug in, place in the affected rooms — no installer required.",
             },
             {
               num: 2,
-              icon: "📡",
-              title: "Monitor",
-              body: "Sensors log temperature and humidity 24/7. The dashboard flags issues and timestamps every reading automatically.",
+              icon: <IconActivity size={28} stroke={1.5} />,
+              title: "Monitor for 14 days",
+              body: "Continuous humidity, temperature, and surface-temperature logging. Automated BMI and dew point analysis.",
             },
             {
               num: 3,
-              icon: "📄",
+              icon: <IconFileCheck size={28} stroke={1.5} />,
               title: "Get the report",
-              body: "One click generates a court-ready PDF with your full evidence trail — ready for the Housing Ombudsman if you need it.",
+              body: "Court-ready PDF: structural failure vs. lifestyle, with timestamped evidence.",
             },
           ]}
         />
+      <Testimonial
+        items={[
+          {
+            quote: "Tenant claimed structural damp. Our md_app report showed lifestyle ventilation issues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
+            name: "James Marshall",
+            role: "Property Compliance Lead · Cambridgeshire HA",
+            stat: { value: "£8,000", label: "Claim avoided" },
+          },
+          {
+            quote: "We had three simultaneous Ombudsman complaints. md_app gave us timestamped sensor data for every property. All three cases were closed in our favour within 6 weeks.",
+            name: "Sarah Chen",
+            role: "Operations Director · Midlands Letting Agency",
+            stat: { value: "3/3", label: "Cases closed" },
+          },
+          {
+            quote: "As a private landlord with six properties I can't afford a solicitor for every dispute. The 14-day kit costs less than a single hour of legal advice and the report does the heavy lifting.",
+            name: "David Okafor",
+            role: "Private Landlord · Greater Manchester",
+            stat: { value: "6", label: "Properties protected" },
+          },
+        ]}
+      />
       {/* Features */}
       <section id="features" className="bg-surface py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">

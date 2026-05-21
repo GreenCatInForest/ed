@@ -5,11 +5,11 @@
 }
 
 .grid {
-  @apply w-full grid grid-cols-1 md:grid-cols-3 gap-8 mt-4;
+  @apply w-full grid grid-cols-1 md:grid-cols-3 gap-8;
 }
 
 .stepCard {
-  @apply flex flex-col items-center gap-3 bg-fg-faint/10 border border-fg-faint/20 rounded-lg p-8;
+  @apply flex flex-col items-start gap-3 bg-fg-faint/10 border border-fg-faint/20 rounded-lg p-8;
 }
 
 @property --border-angle {
@@ -19,13 +19,20 @@
 }
 
 .numBadge {
+    @apply text-accent text-xs font-bold relative block;
+}
+
+/* Border around the badge, on hover rotating red light */
+
+/* 
+.numBadge {
   border-radius: 9999px;
   padding: 1px;
   flex-shrink: 0;
   background: var(--color-accent);
-}
+} */
 
-.numBadge:hover {
+/* .numBadge:hover {
   background: conic-gradient(
     from var(--border-angle),
     var(--color-accent-tint) 0%,
@@ -36,12 +43,13 @@
     var(--color-accent-tint) 100%
   );
   animation: borderSpin 3s linear infinite;
-}
+} */
 
-@keyframes borderSpin {
-  to { --border-angle: 360deg; }
-}
+/* @keyframes borderSpin {
+  to { --border-angle: 360deg; } 
+}*/
 
+/* 
 .numBadgeInner {
   border-radius: 9999px;
   background: var(--color-bg);
@@ -53,8 +61,8 @@
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--color-accent-light);
-}
+} */
 
 .icon {
-  @apply text-4xl;
+  @apply flex items-center justify-center text-accent w-[20px] h-[20px];
 }
