@@ -7,6 +7,7 @@ import StatBlock from "@/components/StatBlock/StatBlock";
 import FeatureSplit from "@/components/FeatureSplit/FeatureSplit";
 import ProcessSteps from "@/components/ProcessSteps/ProcessSteps";
 import Testimonial from "@/components/Testimonial/Testimonial";
+import PricingTiers from "@/components/PricingTiers/PricingTiers";
 import { IconPackage, IconActivity, IconFileCheck } from "@tabler/icons-react";
 import Footer from "@/components/Footer/Footer";
 
@@ -92,6 +93,61 @@ export default function Home() {
             stat: { value: "6", label: "Properties protected" },
           },
         ]}
+      />
+      <PricingTiers
+        eyebrow="Transparent pricing"
+        heading="Pay per property. Or monitor your whole portfolio."
+        tiers={[
+          {
+            name: "Starter Report",
+            price: "£149",
+            description: "For private landlords with a single mould dispute to resolve.",
+            features: [
+              "14-day equipment rental",
+              "1-property diagnostic report",
+              "Court-ready PDF",
+            ],
+            ctaLabel: "Order kit",
+          },
+          {
+            name: "Professional Report",
+            price: "£249",
+            description: "For letting agents and HA property managers handling multiple rooms.",
+            features: [
+              "14-day equipment rental",
+              "3-room diagnostic report",
+              "Written findings summary",
+              "Ombudsman template",
+            ],
+            ctaLabel: "Order kit",
+            featured: true,
+          },
+          {
+            name: "Portfolio Monitoring",
+            price: "£49",
+            period: "/month per property",
+            description: "Continuous monitoring for multi-property landlords and HAs.",
+            features: [
+              "Always-on sensors",
+              "Monthly reports + alerts",
+              "Portfolio dashboard",
+            ],
+            ctaLabel: "Start monitoring",
+          },
+        ]}
+        footnote={
+          <>
+            Need 50+ properties?{" "}
+            <a href="#" className="text-fg underline hover:text-accent-light transition-colors">
+              Enterprise pricing →
+            </a>
+            {" · "}
+            RICS surveyor?{" "}
+            <a href="#" className="text-fg underline hover:text-accent-light transition-colors">
+              Practice licence at £79/mo →
+            </a>
+          </>
+        }
       />
       {/* Features */}
       <section id="features" className="bg-surface py-16 md:py-24">
