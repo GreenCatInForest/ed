@@ -38,7 +38,7 @@
   @apply max-w-6xl mx-auto text-center md:text-left flex flex-col items-center md:items-start relative gap-6;
 }
 
-.heroHomeMarketingWrapper {
+.content {
   @apply flex flex-col items-center md:items-start gap-6 px-6;
 }
 
