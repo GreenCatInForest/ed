@@ -156,24 +156,6 @@ export default function Home() {
         primaryCta={{ label: "Order kit — £149", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />
-      {/* Features */}
-      <section id="features" className="bg-surface py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="font-semibold text-xl mb-2">Fast</h3>
-            <p className="text-fg-muted">Sub-second response times.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl mb-2">Reliable</h3>
-            <p className="text-fg-muted">99.9% uptime guaranteed.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl mb-2">Secure</h3>
-            <p className="text-fg-muted">End-to-end encryption built in.</p>
-          </div>
-        </div>
-      </section>
-     
       <Footer />
     </main>
   );
