@@ -3,8 +3,8 @@ import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 const links = [
-  { href: "#features", label: "Awaab's Law" },
-  { href: "#social-housing", label: "Social Housing" },
+  { href: "/awaabs-law", label: "Awaab's Law - Free Guide" },
+  { href: "/housing-associations", label: "Social Housing" },
   { href: "/landlords", label: "Landlords" },
   { href: "/agents", label: "Agents" },
   { href: "/how-it-works", label: "How it works" },
@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <div className="relative">
       <nav className={styles.nav}>
-        <span className={styles.logo}>Maple Diagnostics</span>
+        <a href="/" className={styles.logo}>Maple Diagnostics</a>
         <div className="hidden md:flex items-center gap-6 text-fg-muted text-sm">
           {links.map((link) => (
             <a key={link.label} href={link.href} className="hover:text-fg transition-colors">
