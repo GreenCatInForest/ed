@@ -1,9 +1,11 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Pill from "@/components/Pill/Pill";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import PricingTiers from "@/components/PricingTiers/PricingTiers";
 import { IconShieldCheck, IconFileReport, IconCloudUpload, IconClock } from "@tabler/icons-react";
+import SituationCards from "@/components/SituationCards/SituationCards";
 
 export const metadata = {
   title: "For Private Landlords — Maple Diagnostics",
@@ -111,6 +113,64 @@ export default function LandlordsPage() {
           </div>
         </div>
       </section>
+       <SituationCards
+        eyebrow="Before you decide"
+        heading="Which situation are you actually in?"
+        body="Your damp and mould obligations vary depending on where you stand in the legal timeline. Three scenarios — three different right approaches:"
+        scenarios={[
+          {
+            variant: "danger",
+            badge: "Active Hazard",
+            subtitle: "Visible mould, sustained damp, or a clear defect?",
+            heading: "There's a problem and you need evidence now.",
+            body: <>Visible mould, persistent condensation, water staining. Your <strong>Section 11 LTA 1985</strong> repairing duty is engaged.</>,
+            stats: [
+              { label: "Clock", value: "Running",          highlight: true },
+              { label: "Risk",  value: "Claim · £30k fine", highlight: true },
+              { label: "Need",  value: "Diagnose: structural vs lifestyle" },
+            ],
+            recommendation: {
+              title: "Maple kit — 14-day diagnostic",
+              price: "£149.",
+              description: "Court-ready PDF before the solicitor's letter arrives.",
+            },
+          },
+          {
+            variant: "warning",
+            badge: "Reported Concern",
+            subtitle: "Tenant complained but you're not sure what's really going on?",
+            heading: "A complaint exists — you must investigate.",
+            body: <><strong>Failing to investigate</strong> — even if you believe there's nothing wrong — is where most maladministration findings arise.</>,
+            stats: [
+              { label: "Clock", value: "Engaged",                  highlight: true },
+              { label: "Risk",  value: "Escalation · PAP letter",  highlight: true },
+              { label: "Need",  value: "Defensible investigation record" },
+            ],
+            recommendation: {
+              title: "Maple kit — 14-day diagnostic",
+              price: "£149.",
+              description: "Even a “no hazard found” report is defensive evidence.",
+            },
+          },
+          {
+            variant: "success",
+            badge: "Proactive Monitoring",
+            subtitle: "No complaint yet — but you want ongoing visibility?",
+            heading: "Catch problems before they become claims.",
+            body: <>Continuous monitoring establishes baseline and supports the <strong>reasonable endeavours defence</strong> (LTA 1985 s.10A(5)).</>,
+            stats: [
+              { label: "Clock", value: "Not running",              highlight: true },
+              { label: "Risk",  value: "Undetected slow defects" },
+              { label: "Need",  value: "Baseline · early-warning alerts" },
+            ],
+            recommendation: {
+              title: "Maple monitoring — £49/mo",
+              price: "Per property.",
+              description: "Always-on sensors. Monthly reports + alerts.",
+            },
+          },
+        ]}
+      />
 
       {/* Risk comparison */}
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
@@ -222,9 +282,9 @@ export default function LandlordsPage() {
         footnote={
           <>
             Managing 10+ properties?{" "}
-            <a href="#" className="text-fg underline hover:text-accent-light transition-colors">
+            <Link href="#" className="text-fg underline hover:text-accent-light transition-colors">
               Volume pricing →
-            </a>
+            </Link>
           </>
         }
       />

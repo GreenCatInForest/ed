@@ -1,0 +1,93 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply max-w-6xl mx-auto px-6 w-full flex flex-col gap-10;
+}
+
+.header {
+  @apply flex flex-col gap-3 max-w-2xl;
+}
+
+.heading {
+  @apply text-3xl md:text-4xl font-bold text-fg;
+}
+
+.body {
+  @apply text-fg-muted text-base leading-relaxed;
+}
+
+/* ── Grid ── */
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+}
+
+/* ── Card ── */
+
+.card {
+  @apply flex flex-col gap-5 rounded-xl p-6 relative;
+  background: var(--color-surface);
+  border: 1px solid color-mix(in srgb, var(--card-border) 25%, transparent);
+}
+
+/* ── Badge ── */
+
+.badge {
+  @apply self-start text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full;
+  color: var(--color-bg);
+}
+
+/* ── Card body ── */
+
+.cardBody {
+  @apply flex flex-col gap-2;
+}
+
+.subtitle {
+  @apply text-sm italic text-fg-subtle;
+}
+
+.cardHeading {
+  @apply text-lg font-bold text-fg leading-snug;
+}
+
+.cardText {
+  @apply text-sm text-fg-muted leading-relaxed mt-1;
+}
+
+/* ── Stats ── */
+
+.stats {
+  @apply flex flex-col gap-2 border-t border-(--color-border) pt-4 mt-1;
+}
+
+.statRow {
+  @apply flex justify-between items-baseline gap-4;
+}
+
+.statLabel {
+  @apply text-[11px] uppercase tracking-widest text-fg-subtle font-medium shrink-0;
+}
+
+.statValue {
+  @apply text-sm text-fg-muted text-right;
+}
+
+/* ── Recommendation footer ── */
+
+.recommendation {
+  @apply flex flex-col gap-1 border-t border-(--color-border) pt-4 mt-auto;
+}
+
+.recTitle {
+  @apply text-sm font-bold text-fg;
+}
+
+.recBody {
+  @apply text-sm text-fg-muted leading-relaxed;
+}
+
+.recPrice {
+  color: var(--card-text);
+  @apply font-semibold;
+}

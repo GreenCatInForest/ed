@@ -35,12 +35,12 @@ background: conic-gradient(
 } 
 
 .pill {
-  @apply pl-8 pr-4 py-px rounded-full border-accent border-[1px];
+  @apply pl-8 pr-4 py-[2px] rounded-full border-accent border-[1px];
   background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg));
 }
 
 .pillText {
-  @apply text-accent-light text-xs font-bold relative block md:flex justify-between;
+  @apply text-accent-light text-sm font-bold relative block md:flex justify-between;
 }
 
 .pillTextInfo {

@@ -1,8 +1,10 @@
+import Link from "next/link";
 import styles from "./Hero.module.css";
 
 interface HeroCardProps {
   label: string;
   color: "blue" | "amber" | "green" | "purple";
+  href?: string;
 }
 
 const colorMap: Record<
@@ -15,9 +17,9 @@ const colorMap: Record<
   purple: { border: "border-purple-400", bg: "var(--glow-purple)", glow: "rgba(192,132,252,0.35)", glowBg: "rgba(192,132,252,0.1)" },
 };
 
-export default function HeroCard({ label, color }: HeroCardProps) {
+export default function HeroCard({ label, color, href }: HeroCardProps) {
   const { border, bg, glow, glowBg } = colorMap[color];
-  return (
+  const card = (
     <div
       className={`${styles.card} ${border}`}
       style={{
@@ -29,4 +31,5 @@ export default function HeroCard({ label, color }: HeroCardProps) {
       {label}
     </div>
   );
+  return href ? <Link href={href}>{card}</Link> : card;
 }

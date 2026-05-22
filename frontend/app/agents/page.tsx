@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Pill from "@/components/Pill/Pill";
@@ -253,14 +254,14 @@ export default function AgentsPage() {
         footnote={
           <>
             Managing 20+ properties?{" "}
-            <a href="#" className="text-fg underline hover:text-accent-light transition-colors">
+            <Link href="#" className="text-fg underline hover:text-accent-light transition-colors">
               Agency volume pricing →
-            </a>
+            </Link>
             {" · "}
             RICS surveyor?{" "}
-            <a href="#" className="text-fg underline hover:text-accent-light transition-colors">
+            <Link href="#" className="text-fg underline hover:text-accent-light transition-colors">
               Practice licence at £79/mo →
-            </a>
+            </Link>
           </>
         }
       />

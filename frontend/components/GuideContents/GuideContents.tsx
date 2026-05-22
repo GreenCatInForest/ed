@@ -7,6 +7,7 @@ export interface GuideSection {
 }
 
 interface GuideContentsProps {
+  num?: number | string;
   sections: GuideSection[];
   aside?: ReactNode;
 }
@@ -46,9 +47,10 @@ export default function GuideContents({ sections, aside }: GuideContentsProps) {
       <div className="flex flex-col gap-6 overflow-y-auto">
         {aside}
         <div className="flex flex-col gap-3">
-          <p className="text-xs font-mono text-fg-subtle">
-            {String(active + 1).padStart(2, "0")}. {sections[active].title}
-          </p>
+          <span className="text-[11px] font-mono font-bold text-accent">01</span>
+          <h2 className=" text-fg font-bold">
+            {sections[active].title}
+          </h2>
           <div className="text-sm text-fg-muted leading-relaxed">
             {sections[active].content}
           </div>

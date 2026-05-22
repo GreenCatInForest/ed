@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 const columns = [
@@ -53,9 +54,9 @@ export default function Footer() {
             <ul className={styles.list}>
               {col.links.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className={styles.link}>
+                  <Link href={link.href} className={styles.link}>
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -1,4 +1,5 @@
 // app/page.tsx
+import Link from "next/link";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import HeroCard from "@/components/Hero/HeroCard";
@@ -27,13 +28,13 @@ export default function Home() {
           </>}
           primaryCta={{ label: "Order your compliance kit", href: "/order" }}
           secondaryCta={{ label: "Watch how it works (2 min)" }}
-          helperText={<>From £149 — cheaper than one solicitor letter.{" "}<a href="#" className="text-accent-light underline hover:text-accent transition-colors">Download sample report →</a></>}
+          helperText={<>From £149 — cheaper than one solicitor letter.{" "}<Link href="#" className="text-accent-light underline hover:text-accent transition-colors">Download sample report →</Link></>}
           visual={
             <div className="grid grid-cols-2 gap-4 m-4 w-full">
-              <HeroCard label="Landlords" color="blue" />
-              <HeroCard label="Housing Associations" color="amber" />
-              <HeroCard label="Surveyors" color="green" />
-              <HeroCard label="Letting Agencies" color="purple" />
+              <HeroCard label="Landlords" color="blue" href="/landlords" />
+              <HeroCard label="Housing Associations" color="amber" href="/housing-associations" />
+              <HeroCard label="Surveyors" color="green" href="/building-specialists" />
+              <HeroCard label="Letting Agencies" color="purple" href="/agents" />
             </div>
           }
         />
@@ -139,14 +140,14 @@ export default function Home() {
         footnote={
           <>
             Need 50+ properties?{" "}
-            <a href="#" className="text-fg underline hover:text-accent-light transition-colors">
+            <Link href="#" className="text-fg underline hover:text-accent-light transition-colors">
               Enterprise pricing →
-            </a>
+            </Link>
             {" · "}
             RICS surveyor?{" "}
-            <a href="#" className="text-fg underline hover:text-accent-light transition-colors">
+            <Link href="#" className="text-fg underline hover:text-accent-light transition-colors">
               Practice licence at £79/mo →
-            </a>
+            </Link>
           </>
         }
       />

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./CtaBanner.module.css";
 
 interface CtaButton {
@@ -18,8 +19,8 @@ export default function CtaBanner({ heading, body, primaryCta, secondaryCta }: C
       <h2 className={styles.heading}>{heading}</h2>
       <p className={styles.body}>{body}</p>
       <div className={styles.actions}>
-        <a href={primaryCta.href ?? "#"} className={styles.primary}>{primaryCta.label}</a>
-        <a href={secondaryCta.href ?? "#"} className={styles.secondary}>{secondaryCta.label}</a>
+        <Link href={primaryCta.href ?? "#"} className={styles.primary}>{primaryCta.label}</Link>
+        <Link href={secondaryCta.href ?? "#"} className={styles.secondary}>{secondaryCta.label}</Link>
       </div>
     </section>
   );
