@@ -110,6 +110,7 @@ export default function Home() {
               "Court-ready PDF",
             ],
             ctaLabel: "Order kit",
+            href: "/order?kit=starter",
           },
           {
             name: "Professional Report",
@@ -122,6 +123,7 @@ export default function Home() {
               "Ombudsman template",
             ],
             ctaLabel: "Order kit",
+            href: "/order?kit=professional",
             featured: true,
           },
           {
@@ -135,6 +137,7 @@ export default function Home() {
               "Portfolio dashboard",
             ],
             ctaLabel: "Start monitoring",
+            href: "/order?kit=portfolio",
           },
         ]}
         footnote={

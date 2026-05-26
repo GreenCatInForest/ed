@@ -217,6 +217,7 @@ export default function HousingAssociationsPage() {
               "Ombudsman case template",
             ],
             ctaLabel: "Order kit",
+            href: "/order?kit=professional",
           },
           {
             name: "Portfolio Monitoring",
@@ -230,6 +231,7 @@ export default function HousingAssociationsPage() {
               "Bulk case export",
             ],
             ctaLabel: "Start monitoring",
+            href: "/order?kit=portfolio",
             featured: true,
           },
           {
@@ -243,6 +245,7 @@ export default function HousingAssociationsPage() {
               "API access",
             ],
             ctaLabel: "Contact us",
+            href: "/contact",
           },
         ]}
         footnote={

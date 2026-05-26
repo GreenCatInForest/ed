@@ -224,6 +224,7 @@ export default function AgentsPage() {
               "Court-ready PDF",
             ],
             ctaLabel: "Order kit",
+            href: "/order?kit=starter",
           },
           {
             name: "Professional Report",
@@ -236,6 +237,7 @@ export default function AgentsPage() {
               "Ombudsman template",
             ],
             ctaLabel: "Order kit",
+            href: "/order?kit=professional",
             featured: true,
           },
           {
@@ -249,6 +251,7 @@ export default function AgentsPage() {
               "Portfolio dashboard",
             ],
             ctaLabel: "Start monitoring",
+            href: "/order?kit=portfolio",
           },
         ]}
         footnote={

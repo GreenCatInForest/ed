@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./PricingTiers.module.css";
 
 export interface PricingTier {
@@ -9,6 +10,7 @@ export interface PricingTier {
   description: string;
   features: string[];
   ctaLabel: string;
+  href?: string;
   featured?: boolean;
 }
 
@@ -59,9 +61,18 @@ export default function PricingTiers({ eyebrow, heading, tiers, footnote }: Pric
                 ))}
               </ul>
             </div>
-            <button className={activeIndex === i ? styles.ctaFeatured : styles.cta}>
-              {tier.ctaLabel}
-            </button>
+            {tier.href ? (
+              <Link
+                href={tier.href}
+                className={`block text-center ${activeIndex === i ? styles.ctaFeatured : styles.cta}`}
+              >
+                {tier.ctaLabel}
+              </Link>
+            ) : (
+              <button className={activeIndex === i ? styles.ctaFeatured : styles.cta}>
+                {tier.ctaLabel}
+              </button>
+            )}
           </div>
         ))}
       </div>
