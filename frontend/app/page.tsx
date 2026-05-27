@@ -1,6 +1,34 @@
 // app/page.tsx
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../components/Navbar/Navbar";
+import { SITE_URL, ORG_ID } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Court-Ready Damp & Mould Evidence",
+  description:
+    "14-day sensor kits that turn damp and mould complaints into court-ready evidence. Protect yourself from Housing Ombudsman rulings and disrepair claims. Proactive monitoring and one-off diagnostics for first complaint compliance with Awaab's Law.",
+  keywords: [
+    "Awaab's Law compliance",
+    "damp mould sensor kit",
+    "court-ready evidence landlord",
+    "housing ombudsman defence",
+    "damp evidence 10 days",
+  ],
+  openGraph: {
+    title: "Court-Ready Damp & Mould Evidence — Maple Diagnostics",
+    description:
+      "14-day sensor kits that turn damp and mould complaints into court-ready evidence. For landlords, housing associations, letting agents, and surveyors.",
+    url: "/",
+    type: "website",
+  },
+  twitter: {
+    title: "Court-Ready Damp & Mould Evidence — Maple Diagnostics",
+    description:
+      "14-day sensor kits that turn damp and mould complaints into court-ready evidence. For landlords, HAs, letting agents, and surveyors.",
+  },
+  alternates: { canonical: "/" },
+};
 import Hero from "@/components/Hero/Hero";
 import HeroCard from "@/components/Hero/HeroCard";
 import TrustBar from "@/components/TrustBar/TrustBar";
@@ -13,9 +41,44 @@ import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import { IconPackage, IconActivity, IconFileCheck } from "@tabler/icons-react";
 import Footer from "@/components/Footer/Footer";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${SITE_URL}/#service`,
+  name: "Damp & Mould Diagnostic Kit",
+  provider: { "@id": ORG_ID },
+  description:
+    "14-day sensor kit rental for court-ready damp and mould evidence. Covers humidity, temperature, and surface temperature with automated BMI and dew-point analysis.",
+  offers: [
+    { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+    { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+    // {
+    //   "@type": "Offer",
+    //   name: "Portfolio Monitoring",
+    //   priceCurrency: "GBP",
+    //   priceSpecification: {
+    //     "@type": "UnitPriceSpecification",
+    //     price: "49",
+    //     priceCurrency: "GBP",
+    //     unitText: "MON",
+    //   },
+    // },
+  ],
+  areaServed: { "@type": "Country", name: "United Kingdom" },
+  serviceType: "Property Diagnostics",
+  audience: {
+    "@type": "Audience",
+    audienceType: "Landlords, Housing Associations, Letting Agents, Surveyors",
+  },
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>

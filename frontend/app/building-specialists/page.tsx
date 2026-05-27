@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -5,11 +6,52 @@ import Pill from "@/components/Pill/Pill";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import PricingTiers from "@/components/PricingTiers/PricingTiers";
 import { IconShieldCheck, IconChartBar, IconFileText, IconBriefcase, IconActivity, IconFileReport, IconListCheck } from "@tabler/icons-react";
+import { ORG_ID } from "@/lib/seo";
 
-export const metadata = {
-  title: "For Surveyors — Maple Diagnostics",
+export const metadata: Metadata = {
+  title: "For Surveyors & Building Specialists",
   description:
     "Enhance your damp and mould surveys with 14-day continuous sensor data. Court-ready evidence that defends your professional findings.",
+  keywords: [
+    "surveyor damp sensor data",
+    "damp survey evidence",
+    "court-ready damp survey report",
+    "building specialist mould evidence",
+    "continuous sensor damp assessment",
+  ],
+  openGraph: {
+    title: "For Surveyors & Building Specialists — Maple Diagnostics",
+    description:
+      "Enhance your damp surveys with 14 days of continuous sensor data. Defend your professional findings with timestamped evidence no opposing expert can dismiss.",
+    url: "/building-specialists",
+  },
+  twitter: {
+    title: "For Surveyors & Building Specialists — Maple Diagnostics",
+    description:
+      "14-day continuous sensor data and PDF reportsthat makes your damp survey findings court-proof.",
+  },
+  alternates: { canonical: "/building-specialists" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Damp & Mould Sensor Data for Surveyors",
+  provider: { "@id": ORG_ID },
+  description:
+    "14-day continuous sensor kit for building surveyors and RICS professionals. Timestamped humidity, temperature, and dew-point data that defends structural vs. lifestyle damp classifications in court and Ombudsman proceedings.",
+  // offers: [
+  //   { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   {
+  //     "@type": "Offer",
+  //     name: "Practice Licence",
+  //     priceCurrency: "GBP",
+  //     priceSpecification: { "@type": "UnitPriceSpecification", price: "79", priceCurrency: "GBP", unitText: "MON" },
+  //   },
+  // ],
+  audience: { "@type": "Audience", audienceType: "Surveyors, RICS Professionals, Building Specialists" },
+  areaServed: { "@type": "Country", name: "United Kingdom" },
 };
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -110,6 +152,10 @@ const objections = [
 export default function BuildingSpecialistsPage() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>

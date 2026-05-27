@@ -1,16 +1,45 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ContactForms from "@/components/ContactForms/ContactForms";
+import { ORG_ID, SITE_URL } from "@/lib/seo";
 
-export const metadata = {
-  title: "Contact — Maple Diagnostics",
+export const metadata: Metadata = {
+  title: "Contact",
   description:
     "Download our compliance guide, apply for the Maple Social Program, or send us a general enquiry.",
+  keywords: ["contact Maple Diagnostics", "damp evidence guide download", "Maple Social Program"],
+  openGraph: {
+    title: "Contact — Maple Diagnostics",
+    description:
+      "Download our compliance guide, apply for the Maple Social Program, or send us a general enquiry.",
+    url: "/contact",
+  },
+  twitter: {
+    title: "Contact — Maple Diagnostics",
+    description: "Download our compliance guide or send us a general enquiry.",
+  },
+  alternates: { canonical: "/contact" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": `${SITE_URL}/contact`,
+  name: "Contact Maple Diagnostics",
+  description:
+    "Download the compliance guide, apply for the Maple Social Program, or send a general enquiry to Maple Diagnostics.",
+  provider: { "@id": ORG_ID },
+  url: `${SITE_URL}/contact`,
 };
 
 export default function ContactPage() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>

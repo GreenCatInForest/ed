@@ -18,10 +18,75 @@ import {
   IconClock,
 } from "@tabler/icons-react";
 
-export const metadata = {
-  title: "How it works — Maple Diagnostics",
+import type { Metadata } from "next";
+import { SITE_URL, ORG_ID } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "How it works",
   description:
     "Three calibrated sensors. Fourteen days of continuous data. One court-ready report. Learn how Maple Diagnostics turns a damp complaint into defensible evidence.",
+  keywords: [
+    "damp sensor kit rental",
+    "mould evidence 14 days",
+    "BMI dew point analysis landlord",
+    "how to get court-ready damp report",
+    "structural vs lifestyle damp",
+  ],
+  openGraph: {
+    title: "How it works — Maple Diagnostics",
+    description:
+      "Three  sensors. Fourteen days of continuous data. One court-ready report. From complaint to defensible evidence in 14 days.",
+    url: "/how-it-works",
+  },
+  twitter: {
+    title: "How it works — Maple Diagnostics",
+    description:
+      "Three sensors. Fourteen days of continuous data. One court-ready report.",
+  },
+  alternates: { canonical: "/how-it-works" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to get court-ready damp and mould evidence in 14 days",
+  description:
+    "A step-by-step guide to using the Maple Diagnostics sensor kit to generate court-ready damp and mould evidence for landlords and housing associations.",
+  provider: { "@id": ORG_ID },
+  supply: [
+    { "@type": "HowToSupply", name: "Calibrated humidity and temperature sensors" },
+    { "@type": "HowToSupply", name: "Surface-temperature probe" },
+    { "@type": "HowToSupply", name: "USB data logger" },
+  ],
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Order your kit",
+      text: "Choose your tier online. The kit is dispatched same day via tracked next-day delivery for orders placed before 2 pm. No account setup required.",
+      url: `${SITE_URL}/order`,
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Deploy the sensors",
+      text: "Place sensors in the affected rooms. No installer, no drilling, no WiFi. Sensors run on internal batteries and log data locally. A tenant can deploy them unassisted in under 10 minutes.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Monitor for 14 days",
+      text: "Sensors record humidity, temperature, and surface temperature every 15 minutes for the full monitoring window. Data is stored on the device, ensuring tamper-evident continuity.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Upload and get your report",
+      text: "Return the kit using the prepaid label. We process the data OR you process the data online - and generate your court-ready PDF within 24 hours. Download, attach to your response, and case closed.",
+    },
+  ],
+  totalTime: "P14D",
+  estimatedCost: { "@type": "MonetaryAmount", currency: "GBP", value: "149" },
 };
 
 // ─── Kit contents ─────────────────────────────────────────────────────────────
@@ -29,8 +94,9 @@ export const metadata = {
 const KIT_CONTENTS = [
   "3 calibrated humidity and temperature sensors",
   "1 surface-temperature probe",
-  "USB data logger with firmware pre-loaded",
-  "Room-by-room placement guide",
+  "USB data logger",
+  "Access to the firmware",
+  "Room placement guide",
   "Prepaid tracked return label",
   "Access to the report generation platform",
 ];
@@ -67,7 +133,7 @@ const REPORT_FEATURES = [
   {
     icon: <IconFileText size={20} stroke={1.5} />,
     title: "Court-ready PDF",
-    body: "Formatted for use in disrepair proceedings, Pre-Action Protocol exchanges, Housing Ombudsman submissions, and expert witness bundles. Accepted by solicitors and surveyors.",
+    body: "Formatted for use in disrepair proceedings, Pre-Action Protocol exchanges, Housing Ombudsman submissions, and expert witness bundles. Includes a clear cause classification, detailed evidence summary, and a comprehensive data appendix.",
   },
   {
     icon: <IconActivity size={20} stroke={1.5} />,
@@ -77,7 +143,7 @@ const REPORT_FEATURES = [
   {
     icon: <IconShieldCheck size={20} stroke={1.5} />,
     title: "Structural vs. lifestyle classification",
-    body: "A clear determination of probable cause with threshold evidence cited. Reproducible, scientifically documented, and aligned with established damp assessment practice accepted in Housing Ombudsman proceedings.",
+    body: "A clear determination of probable cause with threshold evidence cited. Reproducible, scientifically documented, and aligned with damp assessment practice.",
   },
   {
     icon: <IconFileReport size={20} stroke={1.5} />,
@@ -150,6 +216,10 @@ const OUTCOMES = [
 export default function HowItWorksPage() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>

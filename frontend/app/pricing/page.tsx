@@ -7,11 +7,120 @@ import Testimonial from "@/components/Testimonial/Testimonial";
 import PricingFaq from "@/components/PricingFaq/PricingFaq";
 import { IconCheck, IconMinus, IconHome, IconBuildingCommunity, IconBuilding } from "@tabler/icons-react";
 
-export const metadata = {
-  title: "Pricing — Maple Diagnostics",
+import type { Metadata } from "next";
+import { SITE_URL, ORG_ID } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Pricing",
   description:
     "Court-ready damp and mould evidence from £149. One-time kit rental or ongoing portfolio monitoring. No contracts, no lock-in.",
+  keywords: [
+    "damp evidence kit price",
+    "Awaab's Law compliance cost",
+    "landlord mould diagnostic pricing",
+    "portfolio monitoring housing association",
+    "court-ready report cost",
+  ],
+  openGraph: {
+    title: "Pricing — Maple Diagnostics",
+    description:
+      "Court-ready damp and mould evidence from £249. One-time kit rental or ongoing portfolio monitoring. No contracts, no lock-in.",
+    url: "/pricing",
+  },
+  twitter: {
+    title: "Pricing — Maple Diagnostics",
+    description:
+      "Court-ready damp and mould evidence from £149. One-time kit rental or ongoing portfolio monitoring. No contracts, no lock-in.",
+  },
+  alternates: { canonical: "/pricing" },
 };
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What's included in the equipment rental?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Every kit includes calibrated humidity, temperature, and surface-temperature sensors, a data logger, full setup instructions, and a prepaid return label. No installation is required — plug in and place.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How quickly will I receive the kit?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kits are dispatched same day for orders placed before 2 pm (Monday–Friday). Standard delivery is next working day.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I extend my 14-day rental?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Contact us before your rental period ends and we will extend it at £19 per additional week. Also you can switch to a proactive monitoring tier. Extensions do not affect your final report.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Portfolio Monitoring a minimum-term contract?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Portfolio Monitoring is billed monthly and can be cancelled any time with no notice period. Sensors must be returned upon cancellation; we send a prepaid label.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does the Starter kit satisfy Awaab's Law requirements?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Starter kit provides objective sensor evidence but does not include the written findings summary required under Awaab's Law. Social landlords and housing associations should use the Professional report, which includes the formatted written findings and Ombudsman template.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is the report admissible in court or with the Housing Ombudsman?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Reports are timestamped, produced from calibrated sensors, and formatted to meet court evidence standards. They have been used successfully in Ombudsman proceedings and Pre-Action Protocol exchanges.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer volume or enterprise pricing?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. For 10+ annual kits or 50+ properties on monitoring we offer negotiated rates, a dedicated account manager, and API access for property management systems. Contact us to discuss.",
+        },
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_URL}/pricing#service`,
+    name: "Damp & Mould Diagnostic Kit",
+    provider: { "@id": ORG_ID },
+    offers: [
+      { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+      { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+      {
+        "@type": "Offer",
+        name: "Portfolio Monitoring",
+        priceCurrency: "GBP",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "49",
+          priceCurrency: "GBP",
+          unitText: "MON",
+        },
+      },
+    ],
+  },
+];
 
 // ─── Comparison table ────────────────────────────────────────────────────────
 
@@ -136,6 +245,10 @@ const AUDIENCES = [
 export default function PricingPage() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>

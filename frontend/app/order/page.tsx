@@ -1,11 +1,20 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import OrderForm from "@/components/OrderForm/OrderForm";
 
-export const metadata = {
-  title: "Order your kit — Maple Diagnostics",
+export const metadata: Metadata = {
+  title: "Order your kit",
   description:
     "Order your 14-day diagnostic kit or start portfolio monitoring. Same-day dispatch for orders placed before 2 pm.",
+  openGraph: {
+    title: "Order your kit — Maple Diagnostics",
+    description:
+      "Order your 14-day diagnostic kit or start portfolio monitoring. Same-day dispatch for orders placed before 2 pm.",
+    url: "/order",
+  },
+  alternates: { canonical: "/order" },
+  robots: { index: false, follow: false },
 };
 
 export default async function OrderPage({

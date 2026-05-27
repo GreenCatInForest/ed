@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -5,11 +6,51 @@ import Pill from "@/components/Pill/Pill";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import PricingTiers from "@/components/PricingTiers/PricingTiers";
 import { IconBuilding, IconChartBar, IconListCheck, IconShieldCheck } from "@tabler/icons-react";
+import { ORG_ID } from "@/lib/seo";
 
-export const metadata = {
-  title: "For Housing Associations — Maple Diagnostics",
+export const metadata: Metadata = {
+  title: "For Housing Associations",
   description:
-    "Portfolio-scale Awaab's Law compliance for housing associations. Monitor every property, meet every deadline, defend every Ombudsman case.",
+    "Portfolio-scale Awaab's Law compliance for housing associations. Monitor every property, meet every deadline, defend every case.",
+  keywords: [
+    "housing association Awaab's Law",
+    "portfolio damp monitoring",
+    "housing ombudsman defence HA",
+    "social housing compliance sensors",
+    "provider damp evidence",
+  ],
+  openGraph: {
+    title: "For Housing Associations — Maple Diagnostics",
+    description:
+      "Portfolio-scale Awaab's Law compliance for housing associations. Continuous monitoring, automatic evidence collection, and court-ready reports.",
+    url: "/housing-associations",
+  },
+  twitter: {
+    title: "For Housing Associations — Maple Diagnostics",
+    description:
+      "Portfolio-scale Awaab's Law compliance. Monitor every property, meet every deadline, defend every case.",
+  },
+  alternates: { canonical: "/housing-associations" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Portfolio Damp & Mould Compliance for Housing Associations",
+  provider: { "@id": ORG_ID },
+  description:
+    "Continuous monitoring and court-ready reports for housing associations managing Awaab's Law compliance across large property portfolios.",
+  // offers: [
+  //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   {
+  //     "@type": "Offer",
+  //     name: "Portfolio Monitoring",
+  //     priceCurrency: "GBP",
+  //     priceSpecification: { "@type": "UnitPriceSpecification", price: "249", priceCurrency: "GBP", unitText: "MON" },
+  //   },
+  // ],
+  audience: { "@type": "Audience", audienceType: "Housing Associations, Registered Social Landlords" },
+  areaServed: { "@type": "Country", name: "United Kingdom" },
 };
 
 const challenges = [
@@ -48,7 +89,7 @@ const features = [
   "Structural defect vs. lifestyle cause classification",
   "Court-ready PDF reports per property",
   "Portfolio dashboard — compliance state across all units",
-  "Ombudsman-ready case export templates",
+  "Case export templates",
   "Monthly reports and threshold alerts",
 ];
 
@@ -72,6 +113,10 @@ const testimonials = [
 export default function HousingAssociationsPage() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>
@@ -151,10 +196,10 @@ export default function HousingAssociationsPage() {
               What you get
             </p>
             <h2 className="text-3xl font-bold">
-              Everything the Ombudsman expects to see.
+              Continuous compliance monitoring{" "}
             </h2>
             <p className="text-fg-muted text-sm">
-              Maple Diagnostics is built around the questions a Housing Ombudsman investigation will
+              Maple Diagnostics is built around the questions  an investigation can
               ask. Every report, every timestamp, every data point is structured to answer those
               questions with objective, auditable evidence.
             </p>

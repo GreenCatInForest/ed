@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -5,11 +6,52 @@ import Pill from "@/components/Pill/Pill";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import PricingTiers from "@/components/PricingTiers/PricingTiers";
 import { IconBriefcase, IconUsers, IconFileText, IconShieldCheck } from "@tabler/icons-react";
+import { ORG_ID } from "@/lib/seo";
 
-export const metadata = {
-  title: "For Letting Agents — Maple Diagnostics",
+export const metadata: Metadata = {
+  title: "For Letting Agents",
   description:
-    "Protect your clients and your agency from damp and mould disrepair claims. Court-ready evidence for every managed property from £149.",
+    "Protect your clients and your agency from damp and mould disrepair claims. Court-ready evidence for every managed property.",
+  keywords: [
+    "letting agent damp compliance",
+    "managed property mould evidence",
+    "Awaab's Law letting agent",
+    "disrepair claim defence agent",
+    "court-ready report managed property",
+  ],
+  openGraph: {
+    title: "For Letting Agents — Maple Diagnostics",
+    description:
+      "Court-ready damp and mould evidence for every managed property. Protect your landlord clients and your agency from disrepair claims.",
+    url: "/agents",
+  },
+  twitter: {
+    title: "For Letting Agents — Maple Diagnostics",
+    description:
+      "Court-ready damp and mould evidence for every managed property.",
+  },
+  alternates: { canonical: "/agents" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Damp & Mould Diagnostic Kit for Letting Agents",
+  provider: { "@id": ORG_ID },
+  description:
+    "Court-ready 14-day sensor evidence for letting agents managing damp and mould complaints across a landlord portfolio. Protects both agent and client from disrepair claims.",
+  // offers: [
+  //   { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   {
+  //     "@type": "Offer",
+  //     name: "Portfolio Monitoring",
+  //     priceCurrency: "GBP",
+  //     priceSpecification: { "@type": "UnitPriceSpecification", price: "49", priceCurrency: "GBP", unitText: "MON" },
+  //   },
+  // ],
+  audience: { "@type": "Audience", audienceType: "Letting Agents" },
+  areaServed: { "@type": "Country", name: "United Kingdom" },
 };
 
 const risks = [
@@ -94,6 +136,10 @@ const workflow = [
 export default function AgentsPage() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>

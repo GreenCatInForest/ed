@@ -1,17 +1,105 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import DownloadCard from "@/components/DownloadCard/DownloadCard";
 import GuideContents from "@/components/GuideContents/GuideContents";
-export const metadata = {
-  title: "Awaab's Law — Maple Diagnostics",
+import { SITE_URL, ORG_ID } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Awaab's Law Guide",
   description:
-    "Understand Awaab's Law: mandatory damp and mould response deadlines for social landlords in England. Learn what you must do and by when.",
+    "Understand Awaab's Law: mandatory damp and mould response deadlines for social landlords in England. The 10-day investigation clock, written findings, and evidence requirements.",
+  keywords: [
+    "Awaab's Law explained",
+    "social housing damp mould compliance",
+    "10 day investigation deadline",
+    "housing ombudsman written findings",
+    "Awaab Ishak law social landlords",
+  ],
+  openGraph: {
+    title: "Awaab's Law Guide — Maple Diagnostics",
+    description:
+      "A regulation-by-regulation walkthrough of Awaab's Law: deadlines, evidence requirements, and what happens when landlords miss them.",
+    url: "/awaabs-law",
+  },
+  twitter: {
+    title: "Awaab's Law Guide — Maple Diagnostics",
+    description:
+      "10-day investigation deadline, written findings, and evidence requirements for social landlords — explained.",
+  },
+  alternates: { canonical: "/awaabs-law" },
 };
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${SITE_URL}/awaabs-law#article`,
+    headline: "Awaab's Law explained: what does it mean for you?",
+    description:
+      "A practical, regulation-by-regulation walkthrough of Awaab's Law, the Social Housing Regulation Act Phase 1 — with investigation deadlines, written findings requirements, and evidence standards.",
+    publisher: { "@id": ORG_ID },
+    dateModified: "2026-01-01",
+    inLanguage: "en-GB",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/awaabs-law` },
+    keywords: "Awaab's Law, social housing, damp mould, housing ombudsman, 10-day investigation",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is Awaab's Law?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Awaab's Law (Social Housing Regulation Act, Phase 1) came into force in October 2025. It creates legally enforceable timeframes for social landlords to investigate, communicate, and remediate damp and mould hazards. It applies to registered social housing providers in England.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the 10-day investigation deadline under Awaab's Law?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "From the moment a tenant makes a complaint about damp or mould, the social landlord has 10 working days to begin a formal investigation. Missing this deadline is evidence of maladministration in front of the Housing Ombudsman, regardless of whether a repair was eventually completed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What must written findings include under Awaab's Law?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Within 3 working days of completing the investigation, landlords must issue written findings to the tenant. This must include the cause identified, the proposed action, and a timescale for completion. A verbal update or informal email is not sufficient.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the Precautionary Principle in Awaab's Law?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Where there is uncertainty about cause, Awaab's Law applies the precautionary principle: landlords must act as if the hazard is structural until evidence demonstrates otherwise. You can no longer assume lifestyle cause without data to support it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What counts as objective evidence in damp and mould cases?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evidence that supports compliance and features in Housing Ombudsman case outcomes includes: timestamped sensor readings (humidity, temperature, surface temperature), continuous data logs covering the complaint period, BMI and dew point analysis, photographic evidence with EXIF timestamps, and written inspection reports from qualified surveyors.",
+        },
+      },
+    ],
+  },
+];
 
 export default function AwaabsLawPage() {
   return (
     <main className="min-h-screen flex flex-col gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>

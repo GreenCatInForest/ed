@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -5,11 +6,46 @@ import CtaBanner from "@/components/CtaBanner/CtaBanner";
 import PricingTiers from "@/components/PricingTiers/PricingTiers";
 import { IconShieldCheck, IconFileReport, IconCloudUpload, IconClock } from "@tabler/icons-react";
 import LandlordsHero from "@/components/LandlordsHero/LandlordsHero";
+import { ORG_ID } from "@/lib/seo";
 
-export const metadata = {
-  title: "For Private Landlords — Maple Diagnostics",
+export const metadata: Metadata = {
+  title: "For Private Landlords",
   description:
     "Protect yourself from disrepair claims and local authority enforcement. Court-ready damp and mould evidence for private landlords from £149.",
+  keywords: [
+    "private landlord damp evidence",
+    "disrepair claim defence",
+    "HHSRS enforcement landlord",
+    "mould complaint evidence UK",
+    "court-ready damp report landlord",
+  ],
+  openGraph: {
+    title: "For Private Landlords — Maple Diagnostics",
+    description:
+      "Court-ready damp and mould evidence for private landlords. Defend disrepair claims and local authority enforcement with objective sensor data.",
+    url: "/landlords",
+  },
+  twitter: {
+    title: "For Private Landlords — Maple Diagnostics",
+    description:
+      "Court-ready damp and mould evidence for private landlords.",
+  },
+  alternates: { canonical: "/landlords" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Damp & Mould Diagnostic Kit for Private Landlords",
+  provider: { "@id": ORG_ID },
+  description:
+    "Court-ready 14-day sensor evidence for private landlords facing damp and mould complaints. Defends against disrepair claims and local authority HHSRS enforcement.",
+  // offers: [
+  //   { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  // ],
+  audience: { "@type": "Audience", audienceType: "Private Landlords" },
+  areaServed: { "@type": "Country", name: "United Kingdom" },
 };
 
 const risks = [
@@ -79,6 +115,10 @@ const objections = [
 export default function LandlordsPage() {
   return (
     <main className="min-h-screen flex flex-col gap-8 md:gap-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>
