@@ -12,11 +12,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Court-Ready Damp & Mould Evidence — Maple Diagnostics",
+    default: "Damp & Mould Evidence — Maple Diagnostics",
     template: `%s — ${SITE_NAME}`,
   },
   description:
-    "14-day sensor kits that turn damp and mould complaints into court-ready evidence. For landlords, housing associations, letting agents, and building surveyors across the UK. Proactive monitoring and one-off diagnostics available.",
+    "14-day sensor kits that turn damp and mould complaints, formatted for the Pre-Action Protocol disclosure requirements evidence. For landlords, housing associations, letting agents, and building surveyors across the UK. Proactive monitoring and one-off diagnostics available.",
   openGraph: {
     siteName: SITE_NAME,
     locale: "en_GB",

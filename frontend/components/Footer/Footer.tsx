@@ -40,11 +40,10 @@ export default function Footer() {
           <p className={styles.tagline}>
             Awaab&apos;s Law compliance through objective environmental data.
           </p>
-          <p className={styles.location}>Huntingdon · Cambridgeshire</p>
+          <p className={styles.location}>Cambridge · Cambridgeshire</p>
           <div className={styles.pills}>
-            <span className={styles.pill}>RICS aligned</span>
-            <span className={styles.pill}>Ombudsman ready</span>
-            <span className={styles.pill}>Co. No. 12345678</span>
+            <span className={styles.pill}>Designed around Ombudsman published expectations.</span>
+            {/* <span className={styles.pill}>Co. No. 12345678</span> */}
           </div>
         </div>
 

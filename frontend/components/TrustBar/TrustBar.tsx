@@ -12,7 +12,7 @@ export default function TrustBar() {
                 <ul className="mx-auto flex flex-col md:flex-row items-center gap-4">
                     <li className="flex flex-row justify-evenly items-center">
                         <div className={styles.iconWrapper}><div className={styles.iconInner}><IconShieldCheck size={20} stroke={1.6} className="text-accent" /></div></div>
-                        <p className="w-8/12">Housing Ombudsman aligned</p>
+                        <p className="w-8/12">Designed around Housing Ombudsman published guidance</p>
                     </li>
                     <li className="flex flex-row justify-evenly items-center">
                         <div className={styles.iconWrapper}><div className={styles.iconInner}><IconBuildingBank size={20} stroke={1.6} className="text-accent" /></div></div>
@@ -20,11 +20,11 @@ export default function TrustBar() {
                     </li>
                     <li className="flex flex-row justify-evenly items-center">
                         <div className={styles.iconWrapper}><div className={styles.iconInner}><IconGavel size={20} stroke={1.6} className="text-accent" /></div></div>
-                        <p className="w-8/12">Court-ready format</p>
+                        <p className="w-8/12">Formatted for the Pre-Action Protocol disclosure requirements</p>
                     </li>
                     <li className="flex flex-row justify-evenly items-center">
                         <div className={styles.iconWrapper}><div className={styles.iconInner}><IconUsers size={20} stroke={1.6} className="text-accent" /></div></div>
-                        <p className="w-8/12">12 housing providers</p>
+                        <p className="w-8/12">For UK private landlords, social landlords, and chartered surveyors</p>
                     </li>
                 </ul>
             </div>

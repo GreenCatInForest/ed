@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "14-day sensor kits that turn damp and mould complaints into court-ready evidence. Protect yourself from Housing Ombudsman rulings and disrepair claims. Proactive monitoring and one-off diagnostics for first complaint compliance with Awaab's Law.",
   keywords: [
-    "Awaab's Law compliance",
+    "Awaab's Law evidence",
     "damp mould sensor kit",
     "court-ready evidence landlord",
     "housing ombudsman defence",
@@ -49,21 +49,21 @@ const jsonLd = {
   provider: { "@id": ORG_ID },
   description:
     "14-day sensor kit rental for court-ready damp and mould evidence. Covers humidity, temperature, and surface temperature with automated BMI and dew-point analysis.",
-  offers: [
-    { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
-    { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
-    // {
-    //   "@type": "Offer",
-    //   name: "Portfolio Monitoring",
-    //   priceCurrency: "GBP",
-    //   priceSpecification: {
-    //     "@type": "UnitPriceSpecification",
-    //     price: "49",
-    //     priceCurrency: "GBP",
-    //     unitText: "MON",
-    //   },
-    // },
-  ],
+  // offers: [
+  //   { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   // {
+  //   //   "@type": "Offer",
+  //   //   name: "Portfolio Monitoring",
+  //   //   priceCurrency: "GBP",
+  //   //   priceSpecification: {
+  //   //     "@type": "UnitPriceSpecification",
+  //   //     price: "49",
+  //   //     priceCurrency: "GBP",
+  //   //     unitText: "MON",
+  //   //   },
+  //   // },
+  // ],
   areaServed: { "@type": "Country", name: "United Kingdom" },
   serviceType: "Property Diagnostics",
   audience: {
@@ -84,14 +84,15 @@ export default function Home() {
       </header>
       <Hero
           badge={{ text: "Awaab's Law Phase 1 — live since Oct 2025", type: "live" }}
-          headline={<>Comply with Awaab&apos;s Law. <span className="text-accent">In 14 days.</span></>}
+          headline={<>Awaab&apos;s Law evidence. <span className="text-accent">In 10 days.</span></>}
           body={<>
-            <p>Rent sensors. Monitor any property. Get an evidence of timestamped actions due to the official timeline. Generate court-ready reports. Protect yourself from Housing Ombudsman rulings — for £149, not £15,000.</p>
-            <p>Custom bespoke solution based on 3 scientific researches. Developed in collaboration with UK Property Care Association. Trusted by surveyors, landlords, letting agencies across the UK.</p>
+            {/* <p>For social landlords meeting the 10-working-day investigation window. For private landlords gathering the same standard of evidence before the regime extends to the PRS. Calibrated sensors, continuous monitoring, defensible PDF report.</p> */}
+            <p>Rent sensors. Monitor any property. Record timestamped evidence for each action in the official compliance timeline. Generate court-ready reports. Protect yourself from Housing Ombudsman rulings — for £249, not £10000.</p>
+            <p>Custom bespoke solution based on 3 scientific researches. Developed in collaboration with UK Property Care Association. Built around the Housing Ombudsman&apos;s 26 Spotlight recommendations. Aligned with MHCLG 2025 statutory guidance.</p>
           </>}
-          primaryCta={{ label: "Order your compliance kit", href: "/order" }}
+          primaryCta={{ label: "Order your kit", href: "/order" }}
           secondaryCta={{ label: "Watch how it works (2 min)" }}
-          helperText={<>From £149 — cheaper than one solicitor letter.{" "}<Link href="#" className="text-accent-light underline hover:text-accent transition-colors">Download sample report →</Link></>}
+          helperText={<>From £249 — cheaper than one solicitor letter.{" "}<Link href="#" className="text-accent-light underline hover:text-accent transition-colors">Download sample report →</Link></>}
           visual={
             <div className="grid grid-cols-2 gap-4 m-4 w-full">
               <HeroCard label="Landlords" color="blue" href="/landlords" />
@@ -103,19 +104,19 @@ export default function Home() {
         />
       <TrustBar />
       <StatBlock
-          eyebrow="The clock starts the moment a tenant complains"
+          eyebrow="The clock starts the moment a landlord becomes aware of a complaint"
           heading="10 working days. That's all a landlord has."
           body="Awaab's Law gives every social landlord a hard deadline to investigate damp and mould complaints. No data means losing in front of the Housing Ombudsman - by default."
           stats={[
             { value: "10", label: "working days to investigate" },
-            { value: "3", label: "days for written findings" },
+            { value: "3", label: "working days for written findings" },
             { value: "£25k+", label: "Ombudsman ruling exposure" },
           ]}
         />
-      <FeatureSplit />
+      {/* <FeatureSplit /> */}
       <ProcessSteps
-          eyebrow="How md_app works"
-          heading="Three steps. Evidence trail. One court-ready report."
+          eyebrow="How it works"
+          heading="Three steps. Evidence trail. One report."
           steps={[
             {
               num: 1,
@@ -127,17 +128,17 @@ export default function Home() {
               num: 2,
               icon: <IconActivity size={28} stroke={1.5} />,
               title: "Monitor for 14 days",
-              body: "Continuous humidity, temperature, and surface-temperature logging. Automated BMI and dew point analysis due to the metodology developed with UK Property Care Association.",
+              body: "Continuous humidity, temperature, and surface-temperature logging. Automated Building Moisture Index and dew point analysis due to the metodology developed with UK Property Care Association.",
             },
             {
               num: 3,
               icon: <IconFileCheck size={28} stroke={1.5} />,
               title: "Get the report",
-              body: "Court-ready PDF: structural failure vs. lifestyle, with timestamped evidence.",
+              body: "Formatted for the Pre-Action Protocol disclosure requirements PDF: structural failure vs. condensation, with timestamped evidence.",
             },
           ]}
         />
-      <Testimonial
+      {/* <Testimonial
         items={[
           {
             quote: "Tenant claimed structural damp. Our md_app report showed lifestyle ventilation issues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
@@ -158,7 +159,7 @@ export default function Home() {
             stat: { value: "6", label: "Properties protected" },
           },
         ]}
-      />
+      /> */}
       {/* <PricingTiers
         eyebrow="Transparent pricing"
         heading="Pay per property. Or monitor your whole portfolio."
