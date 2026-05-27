@@ -266,7 +266,7 @@ export default function Home() {
         }
       /> */}
        <CtaBanner
-        heading="The landlord who gets a complaint today needs evidence by Friday."
+        heading="Sensors dispatched same day. Court-ready report in 10 days."
         body="Order your kit now. Sensors dispatched same day."
         primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}

@@ -619,12 +619,12 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      <CtaBanner
+      {/* <CtaBanner
         heading="The landlord who gets a complaint today needs evidence by Friday."
         body="Order your kit now. Sensors dispatched same day."
         primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
-      />
+      /> */}
 
       <Footer />
     </main>

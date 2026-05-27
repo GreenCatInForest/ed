@@ -61,8 +61,13 @@ const risks = [
     context: "Plus potential negligence claim",
   },
   {
-    label: "Ombudsman case with no evidence trail",
-    value: "£2,000–25k",
+    label: "Ombudsman case with no evidence trail for social housing clients",
+    value: "up to £32k",
+    context: "Per property finding",
+  },
+   {
+    label: "Ombudsman case with no evidence trail for private clients",
+    value: "county court disrepair claims £2k–£25k typical settlement",
     context: "Per property finding",
   },
   {
@@ -153,9 +158,7 @@ export default function AgentsPage() {
             <span className="text-accent">Your compliance risk.</span>
           </h1>
           <p className="text-fg-muted text-base max-w-2xl">
-            Letting agents sit between landlords and tenants — and between landlords and the Housing
-            Ombudsman. When a damp complaint arrives, the clock starts. Maple Diagnostics gives your
-            agency the evidence to close every case cleanly, protect every client, and defend every dispute.
+            Letting agents sit between landlords and tenants — and between their landlord clients and disrepair claims. When a damp complaint arrives in a property managed for a social housing client, the Awaab&apos;s Law clock starts. For private letting clients, the Pre-Action Protocol clock can start at any time.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
@@ -236,7 +239,7 @@ export default function AgentsPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="max-w-6xl mx-auto px-6 w-full">
+      {/* <section className="max-w-6xl mx-auto px-6 w-full">
         <div className="bg-surface border border-(--color-border) rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-1">
             <p className="text-lg text-fg-muted italic leading-relaxed">
@@ -253,10 +256,10 @@ export default function AgentsPage() {
             <p className="text-sm text-fg-muted">Ombudsman cases closed in favour</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Pricing */}
-      <PricingTiers
+      {/* <PricingTiers
         eyebrow="Agent pricing"
         heading="Per-property or portfolio-wide — your choice."
         tiers={[
@@ -313,10 +316,10 @@ export default function AgentsPage() {
             </Link>
           </>
         }
-      />
+      /> */}
 
       <CtaBanner
-        heading="Your tenant just reported damp. The 10-day clock is running."
+        heading="Your tenant just reported damp. What do you do next?"
         body="Order a kit for the property today. Evidence collected, report ready, case closed."
         primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}

@@ -88,7 +88,7 @@ const benefits = [
   {
     icon: <IconChartBar size={24} stroke={1.5} />,
     title: "Automated structural vs. condensation classification",
-    body: "The classification is reproducible and scientifically documented — aligned with established UK damp assessment practice.",
+    body: "The classification is reproducible and scientifically documented — aligned with established UK damp assessment practice. Consistent with the evidential standards referenced in Housing Ombudsman maladministration findings.",
   },
   {
     icon: <IconShieldCheck size={24} stroke={1.5} />,
@@ -268,7 +268,7 @@ export default function BuildingSpecialistsPage() {
       </section>
 
       {/* Practice licence */}
-      <section className="max-w-6xl mx-auto px-6 w-full">
+      {/* <section className="max-w-6xl mx-auto px-6 w-full">
         <div className="bg-surface border border-accent/30 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8">
           <div className="flex flex-col gap-4 flex-1">
             <Pill text="For RICS-accredited practices" type="info" />
@@ -304,7 +304,7 @@ export default function BuildingSpecialistsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Objection handling */}
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
@@ -324,9 +324,8 @@ export default function BuildingSpecialistsPage() {
           ))}
         </div>
       </section>
-
       {/* Testimonial */}
-      <section className="max-w-6xl mx-auto px-6 w-full">
+      {/* <section className="max-w-6xl mx-auto px-6 w-full">
         <div className="bg-surface border border-(--color-border) rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-1">
             <p className="text-lg text-fg-muted italic leading-relaxed">
@@ -342,8 +341,7 @@ export default function BuildingSpecialistsPage() {
             <p className="text-sm text-fg-muted">Case decided before cross-examination ended</p>
           </div>
         </div>
-      </section>
-
+      </section> */}
       {/* What's in a report */}
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
         <div className="flex flex-col gap-2">
@@ -360,7 +358,7 @@ export default function BuildingSpecialistsPage() {
             {
               icon: <IconChartBar size={22} stroke={1.5} />,
               title: "Building Moisture Index and dew-point analysis",
-              body: "Automated calculation of the established metrics in UK damp assessment practice, applied by qualified surveyors and used in disrepair proceedings and Ombudsman submissions.",
+              body: "Maple's Building Moisture Index methodology — developed with the UK Property Care Association — applied alongside dew-point calculations established in UK building science.",
             },
             {
               icon: <IconListCheck size={22} stroke={1.5} />,
@@ -386,7 +384,7 @@ export default function BuildingSpecialistsPage() {
       </section>
 
       {/* Pricing */}
-      <PricingTiers
+      {/* <PricingTiers
         eyebrow="Surveyor pricing"
         heading="Ad-hoc kits or a practice licence — your choice."
         tiers={[
@@ -422,7 +420,7 @@ export default function BuildingSpecialistsPage() {
             name: "Practice Licence",
             price: "£79",
             period: "/month",
-            description: "For RICS-accredited practices. Unlimited client surveys.",
+            description: "Unlimited client surveys.",
             features: [
               "Discounted kit rate",
               "Unlimited client surveys",
@@ -447,10 +445,10 @@ export default function BuildingSpecialistsPage() {
             </Link>
           </>
         }
-      />
+      /> */}
 
       <CtaBanner
-        heading="Your next report is being challenged. Do you have the data to defend it?"
+        heading="Data to defend your next report."
         body="Add 14 days of continuous sensor evidence to every survey. Same-day kit dispatch."
         primaryCta={{ label: "Order a kit — £249", href: "/order?kit=starter" }}
         secondaryCta={{ label: "Get a practice licence", href: "/contact" }}

@@ -99,7 +99,7 @@ const objections = [
   {
     myth: "\"What if my tenant won't let me install sensors?\"",
     reality:
-      "Section 11(6) of the Landlord and Tenant Act 1985 gives you a right of entry to view the state and condition of the property with at least 24 hours' written notice. Our welcome pack includes a template Section 11 notice letter that meets statutory requirements. If the tenant unreasonably refuses access, that itself becomes part of the evidential record — and a statutory defence under draft Awaab's Law PRS guidance.",
+      "Section 11(6) of the Landlord and Tenant Act 1985 gives you a right of entry to view the state and condition of the property with at least 24 hours' written notice. Our welcome pack includes a template Section 11 notice letter that meets statutory requirements.",
   },
   {
     myth: "\"The tenant is causing it themselves — I shouldn't need evidence.\"",
@@ -306,7 +306,7 @@ export default function LandlordsPage() {
       /> */}
 
       <CtaBanner
-        heading="A complaint arrived this morning. Evidence is due by Friday."
+        heading="A complaint arrived this morning. Get the evidence before the Letter of Claim does."
         body="Order your kit now. Sensors dispatched same day via tracked delivery."
         primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}

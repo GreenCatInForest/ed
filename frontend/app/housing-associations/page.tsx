@@ -79,7 +79,7 @@ const challenges = [
 const stats = [
   { value: "10", label: "working days to investigate — legal deadline" },
   { value: "3", label: "days for written findings after investigation" },
-  { value: "£25k+", label: "average Ombudsman compensation order at scale" },
+  { value: "Up to £32,000", label: "largest single Ombudsman order, 2024–25" },
 ];
 
 const features = [
@@ -89,26 +89,25 @@ const features = [
   "Structural defect vs. condensation cause classification",
   "Court-ready PDF reports per property",
   "Portfolio dashboard — compliance state across all units",
-  "Case export templates",
   "Monthly reports and threshold alerts",
 ];
 
-const testimonials = [
-  {
-    quote:
-      "We had three simultaneous Ombudsman complaints. Maple Diagnostics gave us timestamped sensor data for every property. All three cases were closed in our favour within 6 weeks.",
-    name: "Sarah Chen",
-    role: "Operations Director · Midlands Housing Association",
-    stat: "3/3 cases won",
-  },
-  {
-    quote:
-      "Tenant claimed structural damp. Our report showed condensation issues across all three rooms. The Shelter referral was withdrawn before it reached the Ombudsman.",
-    name: "James Marshall",
-    role: "Property Compliance Lead · Cambridgeshire HA",
-    stat: "£8,000 claim avoided",
-  },
-];
+// const testimonials = [
+//   {
+//     quote:
+//       "We had three simultaneous Ombudsman complaints. Maple Diagnostics gave us timestamped sensor data for every property. All three cases were closed in our favour within 6 weeks.",
+//     name: "Sarah Chen",
+//     role: "Operations Director · Midlands Housing Association",
+//     stat: "3/3 cases won",
+//   },
+//   {
+//     quote:
+//       "Tenant claimed structural damp. Our report showed condensation issues across all three rooms. The Shelter referral was withdrawn before it reached the Ombudsman.",
+//     name: "James Marshall",
+//     role: "Property Compliance Lead · Cambridgeshire HA",
+//     stat: "£8,000 claim avoided",
+//   },
+// ];
 
 export default function HousingAssociationsPage() {
   return (
@@ -209,7 +208,7 @@ export default function HousingAssociationsPage() {
               What you get
             </p>
             <h2 className="text-3xl font-bold">
-              Continuous compliance monitoring{" "}
+              Continuous monitoring designed around Awaab&apos;s Law evidence standards{" "}
             </h2>
             <p className="text-fg-muted text-sm">
               Maple Diagnostics is built around the questions  an investigation can
