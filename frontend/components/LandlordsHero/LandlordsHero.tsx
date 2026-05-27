@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Pill from "@/components/Pill/Pill";
 import SituationCards, { ScenarioCard } from "@/components/SituationCards/SituationCards";
+import CtaLink from "../CtaLink/CtaLink";
 
 type Tab = "private" | "social";
 
@@ -216,6 +217,9 @@ export default function LandlordsHero() {
             <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">Case timeline notifications</li>
             <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">Pre-paid return shipping</li>
           </ul>
+          {/* <CtaLink href="/contact" variant="secondary">
+            Read a landlords guidance
+          </CtaLink> */}
           </div>
         </article>
       </section>

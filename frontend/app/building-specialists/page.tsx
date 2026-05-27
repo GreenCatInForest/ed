@@ -74,7 +74,7 @@ const risks = [
   },
   {
     label: "Maple 14-day kit per survey",
-    value: "£149",
+    value: "£249",
     context: "Objective data. Defensible findings.",
   },
 ];
@@ -143,7 +143,7 @@ const objections = [
   {
     myth: "\"The client won't pay for the additional cost.\"",
     reality:
-      "At £149 per property, it's line-itemable. Most instructing solicitors and landlords will pay for a report that defends their position — because their legal fees dwarf the kit cost. Frame it as evidence enhancement, not an extra charge.",
+      "At £249 per property, it's line-itemable. Most instructing solicitors and landlords will pay for a report that defends their position — because their legal fees dwarf the kit cost. Frame it as evidence enhancement, not an extra charge.",
   },
 ];
 
@@ -392,7 +392,7 @@ export default function BuildingSpecialistsPage() {
         tiers={[
           {
             name: "Starter Report",
-            price: "£149",
+            price: "£249",
             description: "Single property, one-off instruction.",
             features: [
               "14-day equipment rental",
@@ -452,7 +452,7 @@ export default function BuildingSpecialistsPage() {
       <CtaBanner
         heading="Your next report is being challenged. Do you have the data to defend it?"
         body="Add 14 days of continuous sensor evidence to every survey. Same-day kit dispatch."
-        primaryCta={{ label: "Order a kit — £149", href: "/order?kit=starter" }}
+        primaryCta={{ label: "Order a kit — £249", href: "/order?kit=starter" }}
         secondaryCta={{ label: "Get a practice licence", href: "/contact" }}
       />
 

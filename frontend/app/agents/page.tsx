@@ -72,7 +72,7 @@ const risks = [
   },
   {
     label: "Maple Diagnostics per-property report",
-    value: "£149",
+    value: "£249",
     context: "Evidence. Report. Defence.",
   },
 ];
@@ -178,7 +178,7 @@ export default function AgentsPage() {
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <p className="text-xs uppercase tracking-widest text-fg-subtle font-medium">The cost of getting it wrong</p>
-          <h2 className="text-3xl font-bold">£149 per property. Not £25,000.</h2>
+          <h2 className="text-3xl font-bold">£249 per property. Not £25,000.</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {risks.map((item, i) => (
@@ -262,7 +262,7 @@ export default function AgentsPage() {
         tiers={[
           {
             name: "Starter Report",
-            price: "£149",
+            price: "£249",
             description: "Single property. One dispute to resolve.",
             features: [
               "14-day equipment rental",
@@ -318,7 +318,7 @@ export default function AgentsPage() {
       <CtaBanner
         heading="Your tenant just reported damp. The 10-day clock is running."
         body="Order a kit for the property today. Evidence collected, report ready, case closed."
-        primaryCta={{ label: "Order kit — £149", href: "/order" }}
+        primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />
 

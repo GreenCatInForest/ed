@@ -8,6 +8,7 @@ import { IconShieldCheck, IconFileReport, IconCloudUpload, IconClock } from "@ta
 import LandlordsHero from "@/components/LandlordsHero/LandlordsHero";
 import { ORG_ID } from "@/lib/seo";
 
+
 export const metadata: Metadata = {
   title: "For Private Landlords",
   description:
@@ -175,7 +176,6 @@ export default function LandlordsPage() {
           ))}
         </div>
       </section>
-
       {/* Objection handling */}
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
         <div className="flex flex-col gap-2">

@@ -213,7 +213,7 @@ export default function Home() {
         // tiers={[
         //   {
         //     name: "Starter Report",
-        //     price: "£149",
+        //     price: "£249",
         //     description: "For private landlords with a single mould dispute to resolve.",
         //     features: [
         //       "14-day equipment rental",
@@ -268,7 +268,7 @@ export default function Home() {
        <CtaBanner
         heading="The landlord who gets a complaint today needs evidence by Friday."
         body="Order your kit now. Sensors dispatched same day."
-        primaryCta={{ label: "Order kit — £149", href: "/order" }}
+        primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />
       <Footer />

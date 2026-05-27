@@ -13,7 +13,7 @@ import { SITE_URL, ORG_ID } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Court-ready damp and mould evidence from £149. One-time kit rental or ongoing portfolio monitoring. No contracts, no lock-in.",
+    "Court-ready damp and mould evidence from £249. One-time kit rental or ongoing portfolio monitoring. No contracts, no lock-in.",
   keywords: [
     "damp evidence kit price",
     "Awaab's Law compliance cost",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Pricing — Maple Diagnostics",
     description:
-      "Court-ready damp and mould evidence from £149. One-time kit rental or ongoing portfolio monitoring. No contracts, no lock-in.",
+      "Court-ready damp and mould evidence from £249. One-time kit rental or ongoing portfolio monitoring. No contracts, no lock-in.",
   },
   alternates: { canonical: "/pricing" },
 };
@@ -177,7 +177,7 @@ function ComparisonTable() {
         <thead>
           <tr className="border-b border-(--color-border)">
             <th className="text-left py-4 pr-6 font-medium text-fg-subtle w-1/2" />
-            <th className="py-4 px-4 text-center font-semibold text-fg">Starter<br /><span className="font-normal text-fg-muted text-xs">£149</span></th>
+            <th className="py-4 px-4 text-center font-semibold text-fg">Starter<br /><span className="font-normal text-fg-muted text-xs">£249</span></th>
             <th className="py-4 px-4 text-center font-semibold text-fg bg-accent/5 border-x border-(--color-accent-border)">
               Professional<br /><span className="font-normal text-fg-muted text-xs">£249</span>
             </th>
@@ -219,7 +219,7 @@ const AUDIENCES = [
     icon: <IconHome size={22} stroke={1.5} />,
     who: "Private landlord",
     situation: "You've received a damp or mould complaint — or want evidence before one arrives.",
-    tier: "Starter — £149",
+    tier: "Starter — £249",
     cta: "Order kit",
     href: "/order",
   },
@@ -261,12 +261,12 @@ export default function PricingPage() {
           <span className="text-accent">Not subscriptions.</span>
         </h1>
         <p className="text-fg-muted text-base max-w-xl">
-          One-time kit rental from £149. Ongoing portfolio monitoring from £49 per property per month.
+          One-time kit rental from £249. Ongoing portfolio monitoring from £49 per property per month.
           No setup fees, no contracts, no lock-in.
         </p>
         <div className="flex gap-6 mt-2">
           <div>
-            <p className="text-2xl font-bold text-accent">£149</p>
+            <p className="text-2xl font-bold text-accent">£249</p>
             <p className="text-xs text-fg-subtle mt-0.5">one-time diagnostic</p>
           </div>
           <div className="w-px bg-(--color-border)" />
@@ -283,13 +283,13 @@ export default function PricingPage() {
       </section>
 
       {/* ── Pricing tiers ──────────────────────────────────────────────────── */}
-      <PricingTiers
+      {/* <PricingTiers
         eyebrow="Choose your kit"
         heading="Three ways to protect yourself."
         tiers={[
           {
             name: "Starter Report",
-            price: "£149",
+            price: "£249",
             description: "A single damp or mould dispute. Evidence delivered in 14 days.",
             features: [
               "14-day equipment rental",
@@ -345,7 +345,7 @@ export default function PricingPage() {
             </Link>
           </>
         }
-      />
+      /> */}
 
       {/* ── Enterprise callout ─────────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-6 w-full">
@@ -448,7 +448,7 @@ export default function PricingPage() {
               "As a private landlord with six properties I can't afford a solicitor for every dispute. The 14-day kit costs less than a single hour of legal advice and the report does the heavy lifting.",
             name: "David Okafor",
             role: "Private Landlord · Greater Manchester",
-            stat: { value: "£149", label: "vs £350+ solicitor" },
+            stat: { value: "£249", label: "vs £350+ solicitor" },
           },
         ]}
       />
@@ -466,7 +466,7 @@ export default function PricingPage() {
       <CtaBanner
         heading="The landlord who gets a complaint today needs evidence by Friday."
         body="Order your kit now. Sensors dispatched same day."
-        primaryCta={{ label: "Order kit — £149", href: "/order" }}
+        primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />
 

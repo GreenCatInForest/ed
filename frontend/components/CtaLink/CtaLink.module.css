@@ -1,0 +1,44 @@
+@reference "../../app/globals.css";
+
+
+@property --border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.spinBorderWrapper {
+  border-radius: 0.5rem;
+  padding: 1px;
+  cursor: pointer;
+  background: var(--color-border-strong);
+}
+
+.spinBorderWrapper:hover {
+  background: conic-gradient(
+    from var(--border-angle),
+    var(--color-accent-tint) 0%,
+    var(--color-accent) 20%,
+    var(--color-accent-light) 25%,
+    var(--color-accent) 30%,
+    var(--color-accent-tint) 50%,
+    var(--color-accent-tint) 100%
+  );
+  animation: borderSpin 3s linear infinite;
+  box-shadow: 0 0 12px var(--color-accent-tint), 0 0 24px var(--color-accent-tint);
+}
+
+@keyframes borderSpin {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+.primary {
+  @apply inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white text-center px-6 py-3 rounded-lg font-medium transition-colors w-full;
+}
+
+.secondary {
+  @apply inline-flex items-center justify-center bg-(--color-bg) border border-fg-faint/10 text-fg px-6 py-3 rounded-[calc(0.5rem-1px)] font-medium w-full;
+}
+

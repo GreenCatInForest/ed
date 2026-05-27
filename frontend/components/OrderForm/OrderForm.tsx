@@ -9,7 +9,7 @@ const KITS = [
   {
     id: "starter",
     name: "Starter Report",
-    price: "£149",
+    price: "£249",
     priceNote: "one-time",
     description: "Single damp or mould dispute. Evidence in 14 days.",
     features: ["14-day equipment rental", "1-room diagnostic", "Court-ready PDF", "Same-day dispatch"],

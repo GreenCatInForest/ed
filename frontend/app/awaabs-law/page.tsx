@@ -254,7 +254,7 @@ export default function AwaabsLawPage() {
       <CtaBanner
         heading="The 10-day clock starts the moment your tenant complains."
         body="Don't start collecting evidence after the deadline. Order today — sensors dispatched same day."
-        primaryCta={{ label: "Order kit — £149", href: "/order" }}
+        primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />
 

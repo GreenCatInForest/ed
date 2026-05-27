@@ -311,7 +311,7 @@ export default function HowItWorksPage() {
               href="/order"
               className="self-start bg-accent hover:bg-accent-hover text-white font-semibold text-sm px-6 py-3.5 rounded-xl transition-colors"
             >
-              Order kit — £149
+              Order kit — £249
             </Link>
           </div>
 
@@ -624,7 +624,7 @@ export default function HowItWorksPage() {
       <CtaBanner
         heading="The landlord who gets a complaint today needs evidence by Friday."
         body="Order your kit now. Sensors dispatched same day."
-        primaryCta={{ label: "Order kit — £149", href: "/order" }}
+        primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />
 
