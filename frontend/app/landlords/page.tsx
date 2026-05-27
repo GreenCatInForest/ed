@@ -9,7 +9,7 @@ import LandlordsHero from "@/components/LandlordsHero/LandlordsHero";
 export const metadata = {
   title: "For Private Landlords — Maple Diagnostics",
   description:
-    "Protect yourself from disrepair claims and Housing Ombudsman rulings. Court-ready damp and mould evidence for private landlords from £149.",
+    "Protect yourself from disrepair claims and local authority enforcement. Court-ready damp and mould evidence for private landlords from £149.",
 };
 
 const risks = [
@@ -19,9 +19,9 @@ const risks = [
     context: "Settled out of court",
   },
   {
-    label: "Ombudsman finding — maladministration",
-    value: "£2,000–25k",
-    context: "Per property, per case",
+    label: "HHSRS civil penalty — category 1 hazard",
+    value: "£5,000–30k",
+    context: "Local authority enforcement",
   },
   {
     label: "Solicitor letter — first response",
@@ -54,7 +54,7 @@ const steps = [
   {
     icon: <IconShieldCheck size={24} stroke={1.5} />,
     title: "Respond with evidence",
-    body: "Use the report to respond to the tenant, solicitor, or Ombudsman. Objective data, not assertion.",
+    body: "Use the report to respond to the tenant, solicitor, or local authority. Objective data, not assertion.",
   },
 ];
 
@@ -62,7 +62,7 @@ const objections = [
   {
     myth: "\"The tenant is causing it themselves — I shouldn't need evidence.\"",
     reality:
-      "The Ombudsman doesn't take your word for it. Without sensor data showing lifestyle-driven condensation (poor ventilation, cooking, drying laundry), you can't distinguish structural damp from tenant behaviour. The assumption goes against you.",
+      "Courts and local authorities won't take your word for it. Without sensor data showing lifestyle-driven condensation (poor ventilation, cooking, drying laundry), you can't distinguish structural damp from tenant behaviour. The assumption goes against you.",
   },
   {
     myth: "\"I'll deal with it if they actually make a complaint.\"",
@@ -151,55 +151,110 @@ export default function LandlordsPage() {
       </section>
 
       {/* Pricing */}
-      <PricingTiers
-        eyebrow="Landlord pricing"
-        heading="Pay per property. No subscription required."
-        tiers={[
-          {
-            name: "Starter Report",
-            price: "£149",
-            description: "Single property dispute. 14-day evidence window.",
-            features: [
-              "14-day equipment rental",
-              "1-property diagnostic report",
-              "Court-ready PDF",
-            ],
-            ctaLabel: "Order kit",
-            href: "/order?kit=starter",
-          },
-          {
-            name: "Professional Report",
-            price: "£249",
-            description: "Multi-room property or complex dispute.",
-            features: [
-              "14-day equipment rental",
-              "3-room diagnostic report",
-              "Written findings summary",
-              "Ombudsman template",
-            ],
-            ctaLabel: "Order kit",
-            href: "/order?kit=professional",
-            featured: true,
-          },
-          {
-            name: "Portfolio Monitoring",
-            price: "£49",
-            period: "/month per property",
-            description: "Continuous monitoring for multi-property landlords.",
-            features: [
-              "Always-on sensors",
-              "Monthly reports + alerts",
-              "Portfolio dashboard",
-            ],
-            ctaLabel: "Start monitoring",
-            href: "/order?kit=portfolio",
-          },
-        ]}
+        <PricingTiers
+        eyebrow="Transparent pricing"
+        heading="Pay per property. Or monitor your whole portfolio."
+        tiers={
+          [
+            {
+              name: "Proactive Monitoring",
+              price: "£33",
+              period: "per month",
+              description: "For proactive landlords and HAs. Ongoing compliance with continuous sensor data and monthly graphs.",
+              features: [
+                "3 months of always-on sensors",
+                "Monthly graphs on the platform showing the dynamic of readings + mobile phone alerts in case of deviations",
+                "Protective setup for any future complaints",
+                "Ombudsman-ready proactive evidence trail",
+                "Demonstrate duty of care and proactive compliance",
+                "Reports to show your ongoing efforts to resolve damp and mould issues",
+              ],
+              ctaLabel: "Start monitoring",
+              href: "/order?kit=monitoring",
+            },
+            {
+              name: "Emergency kit",
+              price: "£249",
+              description: "For private landlords with a single mould dispute to resolve. Registered providers with an active complaint. Protect your rights from day 1.",
+              features: [
+                "14-day of always-on sensors",
+                "1-property diagnostic report",
+                "Court-ready PDF",
+                "Ombudsman-ready trail of timestamped evidences",
+                "Documented all the actions taken within the legal timeline",
+              ],
+              ctaLabel: "Order kit",
+              href: "/order?kit=diagnostic",
+              featured: true,
+            },
+            {
+              name: "Social ",
+              price: "£0",
+              description: "For landlords with an active complaint. Protect your rights from the 1 day.",
+              features: [
+                "14-day equipment rental",
+                "1-property diagnostic report",
+                "Court-ready PDF",
+                "Trail of timestamped evidences",
+                "Documented all the actions taken within the legal timeline",
+              ],
+              ctaLabel: "Order kit",
+              href: "/order?kit=diagnostic",
+            },
+            
+          ]
+        }
+        // tiers={[
+        //   {
+        //     name: "Starter Report",
+        //     price: "£149",
+        //     description: "For private landlords with a single mould dispute to resolve.",
+        //     features: [
+        //       "14-day equipment rental",
+        //       "1-property diagnostic report",
+        //       "Court-ready PDF",
+        //     ],
+        //     ctaLabel: "Order kit",
+        //     href: "/order?kit=starter",
+        //   },
+        //   {
+        //     name: "Professional Report",
+        //     price: "£249",
+        //     description: "For letting agents and HA property managers handling multiple rooms.",
+        //     features: [
+        //       "14-day equipment rental",
+        //       "3-room diagnostic report",
+        //       "Written findings summary",
+        //       "Ombudsman template",
+        //     ],
+        //     ctaLabel: "Order kit",
+        //     href: "/order?kit=professional",
+        //     featured: true,
+        //   },
+        //   {
+        //     name: "Portfolio Monitoring",
+        //     price: "£49",
+        //     period: "/month per property",
+        //     description: "Continuous monitoring for multi-property landlords and HAs.",
+        //     features: [
+        //       "Always-on sensors",
+        //       "Monthly reports + alerts",
+        //       "Portfolio dashboard",
+        //     ],
+        //     ctaLabel: "Start monitoring",
+        //     href: "/order?kit=portfolio",
+        //   },
+        // ]}
         footnote={
           <>
-            Managing 10+ properties?{" "}
+            Need 50+ properties?{" "}
             <Link href="#" className="text-fg underline hover:text-accent-light transition-colors">
-              Volume pricing →
+              Enterprise pricing →
+            </Link>
+            {" · "}
+            RICS surveyor?{" "}
+            <Link href="#" className="text-fg underline hover:text-accent-light transition-colors">
+              Practice licence at £79/mo →
             </Link>
           </>
         }

@@ -39,7 +39,7 @@ const reasons = [
   {
     icon: <IconBriefcase size={24} stroke={1.5} />,
     title: "You're the first point of contact",
-    body: "When a tenant reports damp, they call your office — not the landlord. That means the compliance clock starts with you. Missing the 10-day investigation window is your liability to explain.",
+    body: "When a tenant reports damp, they call your office — not the landlord. For social housing clients, the Awaab's Law 10-day investigation clock starts immediately. Missing it is your liability to explain.",
   },
   {
     icon: <IconUsers size={24} stroke={1.5} />,
@@ -62,7 +62,7 @@ const workflow = [
   {
     step: "01",
     title: "Complaint received",
-    body: "Tenant reports damp or mould. Log the date — this starts the 10-day investigation clock under Awaab's Law.",
+    body: "Tenant reports damp or mould. Log the date — for social housing clients, this starts the 10-day investigation clock under Awaab's Law.",
   },
   {
     step: "02",
@@ -82,7 +82,7 @@ const workflow = [
   {
     step: "05",
     title: "Issue written findings",
-    body: "Use the report to issue written findings to the tenant within 3 days of investigation — exactly as Awaab's Law requires.",
+    body: "Use the report to issue written findings to the tenant within 3 days of investigation — as required under Awaab's Law for social housing clients, and best practice for all managed properties.",
   },
   {
     step: "06",

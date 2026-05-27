@@ -88,7 +88,7 @@ export default function AwaabsLawPage() {
             content: (
               <>
                 <p className="mb-3">
-                  The Housing Ombudsman accepts the following as objective evidence in damp and mould cases:
+                  The following types of evidence support compliance and feature in case outcomes:
                 </p>
                 <ul className="flex flex-col gap-2">
                   {[

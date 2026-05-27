@@ -26,7 +26,7 @@ const challenges = [
   {
     icon: <IconChartBar size={24} stroke={1.5} />,
     title: "Evidence",
-    body: "Lifestyle vs. structural distinction requires objective data. Assertions without timestamped sensor readings are rejected by the Ombudsman.",
+    body: "Lifestyle vs. structural distinction requires objective data. Assertions without timestamped sensor readings carry little weight — the Ombudsman expects documented, dated evidence of cause.",
   },
   {
     icon: <IconShieldCheck size={24} stroke={1.5} />,
@@ -154,9 +154,9 @@ export default function HousingAssociationsPage() {
               Everything the Ombudsman expects to see.
             </h2>
             <p className="text-fg-muted text-sm">
-              Maple Diagnostics is built around the Housing Ombudsman&apos;s evidence framework. Every
-              report, every timestamp, every data point is structured to answer the questions an
-              Ombudsman will ask.
+              Maple Diagnostics is built around the questions a Housing Ombudsman investigation will
+              ask. Every report, every timestamp, every data point is structured to answer those
+              questions with objective, auditable evidence.
             </p>
             <a
               href="/order"

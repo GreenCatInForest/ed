@@ -58,13 +58,13 @@ export default function Home() {
               num: 1,
               icon: <IconPackage size={28} stroke={1.5} />,
               title: "Rent the kit",
-              body: "Sensors dispatched same day. Plug in, place in the affected rooms — no installer required.",
+              body: "Sensors dispatched same day. Place sensors in the affected room. No WiFi setup required.",
             },
             {
               num: 2,
               icon: <IconActivity size={28} stroke={1.5} />,
               title: "Monitor for 14 days",
-              body: "Continuous humidity, temperature, and surface-temperature logging. Automated BMI and dew point analysis.",
+              body: "Continuous humidity, temperature, and surface-temperature logging. Automated BMI and dew point analysis due to the metodology developed with UK Property Care Association.",
             },
             {
               num: 3,
@@ -96,50 +96,97 @@ export default function Home() {
           },
         ]}
       />
-      <PricingTiers
+      {/* <PricingTiers
         eyebrow="Transparent pricing"
         heading="Pay per property. Or monitor your whole portfolio."
-        tiers={[
-          {
-            name: "Starter Report",
-            price: "£149",
-            description: "For private landlords with a single mould dispute to resolve.",
-            features: [
-              "14-day equipment rental",
-              "1-property diagnostic report",
-              "Court-ready PDF",
-            ],
-            ctaLabel: "Order kit",
-            href: "/order?kit=starter",
-          },
-          {
-            name: "Professional Report",
-            price: "£249",
-            description: "For letting agents and HA property managers handling multiple rooms.",
-            features: [
-              "14-day equipment rental",
-              "3-room diagnostic report",
-              "Written findings summary",
-              "Ombudsman template",
-            ],
-            ctaLabel: "Order kit",
-            href: "/order?kit=professional",
-            featured: true,
-          },
-          {
-            name: "Portfolio Monitoring",
-            price: "£49",
-            period: "/month per property",
-            description: "Continuous monitoring for multi-property landlords and HAs.",
-            features: [
-              "Always-on sensors",
-              "Monthly reports + alerts",
-              "Portfolio dashboard",
-            ],
-            ctaLabel: "Start monitoring",
-            href: "/order?kit=portfolio",
-          },
-        ]}
+        tiers={
+          [
+            {
+              name: "Emergency kit",
+              price: "£249",
+              description: "For private landlords with a single mould dispute to resolve. Registered providers with an active complaint. Protect your rights from day 1.",
+              features: [
+                "14-day equipment rental",
+                "1-property diagnostic report",
+                "Court-ready PDF",
+                "Trail of timestamped evidences",
+                "Documented all the actions taken within the legal timeline",
+              ],
+              ctaLabel: "Order kit",
+              href: "/order?kit=diagnostic",
+            },
+            {
+              name: "Proactive Monitoring",
+              price: "£49/month",
+              period: "per property",
+              description: "For proactive landlords and HAs. Ongoing compliance with continuous sensor data and monthly graphs.",
+              features: [
+                "Always-on sensors",
+                "Monthly graphs showing the actual readings + alerts",
+                "Protective setup for any future complaints",
+              ],
+              ctaLabel: "Start monitoring",
+              href: "/order?kit=monitoring",
+            },
+
+            {
+              name: "Free Emergency Kit",
+              price: "£0",
+              description: "For landlords with an active complaint. Protect your rights from the 1 day.",
+              features: [
+                "14-day equipment rental",
+                "1-property diagnostic report",
+                "Court-ready PDF",
+                "Trail of timestamped evidences",
+                "Documented all the actions taken within the legal timeline",
+              ],
+              ctaLabel: "Order kit",
+              href: "/order?kit=diagnostic",
+            },
+            
+          ]
+        }
+        // tiers={[
+        //   {
+        //     name: "Starter Report",
+        //     price: "£149",
+        //     description: "For private landlords with a single mould dispute to resolve.",
+        //     features: [
+        //       "14-day equipment rental",
+        //       "1-property diagnostic report",
+        //       "Court-ready PDF",
+        //     ],
+        //     ctaLabel: "Order kit",
+        //     href: "/order?kit=starter",
+        //   },
+        //   {
+        //     name: "Professional Report",
+        //     price: "£249",
+        //     description: "For letting agents and HA property managers handling multiple rooms.",
+        //     features: [
+        //       "14-day equipment rental",
+        //       "3-room diagnostic report",
+        //       "Written findings summary",
+        //       "Ombudsman template",
+        //     ],
+        //     ctaLabel: "Order kit",
+        //     href: "/order?kit=professional",
+        //     featured: true,
+        //   },
+        //   {
+        //     name: "Portfolio Monitoring",
+        //     price: "£49",
+        //     period: "/month per property",
+        //     description: "Continuous monitoring for multi-property landlords and HAs.",
+        //     features: [
+        //       "Always-on sensors",
+        //       "Monthly reports + alerts",
+        //       "Portfolio dashboard",
+        //     ],
+        //     ctaLabel: "Start monitoring",
+        //     href: "/order?kit=portfolio",
+        //   },
+        // ]}
         footnote={
           <>
             Need 50+ properties?{" "}
@@ -153,7 +200,7 @@ export default function Home() {
             </Link>
           </>
         }
-      />
+      /> */}
        <CtaBanner
         heading="The landlord who gets a complaint today needs evidence by Friday."
         body="Order your kit now. Sensors dispatched same day."
