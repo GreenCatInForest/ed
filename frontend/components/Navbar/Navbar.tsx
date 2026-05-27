@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css";
 
 const links = [
   { href: "/awaabs-law", label: "Awaab's Law - Free Guide" },
-  { href: "/housing-associations", label: "Housing Associations" },
+  { href: "/housing-associations", label: "Social Housing" },
   { href: "/landlords", label: "Landlords" },
   { href: "/agents", label: "Agencies" },
   { href: "/building-specialists", label: "Surveyors" },
@@ -31,7 +31,7 @@ export default function Navbar() {
           href="/order"
           className="hidden md:inline-flex items-center bg-accent hover:bg-accent-hover text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors shrink-0"
         >
-          Order kit — £149
+          Order kit — £249
         </Link>
         <button
           className="md:hidden flex flex-col justify-center gap-[5px] p-2"
@@ -61,7 +61,7 @@ export default function Navbar() {
               className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-medium px-4 py-2 rounded-lg transition-colors"
               onClick={() => setMenuOpen(false)}
             >
-              Order kit — £149
+              Order kit — from £49
             </Link>
           </div>
         </div>

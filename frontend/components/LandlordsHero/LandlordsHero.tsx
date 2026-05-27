@@ -25,7 +25,7 @@ const privateScenarios: ScenarioCard[] = [
     ],
     recommendation: {
       title: "Maple kit — 14-day diagnostic",
-      price: "£149.",
+      price: "£249.",
       description: "Court-ready PDF before the solicitor’s letter arrives.",
     },
   },
@@ -47,7 +47,7 @@ const privateScenarios: ScenarioCard[] = [
     ],
     recommendation: {
       title: "Maple kit — 14-day diagnostic",
-      price: "£149.",
+      price: "£249.",
       description: "Even a “no hazard found” report is defensive evidence.",
     },
   },
@@ -95,7 +95,7 @@ const socialScenarios: ScenarioCard[] = [
     ],
     recommendation: {
       title: "Maple kit — 14-day diagnostic",
-      price: "£149.",
+      price: "£249.",
       description: "Objective cause determination for your written findings.",
     },
   },
@@ -118,7 +118,7 @@ const socialScenarios: ScenarioCard[] = [
     ],
     recommendation: {
       title: "Maple kit — 14-day diagnostic",
-      price: "£149.",
+      price: "£249.",
       description: "Timestamped report ready to attach to your written findings.",
     },
   },
@@ -166,44 +166,58 @@ export default function LandlordsHero() {
 
   return (
     <>
-      <section className="max-w-6xl mx-auto px-6 w-full pt-8 md:pt-16 flex flex-col gap-6">
-        <div className="flex flex-col gap-4 max-w-3xl">
-          <Pill
-            text={tab === "private" ? "For private landlords" : "For social landlords"}
-            type="info"
-          />
-          <h1 className="text-4xl md:text-5xl font-bold">
-            One tenant complaint.{" "}
-            <span className="text-accent">One court-ready report.</span>
-          </h1>
-          <p className="text-fg-muted text-base max-w-2xl">
-            {tab === "private"
-              ? "Awaab's Law doesn't yet apply to private rentals,[7] but three other duties already do: Section 11 LTA 1985 (repair),[6] the Homes Fitness for Habitation Act 2018,[8] and council enforcement under the HHSRS (up to £30,000 civil penalty)[9]. Where you sit on the spectrum below changes what evidence you should be gathering — and how strong your defence is if a dispute reaches the Pre-Action Protocol.[11]"
-              : "Awaab’s Law created mandatory investigation deadlines for social landlords. Miss the 10-day window and you’re in maladministration territory — regardless of whether a repair was eventually completed. Maple Diagnostics gives you the evidence to meet your compliance obligations."}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <button
-              onClick={() => setTab("private")}
-              className={`inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors ${
-                tab === "private"
-                  ? "bg-accent hover:bg-accent-hover text-white"
-                  : "border border-(--color-border) text-fg hover:border-fg-muted"
-              }`}
-            >
-              Private Landlord
-            </button>
-            <button
-              onClick={() => setTab("social")}
-              className={`inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors ${
-                tab === "social"
-                  ? "bg-accent hover:bg-accent-hover text-white"
-                  : "border border-(--color-border) text-fg hover:border-fg-muted"
-              }`}
-            >
-              Social Landlord
-            </button>
+      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <article className="max-w-6xl mx-auto px-6 w-full pt-8 md:pt-16 flex flex-col gap-6">      
+            <Pill
+              text={tab === "private" ? "For private landlords" : "For social landlords"}
+              type="info"
+            />
+            <h1 className="text-4xl md:text-5xl font-bold">
+              One tenant complaint.{" "}
+              <span className="text-accent">One court-ready report.</span>
+            </h1>
+            <p className="text-fg-muted text-base max-w-2xl">
+              {tab === "private"
+                ? "Awaab's Law doesn't yet apply to private rentals,[7] but three other duties already do: article 11 LTA 1985 (repair),[6] the Homes Fitness for Habitation Act 2018,[8] and council enforcement under the HHSRS (up to £30,000 civil penalty)[9]. Where you sit on the spectrum below changes what evidence you should be gathering — and how strong your defence is if a dispute reaches the Pre-Action Protocol.[11]"
+                : "Awaab’s Law created mandatory investigation deadlines for social landlords. Miss the 10-day window and you’re in maladministration territory — regardless of whether a repair was eventually completed. Maple Diagnostics gives you the evidence to meet your compliance obligations."}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                onClick={() => setTab("private")}
+                className={`inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors ${
+                  tab === "private"
+                    ? "bg-accent hover:bg-accent-hover text-white"
+                    : "border border-(--color-border) text-fg hover:border-fg-muted"
+                }`}
+              >
+                Private Landlord
+              </button>
+              <button
+                onClick={() => setTab("social")}
+                className={`inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors ${
+                  tab === "social"
+                    ? "bg-accent hover:bg-accent-hover text-white"
+                    : "border border-(--color-border) text-fg hover:border-fg-muted"
+                }`}
+              >
+                Social Landlord
+              </button>
+            </div>
+
+        </article>
+        <article className="max-w-2xl mx-auto px-6 w-full pt-8 md:my-6 ">
+          <div className=" bg-fg-faint/10 rounded-lg p-6 border border-(--color-border) flex flex-col gap-4">
+          <div className="eyebrow text-left top-6 left-6 ">What you get</div>
+           <ul className="list-none flex flex-col gap-2 ">
+            <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">3 environmental sensors</li>
+            <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">14 days continuous monitoring</li>
+            <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">Structural vs condensation diagnosis</li>
+            <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">PDF report</li>
+            <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">Case timeline notifications</li>
+            <li className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4">Pre-paid return shipping</li>
+          </ul>
           </div>
-        </div>
+        </article>
       </section>
 
       <SituationCards

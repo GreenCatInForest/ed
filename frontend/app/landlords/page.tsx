@@ -11,7 +11,7 @@ import { ORG_ID } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "For Private Landlords",
   description:
-    "Protect yourself from disrepair claims and local authority enforcement. Court-ready damp and mould evidence for private landlords from £149.",
+    "Protect yourself from disrepair claims and local authority enforcement. Court-ready damp and mould evidence for private landlords from £249.",
   keywords: [
     "private landlord damp evidence",
     "disrepair claim defence",
@@ -41,7 +41,7 @@ const jsonLd = {
   description:
     "Court-ready 14-day sensor evidence for private landlords facing damp and mould complaints. Defends against disrepair claims and local authority HHSRS enforcement.",
   // offers: [
-  //   { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+  //   { "@type": "Offer", name: "Starter Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
   //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
   // ],
   audience: { "@type": "Audience", audienceType: "Private Landlords" },
@@ -66,7 +66,7 @@ const risks = [
   },
   {
     label: "Maple Diagnostics 14-day kit",
-    value: "£149",
+    value: "£249",
     context: "Evidence. Report. Done.",
   },
 ];
@@ -96,9 +96,14 @@ const steps = [
 
 const objections = [
   {
+    myth: "\"What if my tenant won't let me install sensors?\"",
+    reality:
+      "Section 11(6) of the Landlord and Tenant Act 1985 gives you a right of entry to view the state and condition of the property with at least 24 hours' written notice. Our welcome pack includes a template Section 11 notice letter that meets statutory requirements. If the tenant unreasonably refuses access, that itself becomes part of the evidential record — and a statutory defence under draft Awaab's Law PRS guidance.",
+  },
+  {
     myth: "\"The tenant is causing it themselves — I shouldn't need evidence.\"",
     reality:
-      "Courts and local authorities won't take your word for it. Without sensor data showing lifestyle-driven condensation (poor ventilation, cooking, drying laundry), you can't distinguish structural damp from tenant behaviour. The assumption goes against you.",
+      "Courts and local authorities won't take the word for it. Without sensor data showing lifestyle-driven condensation (poor ventilation, cooking, drying laundry), you can't distinguish structural damp from tenant behaviour. The assumption goes against you.",
   },
   {
     myth: "\"I'll deal with it if they actually make a complaint.\"",
@@ -108,7 +113,7 @@ const objections = [
   {
     myth: "\"A surveyor's inspection should be enough.\"",
     reality:
-      "A one-day visit creates a snapshot. Damp and mould is seasonal and behavioural — a 14-day continuous record shows patterns a single inspection cannot.",
+      "A one-day visit creates a snapshot. Damp and mould is seasonal and behavioural — a 10 or 14-day continuous record shows patterns a single inspection cannot.",
   },
 ];
 
@@ -129,7 +134,7 @@ export default function LandlordsPage() {
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <p className="text-xs uppercase tracking-widest text-fg-subtle font-medium">The cost of inaction</p>
-          <h2 className="text-3xl font-bold">£149 versus everything else.</h2>
+          <h2 className="text-3xl font-bold">£249 versus everything else.</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {risks.map((item, i) => (
@@ -191,7 +196,7 @@ export default function LandlordsPage() {
       </section>
 
       {/* Pricing */}
-        <PricingTiers
+        {/* <PricingTiers
         eyebrow="Transparent pricing"
         heading="Pay per property. Or monitor your whole portfolio."
         tiers={
@@ -247,7 +252,7 @@ export default function LandlordsPage() {
         // tiers={[
         //   {
         //     name: "Starter Report",
-        //     price: "£149",
+        //     price: "£249",
         //     description: "For private landlords with a single mould dispute to resolve.",
         //     features: [
         //       "14-day equipment rental",
@@ -298,12 +303,12 @@ export default function LandlordsPage() {
             </Link>
           </>
         }
-      />
+      /> */}
 
       <CtaBanner
         heading="A complaint arrived this morning. Evidence is due by Friday."
         body="Order your kit now. Sensors dispatched same day via tracked delivery."
-        primaryCta={{ label: "Order kit — £149", href: "/order" }}
+        primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />
 

@@ -7,7 +7,7 @@ export default function FeatureSplit() {
         <section className={styles.featureSplit}>
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
                 <article className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
-                    <Pill text="Live diagnostics" type="info" className="w-full md:w-1/3 uppercase text-center"/>
+                    <Pill text="Ongoing diagnostics" type="info" className="w-full md:w-1/2 uppercase text-center"/>
                     <h2 className="text-3xl md:text-4xl font-bold">Every home, every status, in one view.</h2>
                     <p className="text-fg-muted w-full md:w-8/12">
                         See compliance state for every unit across your portfolio after uploading the data. Drill into any flat to view active cases, milestone deadlines, and full audit history.

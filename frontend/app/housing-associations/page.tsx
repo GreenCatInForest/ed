@@ -9,7 +9,7 @@ import { IconBuilding, IconChartBar, IconListCheck, IconShieldCheck } from "@tab
 import { ORG_ID } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "For Housing Associations",
+  title: "For housing associations & councils",
   description:
     "Portfolio-scale Awaab's Law compliance for housing associations. Monitor every property, meet every deadline, defend every case.",
   keywords: [
@@ -120,36 +120,49 @@ export default function HousingAssociationsPage() {
       <header className="border-b border-(--color-border)">
         <Navbar />
       </header>
-
-      {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 w-full pt-8 md:pt-16 flex flex-col gap-6">
+    
+    <section className="max-w-6xl mx-auto px-6 w-full pt-8 md:pt-16 flex flex-col gap-6">
+    {/* Hero */} 
+      <section className="max-w-2xl ">
         <div className="flex flex-col gap-4 max-w-3xl">
-          <Pill text="For housing associations" type="info" />
-          <h1 className="text-4xl md:text-5xl font-bold">
-            Awaab&apos;s Law compliance{" "}
+          <Pill text="For housing associations & councils" type="info" />
+          {/* <h1 className="text-4xl md:text-5xl font-bold">
+            Awaab&apos;s Law evidence{" "}
             <span className="text-accent">across your whole portfolio.</span>
+          </h1> */}
+         <h1 className="text-4xl md:text-5xl font-bold">
+            Defend every case.{" "}
+            <span className="text-accent">Audit every property.</span>
           </h1>
           <p className="text-fg-muted text-base max-w-2xl">
+            Built for compliance teams managing 500–50,000 units. 
             Housing associations face Awaab&apos;s Law at scale. A complaint on any property starts a
             legal clock. Maple Diagnostics gives you continuous monitoring, automatic evidence collection,
             and court-ready reports — before the Ombudsman gets involved.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a
+             <a
               href="/order"
               className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg font-medium transition-colors"
             >
-              Get portfolio pricing
+              Get portfolio pricing 
             </a>
+            {/* <a
+              href="/order"
+              className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            >
+              Book a 3-property pilot
+            </a> */}
             <a
-              href="/awaabs-law"
+              href="/contact"
               className="inline-flex items-center justify-center border border-(--color-border) text-fg px-6 py-3 rounded-lg font-medium transition-colors hover:border-fg-muted"
             >
-              Awaab&apos;s Law timeline
+              Book a FREE 3-property pilot
             </a>
           </div>
         </div>
       </section>
+    </section>
 
       {/* Stats */}
       <section className="max-w-6xl mx-auto px-6 w-full">
@@ -221,7 +234,7 @@ export default function HousingAssociationsPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <p className="text-xs uppercase tracking-widest text-fg-subtle font-medium">Case outcomes</p>
@@ -244,9 +257,9 @@ export default function HousingAssociationsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      {/* Pricing */}
+      {/* Pricing
       <PricingTiers
         eyebrow="HA pricing"
         heading="Scale from a single kit to portfolio-wide monitoring."
@@ -301,7 +314,7 @@ export default function HousingAssociationsPage() {
             </Link>
           </>
         }
-      />
+      /> */}
 
       <CtaBanner
         heading="The next Ombudsman complaint could arrive today."

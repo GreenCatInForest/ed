@@ -87,7 +87,7 @@ export default function Home() {
           headline={<>Awaab&apos;s Law evidence. <span className="text-accent">In 10 days.</span></>}
           body={<>
             {/* <p>For social landlords meeting the 10-working-day investigation window. For private landlords gathering the same standard of evidence before the regime extends to the PRS. Calibrated sensors, continuous monitoring, defensible PDF report.</p> */}
-            <p>Rent sensors. Monitor any property. Record timestamped evidence for each action in the official compliance timeline. Generate court-ready reports. Protect yourself from Housing Ombudsman rulings — for £249, not £10000.</p>
+            <p>Rent sensors. Monitor any property. Record timestamped evidence for each action in the official compliance timeline. Generate court-ready reports. Protect yourself from Housing Ombudsman rulings — for £249, not £32000.</p>
             <p>Custom bespoke solution based on 3 scientific researches. Developed in collaboration with UK Property Care Association. Built around the Housing Ombudsman&apos;s 26 Spotlight recommendations. Aligned with MHCLG 2025 statutory guidance.</p>
           </>}
           primaryCta={{ label: "Order your kit", href: "/order" }}
@@ -113,7 +113,7 @@ export default function Home() {
             { value: "£25k+", label: "Ombudsman ruling exposure" },
           ]}
         />
-      {/* <FeatureSplit /> */}
+      <FeatureSplit />
       <ProcessSteps
           eyebrow="How it works"
           heading="Three steps. Evidence trail. One report."
