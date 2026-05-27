@@ -179,7 +179,7 @@ export default function LandlordsHero() {
             </h1>
             <p className="text-fg-muted text-base max-w-2xl">
               {tab === "private"
-                ? "Awaab's Law doesn't yet apply to private rentals,[7] but three other duties already do: article 11 LTA 1985 (repair),[6] the Homes Fitness for Habitation Act 2018,[8] and council enforcement under the HHSRS (up to £30,000 civil penalty)[9]. Where you sit on the spectrum below changes what evidence you should be gathering — and how strong your defence is if a dispute reaches the Pre-Action Protocol.[11]"
+                ? "Awaab's Law doesn't yet apply to private rentals,[7] but three other duties already do: Section 11 LTA 1985 (repair),[6] the Homes Fitness for Habitation Act 2018,[8] and council enforcement under the HHSRS (up to £30,000 civil penalty)[9]. Where you sit on the spectrum below changes what evidence you should be gathering — and how strong your defence is if a dispute reaches the Pre-Action Protocol.[11]"
                 : "Awaab’s Law created mandatory investigation deadlines for social landlords. Miss the 10-day window and you’re in maladministration territory — regardless of whether a repair was eventually completed. Maple Diagnostics gives you the evidence to meet your compliance obligations."}
             </p>
             <div className="flex flex-col sm:flex-row gap-3">

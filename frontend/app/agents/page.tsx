@@ -91,7 +91,7 @@ const reasons = [
   {
     icon: <IconFileText size={24} stroke={1.5} />,
     title: "Dispute resolution is part of your service",
-    body: "Distinguishing structural damp from tenant lifestyle behaviour protects your landlord client's position. Without sensor data, you're guessing — and guesses don't hold up in front of a solicitor.",
+    body: "Distinguishing structural damp from condensation protects your landlord client's position. Without sensor data, you're guessing — and guesses don't hold up in front of a solicitor.",
   },
   {
     icon: <IconShieldCheck size={24} stroke={1.5} />,
@@ -119,7 +119,7 @@ const workflow = [
   {
     step: "04",
     title: "Generate report",
-    body: "Upload sensor data. Get a court-ready PDF classifying structural defect vs. lifestyle cause with full evidence trail.",
+    body: "Upload sensor data. Get a court-ready PDF classifying structural defect vs. condensation cause with full evidence trail.",
   },
   {
     step: "05",

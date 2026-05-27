@@ -78,7 +78,7 @@ const jsonLd = [
         name: "What is the Precautionary Principle in Awaab's Law?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Where there is uncertainty about cause, Awaab's Law applies the precautionary principle: landlords must act as if the hazard is structural until evidence demonstrates otherwise. You can no longer assume lifestyle cause without data to support it.",
+          text: "Where there is uncertainty about cause, Awaab's Law applies the precautionary principle: landlords must act as if the hazard is structural until evidence demonstrates otherwise. You can no longer assume condensation cause without data to support it.",
         },
       },
       {
@@ -130,12 +130,19 @@ export default function AwaabsLawPage() {
           {
             title: "What is Awaab's Law?",
             content: (
-              <p>
-                Awaab&apos;s Law (Social Housing Regulation Act, Phase 1) came into force in October 2025.
-                It creates legally enforceable timeframes for social landlords to investigate, communicate,
-                and remediate damp and mould hazards. It is named after Awaab Ishak, a two-year-old who
-                died in 2020 from prolonged exposure to black mould in a Rochdale housing association flat.
-              </p>
+              <div className="flex flex-col gap-2">
+                <p>
+                  Awaab&apos;s Law is the colloquial name for the Hazards in Social Housing (Prescribed Requirements) (England) Regulations 2025. 
+                  It came into force on 27 October 2025, introduced by Section 42 of the Social Housing (Regulation) Act 2023, which amended the Landlord and Tenant Act 1985 by inserting new sections 10A and 10B.
+                </p>
+                <p>References:
+                  <ul className="list-disc list-inside mt-2 flex flex-col gap-1">
+                    <li><a href="https://www.legislation.gov.uk/ukpga/2023/35/section/42/enacted" className="text-accent hover:underline">Social Housing (Regulation) Act 2023, Section 42</a></li>
+                    <li><a href="https://www.legislation.gov.uk/ukpga/1985/70/section/10A" className="text-accent hover:underline">Landlord and Tenant Act 1985, Section 10A</a></li>
+                    <li><a href="https://www.legislation.gov.uk/ukpga/1985/70/section/10B" className="text-accent hover:underline">Landlord and Tenant Act 1985, Section 10B</a></li>
+                  </ul>
+                </p>
+              </div>
             ),
           },
           {
@@ -161,12 +168,12 @@ export default function AwaabsLawPage() {
             ),
           },
           {
-            title: "The Precautionary Principle",
+            title: "The reasonable lessor test",
             content: (
               <p>
                 Where there is uncertainty about cause, Awaab&apos;s Law applies the precautionary principle:
                 landlords must act as if the hazard is structural until evidence demonstrates otherwise.
-                This reverses the previous default — you can no longer assume lifestyle cause without data
+                This reverses the previous default — you can no longer assume condensation cause without data
                 to support it.
               </p>
             ),
@@ -180,11 +187,11 @@ export default function AwaabsLawPage() {
                 </p>
                 <ul className="flex flex-col gap-2">
                   {[
-                    "Timestamped sensor readings (humidity, temperature, surface temperature)",
+                    "Timestamped sensor readings",
                     "Continuous data logs covering the complaint period",
-                    "BMI and dew point analysis",
+                    "Building Moisture Index and dew point analysis",
                     "Photographic evidence with EXIF timestamps",
-                    "Written inspection reports from qualified surveyors",
+                    "Written inspection reports due to Maple algorithm, developed for damp and timber specialists.",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="text-success shrink-0 mt-0.5">✓</span>
@@ -219,7 +226,7 @@ export default function AwaabsLawPage() {
                   {[
                     "Maladministration found where investigation was delayed beyond 10 days even when repair was completed",
                     "Written findings missing an action timescale treated as non-compliant",
-                    "Landlord assertions of lifestyle cause without sensor data rejected in full",
+                    "Landlord assertions of condensation cause without sensor data rejected in full",
                     "Compensation orders range from £200 (minor failing) to £25,000+ (serious or repeated)",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
@@ -252,8 +259,8 @@ export default function AwaabsLawPage() {
       />
 
       <CtaBanner
-        heading="The 10-day clock starts the moment your tenant complains."
-        body="Don't start collecting evidence after the deadline. Order today — sensors dispatched same day."
+        heading="Day Zero is the day the landlord becomes aware. "
+        body="Day 1 — the start of the 10 working-day countdown — is the next working day after the landlord become aware of complaint. Start investigation today — sensors dispatched same day."
         primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
       />

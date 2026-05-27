@@ -67,7 +67,7 @@ const challenges = [
   {
     icon: <IconChartBar size={24} stroke={1.5} />,
     title: "Evidence",
-    body: "Lifestyle vs. structural distinction requires objective data. Assertions without timestamped sensor readings carry little weight — the Ombudsman expects documented, dated evidence of cause.",
+    body: "Condensation vs. structural distinction requires objective data. Assertions without timestamped sensor readings carry little weight — the Ombudsman expects documented, dated evidence of cause.",
   },
   {
     icon: <IconShieldCheck size={24} stroke={1.5} />,
@@ -84,9 +84,9 @@ const stats = [
 
 const features = [
   "Always-on humidity, temperature, and surface sensors",
-  "Automated BMI and dew point analysis",
+  "Automated damp and moisture analysis",
   "Timestamped evidence trail from complaint to closure",
-  "Structural defect vs. lifestyle cause classification",
+  "Structural defect vs. condensation cause classification",
   "Court-ready PDF reports per property",
   "Portfolio dashboard — compliance state across all units",
   "Case export templates",
@@ -103,7 +103,7 @@ const testimonials = [
   },
   {
     quote:
-      "Tenant claimed structural damp. Our report showed lifestyle ventilation issues across all three rooms. The Shelter referral was withdrawn before it reached the Ombudsman.",
+      "Tenant claimed structural damp. Our report showed condensation issues across all three rooms. The Shelter referral was withdrawn before it reached the Ombudsman.",
     name: "James Marshall",
     role: "Property Compliance Lead · Cambridgeshire HA",
     stat: "£8,000 claim avoided",

@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   keywords: [
     "damp sensor kit rental",
     "mould evidence 14 days",
-    "BMI dew point analysis landlord",
+    "Building Moisture Index dew point analysis landlord",
     "how to get court-ready damp report",
-    "structural vs lifestyle damp",
+    "structural vs condensation damp",
   ],
   openGraph: {
     title: "How it works — Maple Diagnostics",
@@ -93,7 +93,6 @@ const jsonLd = {
 
 const KIT_CONTENTS = [
   "3 calibrated humidity and temperature sensors",
-  "1 surface-temperature probe",
   "USB data logger",
   "Access to the firmware",
   "Room placement guide",
@@ -103,29 +102,29 @@ const KIT_CONTENTS = [
 
 // ─── Measurement cards ────────────────────────────────────────────────────────
 
-const MEASUREMENTS = [
-  {
-    label: "Relative humidity",
-    unit: "% RH",
-    icon: <IconActivity size={20} stroke={1.5} />,
-    body: "Recorded every minute in each room. Readings sustained above 70% indicate condensation risk; above 80% confirms active damp conditions. Spikes during cooking or bathing hours are logged and distinguished from baseline.",
-    threshold: "Structural threshold: sustained >80% RH during heated, ventilated periods",
-  },
-  {
-    label: "Ambient temperature",
-    unit: "°C",
-    icon: <IconChartBar size={20} stroke={1.5} />,
-    body: "Heating patterns reveal occupant behaviour. Low ambient temperature is a key factor in separating inadequate heating — a lifestyle issue — from thermal bridging or fabric failure, which are structural defects.",
-    threshold: "Below 18°C during occupied hours triggers lifestyle-cause flags",
-  },
-  {
-    label: "Surface temperature",
-    unit: "°C (wall/glass)",
-    icon: <IconListCheck size={20} stroke={1.5} />,
-    body: "Measured at wall and window surfaces. When surface temperature falls below the dew point of the room air, condensation is thermodynamically inevitable — regardless of occupant behaviour. This is the definitive structural test.",
-    threshold: "Dew-point crossing = structural defect indicator",
-  },
-];
+// const MEASUREMENTS = [
+//   {
+//     label: "Relative humidity",
+//     unit: "% RH",
+//     icon: <IconActivity size={20} stroke={1.5} />,
+//     body: "Recorded every minute in each room. Readings sustained above 70% indicate condensation risk; above 80% confirms active damp conditions. Spikes during cooking or bathing hours are logged and distinguished from baseline.",
+//     threshold: "Structural threshold: sustained >80% RH during heated, ventilated periods",
+//   },
+//   {
+//     label: "Ambient temperature",
+//     unit: "°C",
+//     icon: <IconChartBar size={20} stroke={1.5} />,
+//     body: "Heating patterns reveal occupant behaviour. Low ambient temperature is a key factor in separating inadequate heating — a condensation issue — from thermal bridging or fabric failure, which are structural defects.",
+//     threshold: "Below 18°C during occupied hours triggers lifestyle-cause flags",
+//   },
+//   {
+//     label: "Surface temperature",
+//     unit: "°C (wall/glass)",
+//     icon: <IconListCheck size={20} stroke={1.5} />,
+//     body: "Measured at wall and window surfaces. When surface temperature falls below the dew point of the room air, condensation is thermodynamically inevitable — regardless of occupant behaviour. This is the definitive structural test.",
+//     threshold: "Dew-point crossing = structural defect indicator",
+//   },
+// ];
 
 // ─── Report features ──────────────────────────────────────────────────────────
 
@@ -142,7 +141,7 @@ const REPORT_FEATURES = [
   },
   {
     icon: <IconShieldCheck size={20} stroke={1.5} />,
-    title: "Structural vs. lifestyle classification",
+    title: "Structural vs. condensation classification",
     body: "A clear determination of probable cause with threshold evidence cited. Reproducible, scientifically documented, and aligned with damp assessment practice.",
   },
   {
@@ -167,13 +166,13 @@ const LEGAL_ROWS = [
   },
   {
     law: "Housing Ombudsman",
-    requirement: "Objective, timestamped evidence to distinguish structural cause from lifestyle behaviour",
+    requirement: "Objective, timestamped evidence to distinguish structural cause from condensation",
     maple: "All reports contain minute-level timestamped sensor data providing an auditable evidence trail for Ombudsman submissions",
   },
   {
     law: "Section 11 LTA 1985",
     requirement: "Landlord must prove structural defect is absent to defend a disrepair claim",
-    maple: "Classification report provides objective structural vs. lifestyle determination admissible in proceedings",
+    maple: "Classification report provides objective structural vs. condensation determination admissible in proceedings",
   },
   {
     law: "HHSRS enforcement",
@@ -184,32 +183,32 @@ const LEGAL_ROWS = [
 
 // ─── Cause outcomes ───────────────────────────────────────────────────────────
 
-const OUTCOMES = [
-  {
-    verdict: "Structural cause",
-    color: "danger",
-    indicators: [
-      "Dew-point crossings during heated, ventilated periods",
-      "High surface RH in unoccupied rooms with no moisture-generating activity",
-      "BMI exceeds structural threshold independently of ventilation patterns",
-      "Surface temperature persistently below dew point of room air",
-    ],
-    meaning:
-      "The property has a defect — thermal bridging, inadequate insulation, or moisture ingress. The landlord or owner has a repair obligation under Section 11 LTA 1985 or Awaab's Law (social landlords).",
-  },
-  {
-    verdict: "Lifestyle cause",
-    color: "success",
-    indicators: [
-      "Humidity spikes correlate tightly with cooking, bathing, or drying laundry events",
-      "Surface temperature consistently above dew point when ventilation is present",
-      "BMI normalises during periods of adequate heating and ventilation",
-      "No condensation in well-ventilated, consistently heated rooms",
-    ],
-    meaning:
-      "The damp is driven by occupant behaviour — inadequate ventilation or heating — rather than a structural defect. This finding defends the landlord's position in disrepair proceedings.",
-  },
-];
+// const OUTCOMES = [
+//   {
+//     verdict: "Structural cause",
+//     color: "danger",
+//     indicators: [
+//       "Dew-point crossings during heated, ventilated periods",
+//       "High surface RH in unoccupied rooms with no moisture-generating activity",
+//       "Building Moisture Index exceeds structural threshold independently of ventilation patterns",
+//       "Surface temperature persistently below dew point of room air",
+//     ],
+//     meaning:
+//       "The property has a defect — thermal bridging, inadequate insulation, or moisture ingress. The landlord or owner has a repair obligation under Section 11 LTA 1985 or Awaab's Law (social landlords).",
+//   },
+//   {
+//     verdict: "Condensation cause",
+//     color: "success",
+//     indicators: [
+//       "Humidity spikes correlate tightly with cooking, bathing, or drying laundry events",
+//       "Surface temperature consistently above dew point when ventilation is present",
+//       "Building Moisture Index normalises during periods of adequate heating and ventilation",
+//       "No condensation in well-ventilated, consistently heated rooms",
+//     ],
+//     meaning:
+//       "The damp is driven by occupant behaviour — inadequate ventilation or heating — rather than a structural defect. This finding defends the landlord's position in disrepair proceedings.",
+//   },
+// ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
@@ -295,8 +294,7 @@ export default function HowItWorksPage() {
               <h2 className="text-3xl font-bold">Everything you need. Nothing you don&apos;t.</h2>
               <p className="text-sm text-fg-muted mt-1">
                 The kit is designed to require no technical knowledge. A tenant can deploy it unassisted.
-                Sensors run on AA batteries and store data locally — no WiFi, no apps, no connectivity
-                required during collection.
+                Sensors run on built-in battery and store data locally — no WiFi required.
               </p>
             </div>
             <ul className="flex flex-col gap-2.5">
@@ -386,7 +384,7 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* ── Analysis: structural vs lifestyle ────────────────────────────── */}
+      {/* ── Analysis: structural vs condensation ────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <p className="text-xs uppercase tracking-widest text-fg-subtle font-medium">The analysis</p>
@@ -568,11 +566,11 @@ export default function HowItWorksPage() {
       <FeatureSplit />
 
       {/* ── Testimonial ──────────────────────────────────────────────────── */}
-      <Testimonial
+      {/* <Testimonial
         items={[
           {
             quote:
-              "Tenant claimed structural damp. Our Maple report showed lifestyle ventilation issues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
+              "Tenant claimed structural damp. Our Maple report showed condensation issues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
             name: "James Marshall",
             role: "Property Compliance Lead · Cambridgeshire HA",
             stat: { value: "£8,000", label: "Claim avoided" },
@@ -592,7 +590,7 @@ export default function HowItWorksPage() {
             stat: { value: "Day 1", label: "Case decided" },
           },
         ]}
-      />
+      /> */}
 
       {/* ── FAQ teaser ────────────────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-6 w-full">

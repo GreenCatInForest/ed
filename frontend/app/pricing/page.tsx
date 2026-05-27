@@ -140,7 +140,7 @@ const FEATURES: Feature[] = [
   {                         label: "Written findings summary",          starter: false,        professional: true,       portfolio: true },
   {                         label: "Ombudsman response template",       starter: false,        professional: true,       portfolio: true },
   {                         label: "Timestamped sensor data",           starter: true,         professional: true,       portfolio: true },
-  {                         label: "Structural vs. lifestyle analysis",  starter: true,         professional: true,       portfolio: true },
+  {                         label: "Structural vs. condensation analysis",  starter: true,         professional: true,       portfolio: true },
   // Equipment
   { group: "Equipment",     label: "Equipment rental",                  starter: "14 days",    professional: "14 days",  portfolio: "Ongoing" },
   {                         label: "Rooms covered",                     starter: "1 room",     professional: "Up to 3",  portfolio: "Unlimited" },
@@ -434,11 +434,11 @@ export default function PricingPage() {
       </section>
 
       {/* ── Testimonial ────────────────────────────────────────────────────── */}
-      <Testimonial
+      {/* <Testimonial
         items={[
           {
             quote:
-              "Tenant claimed structural damp. Our Maple report showed lifestyle ventilation issues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
+              "Tenant claimed structural damp. Our Maple report showed condensation issues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
             name: "James Marshall",
             role: "Property Compliance Lead · Cambridgeshire HA",
             stat: { value: "£8,000", label: "Claim avoided" },
@@ -451,7 +451,7 @@ export default function PricingPage() {
             stat: { value: "£249", label: "vs £350+ solicitor" },
           },
         ]}
-      />
+      /> */}
 
       {/* ── FAQ ───────────────────────────────────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-6 w-full flex flex-col gap-8">

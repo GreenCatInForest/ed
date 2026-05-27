@@ -39,7 +39,7 @@ const jsonLd = {
   name: "Damp & Mould Sensor Data for Surveyors",
   provider: { "@id": ORG_ID },
   description:
-    "14-day continuous sensor kit for building surveyors and RICS professionals. Timestamped humidity, temperature, and dew-point data that defends structural vs. lifestyle damp classifications in court and Ombudsman proceedings.",
+    "14-day continuous sensor kit for building surveyors and RICS professionals. Timestamped humidity, temperature, and dew-point data that defends structural vs. condensation damp classifications in court and Ombudsman proceedings.",
   // offers: [
   //   { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
   //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
@@ -68,7 +68,7 @@ const risks = [
     context: "Your report becomes the weaker submission",
   },
   {
-    label: "Client disputes your structural vs. lifestyle call",
+    label: "Client disputes your structural vs. condensationcall",
     value: "Liability exposure",
     context: "Professional indemnity engaged",
   },
@@ -87,8 +87,8 @@ const benefits = [
   },
   {
     icon: <IconChartBar size={24} stroke={1.5} />,
-    title: "Automated structural vs. lifestyle classification",
-    body: "Maple's analysis engine correlates humidity, surface temperature, and dew-point data against BMI thresholds. The classification is reproducible and scientifically documented — aligned with established UK damp assessment practice and accepted in Ombudsman proceedings.",
+    title: "Automated structural vs. condensation classification",
+    body: "The classification is reproducible and scientifically documented — aligned with established UK damp assessment practice.",
   },
   {
     icon: <IconShieldCheck size={24} stroke={1.5} />,
@@ -111,7 +111,7 @@ const methodology = [
   {
     num: "02",
     title: "14-day continuous logging",
-    body: "Sensors record humidity, temperature, and surface temperature every minute. BMI index and dew-point calculations run automatically. No WiFi or connectivity required during collection.",
+    body: "Sensors record humidity, temperature, and surface temperature every minute. Building Moisture Index and all the calculations run automatically. No WiFi required during collection.",
   },
   {
     num: "03",
@@ -197,7 +197,7 @@ export default function BuildingSpecialistsPage() {
           </div>
           <div className="flex flex-col gap-1">
             <p className="font-semibold text-fg">Section 11 LTA 1985</p>
-            <p className="text-fg-muted text-xs">Applies to <strong className="text-fg">all landlords</strong> with tenancies under 7 years. Covers structure, exterior, and installations. Lifestyle defence increasingly difficult without objective evidence.</p>
+            <p className="text-fg-muted text-xs">Applies to <strong className="text-fg">all landlords</strong> with tenancies under 7 years. Covers structure, exterior, and installations. Condensation defence increasingly difficult without objective evidence.</p>
           </div>
           <div className="flex flex-col gap-1">
             <p className="font-semibold text-fg">Homes Act 2018 &amp; HHSRS</p>
@@ -359,12 +359,12 @@ export default function BuildingSpecialistsPage() {
             },
             {
               icon: <IconChartBar size={22} stroke={1.5} />,
-              title: "BMI and dew-point analysis",
-              body: "Automated calculation of the Building Moisture Index and dew-point crossings — established metrics in UK damp assessment practice, applied by qualified surveyors and used in disrepair proceedings and Ombudsman submissions.",
+              title: "Building Moisture Index and dew-point analysis",
+              body: "Automated calculation of the established metrics in UK damp assessment practice, applied by qualified surveyors and used in disrepair proceedings and Ombudsman submissions.",
             },
             {
               icon: <IconListCheck size={22} stroke={1.5} />,
-              title: "Structural vs. lifestyle classification",
+              title: "Structural vs. condensation classification",
               body: "A clear, scientifically documented determination of probable cause with threshold evidence. Reproducible and defensible.",
             },
             {

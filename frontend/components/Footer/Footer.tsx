@@ -17,7 +17,7 @@ const columns = [
       { href: "/social-housing", label: "Social housing" },
       { href: "/landlords", label: "Private landlords" },
       { href: "/agents", label: "Letting agents" },
-      { href: "/surveyors", label: "Surveyors" },
+      { href: "/building-specialists", label: "Surveyors" },
     ],
   },
   {
@@ -38,7 +38,7 @@ export default function Footer() {
         <div className={styles.brand}>
           <span className={styles.logo}>Maple Diagnostics</span>
           <p className={styles.tagline}>
-            Awaab&apos;s Law compliance through objective environmental data.
+            Awaab&apos;s Law-grade evidence through objective environmental data.
           </p>
           <p className={styles.location}>Cambridge · Cambridgeshire</p>
           <div className={styles.pills}>

@@ -48,7 +48,7 @@ const jsonLd = {
   name: "Damp & Mould Diagnostic Kit",
   provider: { "@id": ORG_ID },
   description:
-    "14-day sensor kit rental for court-ready damp and mould evidence. Covers humidity, temperature, and surface temperature with automated BMI and dew-point analysis.",
+    "14-day sensor kit rental for court-ready damp and mould evidence. Covers humidity, temperature, surface temperature with automated Building Moisture Index and dew-point analysis.",
   // offers: [
   //   { "@type": "Offer", name: "Starter Report", price: "149", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
   //   { "@type": "Offer", name: "Professional Report", price: "249", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
@@ -141,7 +141,7 @@ export default function Home() {
       {/* <Testimonial
         items={[
           {
-            quote: "Tenant claimed structural damp. Our md_app report showed lifestyle ventilation issues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
+            quote: "Tenant claimed structural damp. Our md_app report showed condensationissues across all three rooms. The Shelter referral was withdrawn. We avoided an £8,000 disrepair claim.",
             name: "James Marshall",
             role: "Property Compliance Lead · Cambridgeshire HA",
             stat: { value: "£8,000", label: "Claim avoided" },
