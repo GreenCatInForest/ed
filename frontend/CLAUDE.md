@@ -32,11 +32,25 @@ className="bg-(--color-surface-2) border-(--color-accent-border)"
 
 The `.eyebrow` class (defined in `globals.css`) renders a small red uppercase label above headings.
 
+
 ## Component conventions
 
 Each component lives in its own folder: `components/ComponentName/ComponentName.tsx`.
 
+## Component Patterns
+- Build components as reusable and prop-based so callers can pass arbitrary JSX/Tailwind — do NOT hardcode grid wrappers or fixed child content inside shared components.
+
 **Styling**: complex components use a co-located CSS Module (`ComponentName.module.css`) with `@reference "../../app/globals.css"` at the top so Tailwind utilities resolve correctly inside the module. Simple components use inline Tailwind classes directly.
+
+## Styling Rules
+- Always use design tokens / CSS color variables (defined in globals) instead of hardcoded colors.
+- CSS class names and JSX className references are case-sensitive — match them exactly.
+- For hover/glow border effects, use the proven wrapper-element approach, NOT `::before` + `z-index:-1`.
+
+## Build & Cache Troubleshooting
+- When styles/tokens don't apply unexpectedly, check for a stale `.next` cache (especially Docker-tainted paths) before deep debugging.
+- This repo uses cross-platform Docker builds: prefer `npm install` over `npm ci` to avoid lockfile platform mismatches with @tabler/icons-react.
+- Confirm the correct venv is activated before running local DB/Python tests.
 
 ## Guide page pattern
 
@@ -47,6 +61,10 @@ Used by `/awaabs-law` and any future guide pages:
 3. **`GuideContents`** (`components/GuideContents/GuideContents.tsx`) is the tabbed shell — left TOC, right content panel.
 4. The page file just wires metadata, JSON-LD, and the two components together.
 
+## SEO & Page Conventions
+- When adding JSON-LD, define the const AND inject the JSX in the same edit to avoid transient unused-variable/import warnings.
+- Use Next.js <Link> instead of <a> for internal navigation, and reset default browser link styling (color/underline) on logo/nav links.
+
 **Quotation rule** (from `content/awaabs-law-guide.ts`): only use `type: "quote"` for verbatim text from the cited source. Never paraphrase inside a quote block.
 
 ## Forms and email
@@ -56,3 +74,5 @@ Order and contact forms POST to Next.js API routes — there is no Django backen
 - `/api/contact` → `app/api/contact/route.ts`
 
 Both use nodemailer with SMTP env vars: `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`.
+
+
