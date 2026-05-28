@@ -363,8 +363,8 @@ export default function HowItWorksPage() {
             solicitor, and Ombudsman needs answered: is this damp structural or lifestyle?
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {MEASUREMENTS.map((m) => (
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {MEASUREMENTS&&MEASUREMENTS.map((m) => (
             <div key={m.label} className="bg-surface border border-(--color-border) rounded-xl p-6 flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <span className="text-accent">{m.icon}</span>
@@ -381,7 +381,7 @@ export default function HowItWorksPage() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* ── Analysis: structural vs condensation ────────────────────────────── */}
@@ -395,7 +395,7 @@ export default function HowItWorksPage() {
             research. The output is one of two classifications — each with a documented evidence trail.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {OUTCOMES.map((outcome) => (
             <div
               key={outcome.verdict}
@@ -430,7 +430,7 @@ export default function HowItWorksPage() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* ── The report ───────────────────────────────────────────────────── */}
@@ -619,12 +619,12 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      {/* <CtaBanner
-        heading="The landlord who gets a complaint today needs evidence by Friday."
-        body="Order your kit now. Sensors dispatched same day."
+      <CtaBanner
+        heading="Day Zero starts today."
+        body="Day 1 begins tomorrow. The investigation must complete by working-day 10."
         primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
-      /> */}
+      />
 
       <Footer />
     </main>

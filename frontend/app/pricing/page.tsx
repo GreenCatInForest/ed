@@ -463,12 +463,12 @@ export default function PricingPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
-      {/* <CtaBanner
-        heading="The landlord who gets a complaint today needs evidence by Friday."
-        body="Order your kit now. Sensors dispatched same day."
+      <CtaBanner
+        heading="Day Zero starts today."
+        body="Day 1 begins tomorrow. The investigation must complete by working-day 10."
         primaryCta={{ label: "Order kit — £249", href: "/order" }}
         secondaryCta={{ label: "Download sample report", href: "#" }}
-      /> */}
+      />
 
       <Footer />
     </main>

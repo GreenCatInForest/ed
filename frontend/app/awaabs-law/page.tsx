@@ -135,13 +135,13 @@ export default function AwaabsLawPage() {
                   Awaab&apos;s Law is the colloquial name for the Hazards in Social Housing (Prescribed Requirements) (England) Regulations 2025. 
                   It came into force on 27 October 2025, introduced by Section 42 of the Social Housing (Regulation) Act 2023, which amended the Landlord and Tenant Act 1985 by inserting new sections 10A and 10B.
                 </p>
-                <p>References:
+                <div>References:
                   <ul className="list-disc list-inside mt-2 flex flex-col gap-1">
                     <li><a href="https://www.legislation.gov.uk/ukpga/2023/35/section/42/enacted" className="text-accent hover:underline">Social Housing (Regulation) Act 2023, Section 42</a></li>
                     <li><a href="https://www.legislation.gov.uk/ukpga/1985/70/section/10A" className="text-accent hover:underline">Landlord and Tenant Act 1985, Section 10A</a></li>
                     <li><a href="https://www.legislation.gov.uk/ukpga/1985/70/section/10B" className="text-accent hover:underline">Landlord and Tenant Act 1985, Section 10B</a></li>
                   </ul>
-                </p>
+                </div>
               </div>
             ),
           },
