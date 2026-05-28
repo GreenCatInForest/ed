@@ -26,7 +26,11 @@ services:
       - db
       - redis
     environment:
-      - DATABASE_URL=postgres://app:app@db:5432/app
+      - DB_NAME=app
+      - DB_USER=app
+      - DB_PASSWORD=app
+      - DB_HOST=db
+      - DB_PORT=5432
       - REDIS_URL=redis://redis:6379/0
 
   frontend:
