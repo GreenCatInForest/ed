@@ -105,7 +105,7 @@ export const awaabsLawGuide = {
         },
         {
           type: "para",
-          text: "The investigation must be carried out by a competent person — defined as someone who, in the reasonable opinion of the landlord, has 'the skills, qualifications (where applicable) and experience necessary' to determine whether a hazard exists.",
+          text: "The investigation must be carried out by a competent person — defined as someone who, in the reasonable opinion of the landlord, has the skills, qualifications and experience necessary to determine whether a hazard exists.",
           refs: [2],
         },
         {
@@ -208,7 +208,7 @@ export const awaabsLawGuide = {
               refs: [5],
             },
             {
-              text: "'Relevant knowledge' — the MHCLG guidance defines this as 'the knowledge that the landlord has, or reasonably ought to have, about the health and circumstances of the occupiers.' Pleading ignorance does not lower the bar.",
+              text: "'Relevant knowledge' — the MHCLG guidance defines this as 'the knowledge that the sociallandlord has, or reasonably ought to have, about the health and circumstances of the occupier.' Pleading ignorance does not lower the bar.",
               refs: [19],
             },
             {
@@ -356,7 +356,7 @@ export const awaabsLawGuide = {
         },
         {
           type: "para",
-          text: "These figures pre-date the statutory regime that began on 27 October 2025. With binding statutory deadlines now in force, the Ombudsman has signalled that breaches of the 10-day investigation window will be treated as per se maladministration absent successful reliance on the reasonable endeavours defence. The compensation pattern from 2024–25 represents the floor, not the ceiling, of likely future awards.",
+          text: "These figures pre-date the statutory regime that began on 27 October 2025. With binding statutory deadlines now in force, the compensation pattern from 2024–25 represents the floor, not the ceiling, of likely future awards.",
           refs: [16],
         },
       ],
