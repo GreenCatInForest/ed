@@ -208,7 +208,7 @@ export const awaabsLawGuide = {
               refs: [5],
             },
             {
-              text: "'Relevant knowledge' — the MHCLG guidance defines this as 'the knowledge that the sociallandlord has, or reasonably ought to have, about the health and circumstances of the occupier.' Pleading ignorance does not lower the bar.",
+              text: "'Relevant knowledge' — the MHCLG guidance defines this as 'the knowledge that the social landlord has, or reasonably ought to have, about the health and circumstances of the occupier.' Pleading ignorance does not lower the bar.",
               refs: [19],
             },
             {
