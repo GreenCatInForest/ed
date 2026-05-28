@@ -8,7 +8,7 @@ function Refs({ ids }: { ids: ReferenceId[] }) {
         <a
           key={id}
           href={`/references#ref-${id}`}
-          className="font-mono text-[10px] text-fg-faint hover:text-accent transition-colors ml-0.5 no-underline"
+          className="font-mono text-[10px] text-accent hover:text-accent-light transition-colors ml-0.5 no-underline"
           title={`Reference [${id}]`}
         >
           <sup>[{id}]</sup>

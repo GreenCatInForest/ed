@@ -61,7 +61,7 @@ export default function Navbar() {
               className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-white font-medium px-4 py-2 rounded-lg transition-colors"
               onClick={() => setMenuOpen(false)}
             >
-              Order kit — from £49
+              Order kit — from £249
             </Link>
           </div>
         </div>

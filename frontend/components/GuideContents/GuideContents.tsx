@@ -25,7 +25,7 @@ export default function GuideContents({ sections, aside }: GuideContentsProps) {
             <li key={i}>
               <button
                 onClick={() => setActive(i)}
-                className={`w-full text-left flex items-baseline gap-4 px-0 py-3.5 border-b border-(--color-border) border-l-2 pl-4 transition-colors ${
+                className={`w-full text-left flex items-baseline cursor-pointer gap-4 px-0 py-3.5 border-b border-(--color-border) border-l-2 pl-4 transition-colors ${
                   active === i
                     ? "border-l-accent text-fg"
                     : "border-l-transparent text-fg-muted hover:text-fg"
