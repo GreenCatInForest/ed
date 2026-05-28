@@ -147,7 +147,7 @@ const REPORT_FEATURES = [
   {
     icon: <IconFileReport size={20} stroke={1.5} />,
     title: "Written findings summary",
-    body: "Included in the Professional tier. Pre-formatted to meet the written findings requirements under Awaab's Law (social housing) — cause identified, proposed action, and completion timescale.",
+    body: "Included in the Professional tier. Pre-formatted to meet the written findings requirements under Awaab's Law (social housing) — hazard identified, proposed action, and target timescales for beginning and completing works.",
   },
 ];
 
@@ -156,8 +156,8 @@ const REPORT_FEATURES = [
 const LEGAL_ROWS = [
   {
     law: "Awaab's Law",
-    requirement: "Investigation must begin within 10 working days of a damp or mould complaint (social housing — registered providers)",
-    maple: "Same-day kit dispatch means monitoring begins the day the complaint is logged",
+    requirement: "Investigation must be completed within 10 working days of a damp or mould complaint (social housing — registered providers)",
+    maple: "Same-day kit dispatch means monitoring begins the day the complaint is logged. The monitoring lasts 10 calendar days, ensuring the investigation window is met even with weekends and bank holidays.",
   },
   {
     law: "Awaab's Law",
@@ -171,7 +171,7 @@ const LEGAL_ROWS = [
   },
   {
     law: "Section 11 LTA 1985",
-    requirement: "Landlord must prove structural defect is absent to defend a disrepair claim",
+    requirement: "Landlord's repairing obligation covers structure and exterior — objective evidence of cause (structural defect vs. condensation) is central to defending or settling a disrepair claim",
     maple: "Classification report provides objective structural vs. condensation determination admissible in proceedings",
   },
   {
@@ -532,7 +532,7 @@ export default function HowItWorksPage() {
             },
             {
               role: "Letting agent",
-              scenario: "Managing a disputed property. Client needs written findings within 3 days.",
+              scenario: "Managing a disputed property. Client - social landlord - needs written findings within 3 days. Private landlord needs a clear, documented cause determination to resolve the complaint and avoid escalation to proceedings.",
               action: "Order Professional kit",
               href: "/order?kit=professional",
             },
