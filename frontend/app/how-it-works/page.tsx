@@ -115,7 +115,7 @@ const KIT_CONTENTS = [
 //     unit: "°C",
 //     icon: <IconChartBar size={20} stroke={1.5} />,
 //     body: "Heating patterns reveal occupant behaviour. Low ambient temperature is a key factor in separating inadequate heating — a condensation issue — from thermal bridging or fabric failure, which are structural defects.",
-//     threshold: "Below 18°C during occupied hours triggers lifestyle-cause flags",
+//     threshold: "Below 18°C during occupied hours triggers condensation issue flags",
 //   },
 //   {
 //     label: "Surface temperature",
@@ -360,7 +360,7 @@ export default function HowItWorksPage() {
           <h2 className="text-3xl font-bold">What the sensors measure — and why it matters.</h2>
           <p className="text-fg-muted text-sm max-w-2xl">
             Three variables. Continuously logged. Together they answer the one question every landlord,
-            solicitor, and Ombudsman needs answered: is this damp structural or lifestyle?
+            solicitor, and Ombudsman needs answered: is this damp structural or condensation?
           </p>
         </div>
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

@@ -22,7 +22,7 @@ const privateScenarios: ScenarioCard[] = [
     stats: [
       { label: "Clock", value: "Running",           highlight: true },
       { label: "Risk",  value: "Claim · £30k fine", highlight: true },
-      { label: "Need",  value: "Diagnose: structural vs lifestyle" },
+      { label: "Need",  value: "Diagnose: structural vs condensation" },
     ],
     recommendation: {
       title: "Maple kit — 14-day diagnostic",

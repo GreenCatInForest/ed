@@ -104,7 +104,7 @@ const objections = [
   {
     myth: "\"The tenant is causing it themselves — I shouldn't need evidence.\"",
     reality:
-      "Courts and local authorities won't take the word for it. Without sensor data showing lifestyle-driven condensation (poor ventilation, cooking, drying laundry), you can't distinguish structural damp from tenant behaviour. The assumption goes against you.",
+      "Courts and local authorities won't take the word for it. Without sensor data showing condensation issues (poor ventilation, cooking, drying laundry), you can't distinguish structural damp from tenant behaviour. The assumption goes against you.",
   },
   {
     myth: "\"I'll deal with it if they actually make a complaint.\"",

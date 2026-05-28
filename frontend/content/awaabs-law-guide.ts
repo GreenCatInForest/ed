@@ -47,7 +47,7 @@ export const awaabsLawGuide = {
     { num: "03", title: "Written findings: format & deadline", anchor: "findings" },
     { num: "04", title: "The reasonable lessor test", anchor: "reasonable-lessor" },
     { num: "05", title: "What counts as objective evidence", anchor: "evidence" },
-    { num: "06", title: "Structural vs lifestyle: legal test", anchor: "structural" },
+    { num: "06", title: "Structural vs condensation: legal test", anchor: "structural" },
     { num: "07", title: "Housing Ombudsman case patterns", anchor: "ombudsman" },
     { num: "08", title: "Compliance checklist (PDF)", anchor: "checklist" },
   ],
@@ -274,12 +274,12 @@ export const awaabsLawGuide = {
     },
 
     // ========================================================
-    // 06. STRUCTURAL VS LIFESTYLE — LEGAL TEST
+    // 06. STRUCTURAL VS CONDENSATION — LEGAL TEST
     // ========================================================
     {
       num: "06",
       anchor: "structural",
-      title: "Structural vs lifestyle: legal test",
+      title: "Structural vs condensation: legal test",
       body: [
         {
           type: "para",
