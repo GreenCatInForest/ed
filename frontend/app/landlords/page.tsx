@@ -86,7 +86,7 @@ const steps = [
   {
     icon: <IconFileReport size={24} stroke={1.5} />,
     title: "Upload & generate report",
-    body: "Upload sensor data to the platform. Get a court-ready PDF within minutes — structural defect vs. condensation cause, timestamped.",
+    body: "Upload sensor data to the platform. Get a disclosure-ready PDF within minutes — structural defect vs. condensation cause, timestamped.",
   },
   {
     icon: <IconShieldCheck size={24} stroke={1.5} />,

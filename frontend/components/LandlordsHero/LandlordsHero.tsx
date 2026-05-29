@@ -27,7 +27,7 @@ const privateScenarios: ScenarioCard[] = [
     recommendation: {
       title: "Maple kit — 14-day diagnostic",
       price: "£249.",
-      description: "Court-ready PDF before the solicitor’s letter arrives.",
+      description: "disclosure-ready PDF report before the solicitor’s letter arrives.",
     },
   },
   {

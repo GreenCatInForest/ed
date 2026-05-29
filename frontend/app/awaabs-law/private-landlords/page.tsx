@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
-import DownloadGate from "@/components/DownloadGate/DownloadGate";
+import DownloadCard from "@/components/DownloadCard/DownloadCard";
 import { SITE_URL, ORG_ID } from "@/lib/seo";
 import { privateLandlordsGuide } from "@/content/private-landlords-guide";
 import { references } from "@/content/references";
@@ -240,12 +240,28 @@ export default function PrivateLandlordsPage() {
               </ol>
             </div>
 
-            <DownloadGate
+            <DownloadCard
               label="Free download"
               title={download.title}
-              description={download.description}
-              guideName={download.title}
-              ctaLabel={download.cta.label}
+              description={
+                <>
+                  A printable 24-hour notice of entry meeting the statutory
+                  requirements of the Landlord and Tenant Act 1985, s.11(6).
+                  Drafted from{" "}
+                  <a
+                    href="https://www.legislation.gov.uk/ukpga/1985/70/section/11"
+                    className="text-accent hover:text-accent-light transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    legislation.gov.uk
+                  </a>{" "}
+                  and the MHCLG statutory guidance.
+                </>
+              }
+              downloads={[...download.downloads]}
+              disclaimer={download.disclaimer}
+              caption={download.caption}
             />
           </div>
         </aside>

@@ -76,9 +76,13 @@ export const privateLandlordsGuide = {
 
   download: {
     title: "Section 11(6) notice template",
-    description:
-      "A 24-hour written notice meeting the statutory requirements of LTA 1985 s.11(6).",
-    cta: { label: "Download template", href: "#" },
+    downloads: [
+      { label: "Download PDF", href: "#", meta: "14 KB · 7 pages" },
+      { label: "Download Word (fillable)", href: "#", meta: "17 KB · editable" },
+    ],
+    disclaimer:
+      "Template — not legal advice. Fill in, serve at least 24 hours before your visit, and keep proof of service.",
+    caption: "Resource card · /landlords + /social-housing pages",
   },
 
   sections: {

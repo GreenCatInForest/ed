@@ -124,7 +124,7 @@ const workflow = [
   {
     step: "04",
     title: "Generate report",
-    body: "Upload sensor data. Get a court-ready PDF classifying structural defect vs. condensation cause with full evidence trail.",
+    body: "Upload sensor data. Get a audit-ready PDF classifying structural defect vs. condensation cause with full evidence trail.",
   },
   {
     step: "05",
@@ -270,7 +270,7 @@ export default function AgentsPage() {
             features: [
               "14-day equipment rental",
               "1-property diagnostic report",
-              "Court-ready PDF",
+              "Audit-ready PDF",
             ],
             ctaLabel: "Order kit",
             href: "/order?kit=starter",

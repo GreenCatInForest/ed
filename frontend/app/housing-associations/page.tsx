@@ -87,7 +87,7 @@ const features = [
   "Automated damp and moisture analysis",
   "Timestamped evidence trail from complaint to closure",
   "Structural defect vs. condensation cause classification",
-  "Court-ready PDF reports per property",
+  "Disclosure-ready evidence reports per property",
   "Portfolio dashboard — compliance state across all units",
   "Monthly reports and threshold alerts",
 ];

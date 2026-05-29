@@ -82,7 +82,7 @@ const jsonLd = {
       "@type": "HowToStep",
       position: 4,
       name: "Upload and get your report",
-      text: "Return the kit using the prepaid label. We process the data OR you process the data online - and generate your court-ready PDF within 24 hours. Download, attach to your response, and case closed.",
+      text: "Return the kit using the prepaid label. We process the data OR you process the data online - and generate your disclosure-ready PDF within 24 hours. Download, attach to your response, and case closed.",
     },
   ],
   totalTime: "P14D",
@@ -131,7 +131,7 @@ const KIT_CONTENTS = [
 const REPORT_FEATURES = [
   {
     icon: <IconFileText size={20} stroke={1.5} />,
-    title: "Court-ready PDF",
+    title: "Disclosure-ready PDF",
     body: "Formatted for use in disrepair proceedings, Pre-Action Protocol exchanges, Housing Ombudsman submissions, and expert witness bundles. Includes a clear cause classification, detailed evidence summary, and a comprehensive data appendix.",
   },
   {
@@ -177,7 +177,7 @@ const LEGAL_ROWS = [
   {
     law: "HHSRS enforcement",
     requirement: "Evidence to challenge or support a council hazard score under the Housing Health and Safety Rating System",
-    maple: "Court-ready PDF is admissible in HHSRS appeal proceedings and used by surveyors as supporting evidence",
+    maple: "Disclosure-ready PDF is admissible in HHSRS appeal proceedings and used by surveyors as supporting evidence",
   },
 ];
 

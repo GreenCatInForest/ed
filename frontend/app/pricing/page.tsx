@@ -136,7 +136,7 @@ interface Feature {
 
 const FEATURES: Feature[] = [
   // Evidence
-  { group: "Evidence",      label: "Court-ready PDF report",           starter: true,         professional: true,       portfolio: true },
+  { group: "Evidence",      label: "disclosure-ready PDF report",           starter: true,         professional: true,       portfolio: true },
   {                         label: "Written findings summary",          starter: false,        professional: true,       portfolio: true },
   {                         label: "Ombudsman response template",       starter: false,        professional: true,       portfolio: true },
   {                         label: "Timestamped sensor data",           starter: true,         professional: true,       portfolio: true },

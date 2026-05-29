@@ -116,7 +116,7 @@ const methodology = [
   {
     num: "03",
     title: "Upload data, receive the Maple report",
-    body: "Upload sensor data to the platform. Maple generates a court-ready PDF classifying cause, with full timestamped evidence trail. Attach it to your survey report or use it as a standalone evidential document.",
+    body: "Upload sensor data to the platform. Maple generates a evidence-grade reporting classifying cause, with full timestamped evidence trail. Attach it to your survey report or use it as a standalone evidential document.",
   },
 ];
 
@@ -367,7 +367,7 @@ export default function BuildingSpecialistsPage() {
             },
             {
               icon: <IconFileText size={22} stroke={1.5} />,
-              title: "Court-ready PDF",
+              title: "Evidence-grade PDF reporting",
               body: "Formatted for use in disrepair proceedings, Pre-Action Protocol exchanges, Ombudsman submissions, and expert witness bundles.",
             },
           ].map((item) => (
