@@ -7,7 +7,7 @@ const links: NavLink[] = [
   { href: "/awaabs-law", label: "Awaab's Law - Free Guide", 
     children: [
       {
-        href: "/awaabs-law/awaabs-law",
+        href: "/awaabs-law/housing-associations",
         label: "For housing associations",
       },
       {

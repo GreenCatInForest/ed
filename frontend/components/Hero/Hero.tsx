@@ -33,7 +33,7 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section className={styles.hero}>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-6">
         <article className={styles.content}>
           {badge && <Pill text={badge.text} type={badge.type} />}
 

@@ -47,6 +47,18 @@ Each component lives in its own folder: `components/ComponentName/ComponentName.
 - CSS class names and JSX className references are case-sensitive — match them exactly.
 - For hover/glow border effects, use the proven wrapper-element approach, NOT `::before` + `z-index:-1`.
 
+## Responsive layout rules
+
+**Minimum supported width: 320px.** The `<body>` has `min-width: 320px` — below that a horizontal scrollbar appears rather than the layout collapsing. Do not remove it.
+
+**Pill / badge components**: always add `white-space: nowrap` to the inner pill element. Without it, long badge text wraps at narrow widths, and `border-radius: 9999px` on the wrapper turns the wrapped multi-line text into a circular blob. Never add large horizontal padding (`px-10` etc.) to pill *wrapper* elements — padding belongs on the inner pill only.
+
+**Wrapper elements used for border/glow effects**: keep them `inline-flex` or `inline-block` with only `padding: 1px` and the border-radius. Any extra padding pushes layout and compounds the wrapping problem above.
+
+**Collapsible TOC on mobile**: `GuideContents` hides the TOC column on mobile and shows a toggle bar instead. When opened, the TOC renders as a fixed bottom sheet with a `rgba(0,0,0,0.72)` backdrop. Do not revert to always-visible stacked columns — the TOC items overlap the content text on narrow screens.
+
+**Testing mobile**: use browser DevTools Responsive mode at 320px (floor) and 390px (standard iPhone) before marking any layout change done. The 140px "extreme narrow" case is handled by the `min-width` — no need to optimise for it specifically.
+
 ## Build & Cache Troubleshooting
 - When styles/tokens don't apply unexpectedly, check for a stale `.next` cache (especially Docker-tainted paths) before deep debugging.
 - This repo uses cross-platform Docker builds: prefer `npm install` over `npm ci` to avoid lockfile platform mismatches with @tabler/icons-react.
@@ -105,10 +117,37 @@ Then manually verify:
 
 ## Forms and email
 
-Order and contact forms POST to Next.js API routes — there is no Django backend involved:
-- `/api/order` → `app/api/order/route.ts`
-- `/api/contact` → `app/api/contact/route.ts`
+Three Next.js API routes handle form submissions:
 
-Both use nodemailer with SMTP env vars: `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`.
+| Route | Handler | Backend |
+|---|---|---|
+| `/api/contact` | Contact, guide download, social program forms | nodemailer only |
+| `/api/order` | Kit order form | nodemailer only |
+| `/api/download-request` | Download gate (template/PDF requests) | Proxies to Django `POST /api/leads/download-request/`; falls back to nodemailer if Django is down |
+
+All nodemailer routes share SMTP env vars: `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`.
+
+## Download gate pattern
+
+Every "free download" button that should capture a lead uses `DownloadGate` instead of `DownloadCard`:
+
+```tsx
+// In a page (server component) — no "use client" needed
+import DownloadGate from "@/components/DownloadGate/DownloadGate";
+
+<DownloadGate
+  title="Section 11(6) notice template"
+  description="Short description for the card."
+  guideName="Section 11(6) notice template"   // sent to backend as guide_name
+  ctaLabel="Download template"
+/>
+```
+
+`DownloadGate` (`"use client"`) holds open/close state, renders `DownloadCard` as the trigger, and mounts `DownloadModal` on click.
+
+`DownloadModal` (`components/DownloadModal/DownloadModal.tsx`) contains the full form: name, work email, organisation, role radio grid, properties range select, marketing consent checkbox. It includes:
+- **Honeypot** field (`company_website`) rendered off-screen at `left: -9999px`. Never remove or make it visible.
+- **Competitor blocking** happens server-side in the Django serializer — no frontend list to maintain.
+- Posts to `/api/download-request`, shows success state on `{"ok": true}`, error state otherwise.
 
 

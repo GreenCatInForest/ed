@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { IconX, IconFileDownload, IconSend } from "@tabler/icons-react";
 
 const inputCls =
@@ -82,7 +83,7 @@ export default function DownloadModal({ title, guideName, onClose }: Props) {
     }
   }
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
       style={{ background: "rgba(0,0,0,0.75)" }}
@@ -286,6 +287,7 @@ export default function DownloadModal({ title, guideName, onClose }: Props) {
           </form>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

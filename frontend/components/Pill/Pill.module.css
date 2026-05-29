@@ -7,7 +7,7 @@
 }
 
 .pillWrapper {
-  @apply max-w-sm px-10;
+  display: inline-flex;
   border-radius: 9999px;
   padding: 1px;
   cursor: pointer;
@@ -37,6 +37,7 @@ background: conic-gradient(
 .pill {
   @apply pl-8 pr-4 py-[2px] rounded-full border-accent border-[1px];
   background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg));
+  white-space: nowrap;
 }
 
 .pillText {

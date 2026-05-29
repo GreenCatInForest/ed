@@ -1,0 +1,224 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e5]:
+      - link "Maple Diagnostics" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - button "Toggle menu" [ref=e7]
+    - generic [ref=e11]:
+      - article [ref=e12]:
+        - paragraph [ref=e15] [cursor=pointer]: For private landlords
+        - heading "One tenant complaint. One court-ready report." [level=1] [ref=e17]
+        - paragraph [ref=e18]: "Awaab's Law doesn't yet apply to private rentals,[7] but three other duties already do: Section 11 LTA 1985 (repair),[6] the Homes Fitness for Habitation Act 2018,[8] and council enforcement under the HHSRS (up to £30,000 civil penalty)[9]. Where you sit on the spectrum below changes what evidence you should be gathering — and how strong your defence is if a dispute reaches the Pre-Action Protocol.[11]"
+        - generic [ref=e19]:
+          - button "Private Landlord" [ref=e20]
+          - button "Social Landlord" [ref=e21]
+      - article [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]: What you get
+          - list [ref=e25]:
+            - listitem [ref=e26]: ▹ 3 environmental sensors
+            - listitem [ref=e27]: ▹ 14 days continuous monitoring
+            - listitem [ref=e28]: ▹ Structural vs condensation diagnosis
+            - listitem [ref=e29]: ▹ PDF report
+            - listitem [ref=e30]: ▹ Case timeline notifications
+            - listitem [ref=e31]: ▹ Pre-paid return shipping
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - paragraph [ref=e34]: Before you decide
+        - heading "Which situation are you actually in?" [level=2] [ref=e35]
+        - paragraph [ref=e36]: "Your damp and mould obligations vary depending on where you stand in the legal timeline. Three scenarios — three different right approaches:"
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: Active Hazard
+          - generic [ref=e40]:
+            - paragraph [ref=e41]: Visible mould, sustained damp, or a clear defect?
+            - heading "There's a problem and you need evidence now." [level=3] [ref=e42]
+            - generic [ref=e43]:
+              - text: Visible mould, persistent condensation, water staining. Your
+              - strong [ref=e44]: Section 11 LTA 1985
+              - text: repairing duty is engaged.
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - term [ref=e47]: Clock
+              - definition [ref=e48]: Running
+            - generic [ref=e49]:
+              - term [ref=e50]: Risk
+              - definition [ref=e51]: Claim · £30k fine
+            - generic [ref=e52]:
+              - term [ref=e53]: Need
+              - definition [ref=e54]: "Diagnose: structural vs condensation"
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: Maple kit — 14-day diagnostic
+            - paragraph [ref=e57]: £249. Court-ready PDF before the solicitor’s letter arrives.
+        - generic [ref=e58]:
+          - generic [ref=e59]: Reported Concern
+          - generic [ref=e60]:
+            - paragraph [ref=e61]: Tenant complained but you’re not sure what’s really going on?
+            - heading "A complaint exists — you must investigate." [level=3] [ref=e62]
+            - generic [ref=e63]:
+              - strong [ref=e64]: Failing to investigate
+              - text: — even if you believe there’s nothing wrong — is where most maladministration findings arise.
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - term [ref=e67]: Clock
+              - definition [ref=e68]: Engaged
+            - generic [ref=e69]:
+              - term [ref=e70]: Risk
+              - definition [ref=e71]: Escalation · PAP letter
+            - generic [ref=e72]:
+              - term [ref=e73]: Need
+              - definition [ref=e74]: Defensible investigation record
+          - generic [ref=e75]:
+            - paragraph [ref=e76]: Maple kit — 14-day diagnostic
+            - paragraph [ref=e77]: £249. Even a “no hazard found” report is defensive evidence.
+        - generic [ref=e78]:
+          - generic [ref=e79]: Proactive Monitoring
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: No complaint yet — but you want ongoing visibility?
+            - heading "Catch problems before they become claims." [level=3] [ref=e82]
+            - generic [ref=e83]:
+              - text: Continuous monitoring establishes baseline and supports the
+              - strong [ref=e84]: reasonable endeavours defence
+              - text: (LTA 1985 s.10A(5)).
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - term [ref=e87]: Clock
+              - definition [ref=e88]: Not running
+            - generic [ref=e89]:
+              - term [ref=e90]: Risk
+              - definition [ref=e91]: Undetected slow defects
+            - generic [ref=e92]:
+              - term [ref=e93]: Need
+              - definition [ref=e94]: Baseline · early-warning alerts
+          - generic [ref=e95]:
+            - paragraph [ref=e96]: Maple monitoring — £49/mo
+            - paragraph [ref=e97]: Per property. Always-on sensors. Monthly reports + alerts.
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - paragraph [ref=e100]: The cost of inaction
+        - heading "£249 versus everything else." [level=2] [ref=e101]
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - paragraph [ref=e104]: £8,000
+          - paragraph [ref=e105]: Average disrepair claim
+          - paragraph [ref=e106]: Settled out of court
+        - generic [ref=e107]:
+          - paragraph [ref=e108]: £5,000–30k
+          - paragraph [ref=e109]: HHSRS civil penalty — category 1 hazard
+          - paragraph [ref=e110]: Local authority enforcement
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: £350+
+          - paragraph [ref=e113]: Solicitor letter — first response
+          - paragraph [ref=e114]: Before you've even replied
+        - generic [ref=e115]:
+          - paragraph [ref=e116]: £249
+          - paragraph [ref=e117]: Maple Diagnostics 14-day kit
+          - paragraph [ref=e118]: Evidence. Report. Done.
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - paragraph [ref=e121]: How it works
+        - heading "Four steps. Evidence in 14 days." [level=2] [ref=e122]
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]: "01"
+            - img [ref=e128]
+          - heading "Order online" [level=3] [ref=e131]
+          - paragraph [ref=e132]: Choose your kit. Sensors are dispatched same day via tracked delivery.
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - generic [ref=e135]: "02"
+            - img [ref=e137]
+          - heading "Monitor for 14 days" [level=3] [ref=e140]
+          - paragraph [ref=e141]: Plug-in sensors record humidity, temperature, and surface conditions continuously. No WiFi setup required.
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - generic [ref=e144]: "03"
+            - img [ref=e146]
+          - heading "Upload & generate report" [level=3] [ref=e151]
+          - paragraph [ref=e152]: Upload sensor data to the platform. Get a court-ready PDF within minutes — structural defect vs. condensation cause, timestamped.
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]: "04"
+            - img [ref=e157]
+          - heading "Respond with evidence" [level=3] [ref=e160]
+          - paragraph [ref=e161]: Use the report to respond to the tenant, solicitor, or local authority. Objective data, not assertion.
+    - generic [ref=e162]:
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: Common assumptions
+        - heading "What landlords get wrong." [level=2] [ref=e165]
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - paragraph [ref=e168]: "\"What if my tenant won't let me install sensors?\""
+          - paragraph [ref=e169]: Section 11(6) of the Landlord and Tenant Act 1985 gives you a right of entry to view the state and condition of the property with at least 24 hours' written notice. Our welcome pack includes a template Section 11 notice letter that meets statutory requirements.
+        - generic [ref=e170]:
+          - paragraph [ref=e171]: "\"The tenant is causing it themselves — I shouldn't need evidence.\""
+          - paragraph [ref=e172]: Courts and local authorities won't take the word for it. Without sensor data showing condensation issues (poor ventilation, cooking, drying laundry), you can't distinguish structural damp from tenant behaviour. The assumption goes against you.
+        - generic [ref=e173]:
+          - paragraph [ref=e174]: "\"I'll deal with it if they actually make a complaint.\""
+          - paragraph [ref=e175]: By the time a Shelter referral or solicitor letter arrives, you're already in reactive mode. Pre-emptive monitoring is admissible evidence and demonstrates due diligence.
+        - generic [ref=e176]:
+          - paragraph [ref=e177]: "\"A surveyor's inspection should be enough.\""
+          - paragraph [ref=e178]: A one-day visit creates a snapshot. Damp and mould is seasonal and behavioural — a 10 or 14-day continuous record shows patterns a single inspection cannot.
+    - generic [ref=e179]:
+      - heading "A complaint arrived this morning. Get the evidence before the Letter of Claim does." [level=2] [ref=e180]
+      - paragraph [ref=e181]: Order your kit now. Sensors dispatched same day via tracked delivery.
+      - generic [ref=e182]:
+        - link "Order kit — £249" [ref=e183] [cursor=pointer]:
+          - /url: /order
+        - link "Download sample report" [ref=e184] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - generic [ref=e188]: Maple Diagnostics
+        - paragraph [ref=e189]: Awaab's Law-grade evidence through objective environmental data.
+        - paragraph [ref=e190]: Cambridge · Cambridgeshire
+        - generic [ref=e192]: Designed around Ombudsman published expectations.
+      - generic [ref=e193]:
+        - paragraph [ref=e194]: Product
+        - list [ref=e195]:
+          - listitem [ref=e196]:
+            - link "How it works" [ref=e197] [cursor=pointer]:
+              - /url: /how-it-works
+          - listitem [ref=e198]:
+            - link "Pricing" [ref=e199] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e200]:
+            - link "Sample report" [ref=e201] [cursor=pointer]:
+              - /url: /sample-report
+          - listitem [ref=e202]:
+            - link "Sensor specs" [ref=e203] [cursor=pointer]:
+              - /url: /sensor-specs
+      - generic [ref=e204]:
+        - paragraph [ref=e205]: Solutions
+        - list [ref=e206]:
+          - listitem [ref=e207]:
+            - link "Social housing" [ref=e208] [cursor=pointer]:
+              - /url: /social-housing
+          - listitem [ref=e209]:
+            - link "Private landlords" [ref=e210] [cursor=pointer]:
+              - /url: /landlords
+          - listitem [ref=e211]:
+            - link "Letting agents" [ref=e212] [cursor=pointer]:
+              - /url: /agents
+          - listitem [ref=e213]:
+            - link "Surveyors" [ref=e214] [cursor=pointer]:
+              - /url: /building-specialists
+      - generic [ref=e215]:
+        - paragraph [ref=e216]: Resources
+        - list [ref=e217]:
+          - listitem [ref=e218]:
+            - link "Awaab's Law guide" [ref=e219] [cursor=pointer]:
+              - /url: /awaabs-law-guide
+          - listitem [ref=e220]:
+            - link "Compliance checklist" [ref=e221] [cursor=pointer]:
+              - /url: /compliance-checklist
+          - listitem [ref=e222]:
+            - link "Blog" [ref=e223] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e224]:
+            - link "Contact" [ref=e225] [cursor=pointer]:
+              - /url: /contact
+  - button "Open Next.js Dev Tools" [ref=e231] [cursor=pointer]:
+    - img [ref=e232]
+  - alert [ref=e235]
