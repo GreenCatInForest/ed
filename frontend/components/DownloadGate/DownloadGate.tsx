@@ -11,6 +11,8 @@ interface DownloadGateProps {
   description: ReactNode;
   guideName: string;
   ctaLabel?: string;
+  disclaimer?: string;
+  caption?: string;
   icon?: ReactNode;
 }
 
@@ -20,6 +22,8 @@ export default function DownloadGate({
   description,
   guideName,
   ctaLabel = "Get free template",
+  disclaimer,
+  caption,
   icon,
 }: DownloadGateProps) {
   const [open, setOpen] = useState(false);
@@ -31,8 +35,9 @@ export default function DownloadGate({
         title={title}
         description={description}
         icon={icon}
-        cta={{ label: ctaLabel, href: "#" }}
-        onDownload={() => setOpen(true)}
+        downloads={[{ label: ctaLabel, onDownload: () => setOpen(true), primary: true }]}
+        disclaimer={disclaimer}
+        caption={caption}
       />
       {open && (
         <DownloadModal
