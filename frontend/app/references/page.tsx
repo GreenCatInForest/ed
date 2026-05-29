@@ -42,19 +42,19 @@ const jsonLd = {
 const groups: { label: string; ids: (keyof typeof references)[] }[] = [
   {
     label: "Legislation & statutory instruments",
-    ids: [1, 3, 5, 6, 8, 10, 13, 17, 21, 22, 23, 24, 25, 26, 27, 28],
+    ids: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
   },
   {
     label: "MHCLG statutory guidance",
-    ids: [2, 7, 9, 11, 15, 16, 18, 19, 20],
+    ids: [17, 18, 19, 20, 21, 22, 23, 24, 25],
   },
   {
     label: "Impact assessments",
-    ids: [4],
+    ids: [26],
   },
   {
     label: "Housing Ombudsman",
-    ids: [12, 14],
+    ids: [27, 28],
   },
 ];
 

@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e5]:
+      - link "Maple Diagnostics" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e7]:
+        - link "Awaab's Law - Free Guide ▾" [ref=e9] [cursor=pointer]:
+          - /url: /awaabs-law
+          - text: Awaab's Law - Free Guide
+          - generic [ref=e10]: ▾
+        - link "Social Housing" [ref=e12] [cursor=pointer]:
+          - /url: /housing-associations
+        - link "Landlords" [ref=e14] [cursor=pointer]:
+          - /url: /landlords
+        - link "Agencies" [ref=e16] [cursor=pointer]:
+          - /url: /agents
+        - link "Surveyors" [ref=e18] [cursor=pointer]:
+          - /url: /building-specialists
+        - link "How it works" [ref=e20] [cursor=pointer]:
+          - /url: /how-it-works
+        - link "Pricing" [ref=e22] [cursor=pointer]:
+          - /url: /pricing
+      - link "Order kit — £249" [ref=e23] [cursor=pointer]:
+        - /url: /order
+    - generic [ref=e25]:
+      - generic [ref=e26]: A guide for compliance officers & housing managers
+      - 'heading "Awaab''s Law explained: what does it mean for you?" [level=1] [ref=e27]'
+      - paragraph [ref=e28]: Awaab's Law came into force on 27 October 2025 under the Hazards in Social Housing (Prescribed Requirements) (England) Regulations 2025. This page sets out the statutory timeframes, what counts as a 'significant' or 'emergency' hazard, the evidence the Housing Ombudsman expects, and the compensation patterns from the year before commencement.
+      - paragraph [ref=e29]: "Last reviewed: 21 May 2026"
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: In this guide
+        - list [ref=e34]:
+          - listitem [ref=e35]:
+            - button "01 What is Awaab's Law?" [ref=e36] [cursor=pointer]:
+              - generic [ref=e37]: "01"
+              - generic [ref=e38]: What is Awaab's Law?
+          - listitem [ref=e39]:
+            - button "02 The 10-day investigation deadline" [ref=e40] [cursor=pointer]:
+              - generic [ref=e41]: "02"
+              - generic [ref=e42]: The 10-day investigation deadline
+          - listitem [ref=e43]:
+            - 'button "03 Written findings: format & deadline" [ref=e44] [cursor=pointer]':
+              - generic [ref=e45]: "03"
+              - generic [ref=e46]: "Written findings: format & deadline"
+          - listitem [ref=e47]:
+            - button "04 The reasonable lessor test" [ref=e48] [cursor=pointer]:
+              - generic [ref=e49]: "04"
+              - generic [ref=e50]: The reasonable lessor test
+          - listitem [ref=e51]:
+            - button "05 What counts as objective evidence" [ref=e52] [cursor=pointer]:
+              - generic [ref=e53]: "05"
+              - generic [ref=e54]: What counts as objective evidence
+          - listitem [ref=e55]:
+            - 'button "06 Structural vs condensation: legal test" [ref=e56] [cursor=pointer]':
+              - generic [ref=e57]: "06"
+              - generic [ref=e58]: "Structural vs condensation: legal test"
+          - listitem [ref=e59]:
+            - button "07 Housing Ombudsman case patterns" [ref=e60] [cursor=pointer]:
+              - generic [ref=e61]: "07"
+              - generic [ref=e62]: Housing Ombudsman case patterns
+          - listitem [ref=e63]:
+            - button "08 Compliance checklist (PDF)" [ref=e64] [cursor=pointer]:
+              - generic [ref=e65]: "08"
+              - generic [ref=e66]: Compliance checklist (PDF)
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - img [ref=e70]
+            - text: Free download
+          - heading "10-Day Investigation Checklist" [level=3] [ref=e74]
+          - paragraph [ref=e75]: The exact actions to take on day 1, 3, 5, 10 — printable for your compliance team.
+          - button "Download PDF" [ref=e77]:
+            - generic [ref=e78]:
+              - img [ref=e79]
+              - text: Download PDF
+        - generic [ref=e82]:
+          - generic [ref=e83]: "01"
+          - heading "What is Awaab's Law?" [level=2] [ref=e84]
+          - generic [ref=e86]:
+            - paragraph [ref=e87]:
+              - text: Awaab's Law is the colloquial name for the Hazards in Social Housing (Prescribed Requirements) (England) Regulations 2025. It came into force on 27 October 2025, introduced by Section 42 of the Social Housing (Regulation) Act 2023, which amended the Landlord and Tenant Act 1985 by inserting new sections 10A and 10B.
+              - link "[1]" [ref=e88] [cursor=pointer]:
+                - /url: /references#ref-1
+                - superscript [ref=e89]: "[1]"
+              - link "[2]" [ref=e90] [cursor=pointer]:
+                - /url: /references#ref-2
+                - superscript [ref=e91]: "[2]"
+            - paragraph [ref=e92]:
+              - text: It is named in memory of two-year-old Awaab Ishak, who died in December 2020 from prolonged exposure to mould in a social housing flat in Rochdale. The coroner ruled that Awaab's death was a direct consequence of his landlord's failure to act on repeated reports of damp and mould.
+              - link "[26]" [ref=e93] [cursor=pointer]:
+                - /url: /references#ref-26
+                - superscript [ref=e94]: "[26]"
+            - paragraph [ref=e95]:
+              - text: The law applies to social homes as defined in Regulation 2 of the 2025 Regulations — leases let by registered providers of social housing. It does not yet apply to the private rented sector; that extension is provided for by Section 60 of the Renters' Rights Act 2025 but awaits separate commencement regulations.
+              - link "[1]" [ref=e96] [cursor=pointer]:
+                - /url: /references#ref-1
+                - superscript [ref=e97]: "[1]"
+              - link "[4]" [ref=e98] [cursor=pointer]:
+                - /url: /references#ref-4
+                - superscript [ref=e99]: "[4]"
+            - paragraph [ref=e100]:
+              - text: Phase 1 (in force since 27 October 2025) covers damp and mould hazards and all emergency hazards. Phase 2 (during 2026) will extend the regime to additional HHSRS hazards including excess cold and heat, falls, structural collapse, explosions, fire and electrical hazards, and domestic and personal hygiene and food safety. Phase 3 (during 2027) will extend it to all remaining HHSRS categories except overcrowding.
+              - link "[18]" [ref=e101] [cursor=pointer]:
+                - /url: /references#ref-18
+                - superscript [ref=e102]: "[18]"
+    - generic [ref=e103]:
+      - heading "Day Zero is the day the landlord becomes aware." [level=2] [ref=e104]
+      - paragraph [ref=e105]: Day 1 — the start of the 10 working-day countdown — is the next working day after the landlord becomes aware of the complaint. Start the investigation today — sensors dispatched same day.
+      - generic [ref=e106]:
+        - link "Order kit — £249" [ref=e107] [cursor=pointer]:
+          - /url: /order
+        - link "Download sample report" [ref=e108] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]: Maple Diagnostics
+        - paragraph [ref=e113]: Awaab's Law-grade evidence through objective environmental data.
+        - paragraph [ref=e114]: Cambridge · Cambridgeshire
+        - generic [ref=e116]: Designed around Ombudsman published expectations.
+      - generic [ref=e117]:
+        - paragraph [ref=e118]: Product
+        - list [ref=e119]:
+          - listitem [ref=e120]:
+            - link "How it works" [ref=e121] [cursor=pointer]:
+              - /url: /how-it-works
+          - listitem [ref=e122]:
+            - link "Pricing" [ref=e123] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e124]:
+            - link "Sample report" [ref=e125] [cursor=pointer]:
+              - /url: /sample-report
+          - listitem [ref=e126]:
+            - link "Sensor specs" [ref=e127] [cursor=pointer]:
+              - /url: /sensor-specs
+      - generic [ref=e128]:
+        - paragraph [ref=e129]: Solutions
+        - list [ref=e130]:
+          - listitem [ref=e131]:
+            - link "Social housing" [ref=e132] [cursor=pointer]:
+              - /url: /social-housing
+          - listitem [ref=e133]:
+            - link "Private landlords" [ref=e134] [cursor=pointer]:
+              - /url: /landlords
+          - listitem [ref=e135]:
+            - link "Letting agents" [ref=e136] [cursor=pointer]:
+              - /url: /agents
+          - listitem [ref=e137]:
+            - link "Surveyors" [ref=e138] [cursor=pointer]:
+              - /url: /building-specialists
+      - generic [ref=e139]:
+        - paragraph [ref=e140]: Resources
+        - list [ref=e141]:
+          - listitem [ref=e142]:
+            - link "Awaab's Law guide" [ref=e143] [cursor=pointer]:
+              - /url: /awaabs-law-guide
+          - listitem [ref=e144]:
+            - link "Compliance checklist" [ref=e145] [cursor=pointer]:
+              - /url: /compliance-checklist
+          - listitem [ref=e146]:
+            - link "Blog" [ref=e147] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e148]:
+            - link "Contact" [ref=e149] [cursor=pointer]:
+              - /url: /contact
+  - button "Open Next.js Dev Tools" [ref=e155] [cursor=pointer]:
+    - img [ref=e156]

@@ -29,10 +29,13 @@ type Status = "idle" | "loading" | "success" | "error";
 interface Props {
   title: string;
   guideName: string;
+  format?: "pdf" | "word";
   onClose: () => void;
 }
 
-export default function DownloadModal({ title, guideName, onClose }: Props) {
+export default function DownloadModal({ title, guideName, format, onClose }: Props) {
+  const formatLabel = format === "pdf" ? "PDF" : format === "word" ? "Word" : null;
+  const resolvedGuideName = formatLabel ? `${guideName} (${formatLabel})` : guideName;
   const [f, setF] = useState({
     name: "",
     email: "",
@@ -66,7 +69,7 @@ export default function DownloadModal({ title, guideName, onClose }: Props) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          guide_name: guideName,
+          guide_name: resolvedGuideName,
           name: f.name,
           email: f.email,
           organisation: f.organisation,
@@ -126,7 +129,11 @@ export default function DownloadModal({ title, guideName, onClose }: Props) {
             <div className="flex flex-col gap-1">
               <h2 className="text-xl font-bold text-fg">{title}</h2>
               <p className="text-sm text-fg-muted leading-relaxed">
-                A 7-page printable + fillable Word template. Tell us a little about you and we&apos;ll email the template.
+                {format === "pdf"
+                  ? "A printable 7-page PDF. Tell us a little about you and we’ll email it."
+                  : format === "word"
+                  ? "A fillable Word template. Tell us a little about you and we’ll email it."
+                  : "Tell us a little about you and we’ll email the template."}
               </p>
             </div>
 

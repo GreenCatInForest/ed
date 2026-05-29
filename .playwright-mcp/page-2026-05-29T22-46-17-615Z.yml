@@ -1,0 +1,290 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e5]:
+      - link "Maple Diagnostics" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e7]:
+        - link "Awaab's Law - Free Guide ▾" [ref=e9] [cursor=pointer]:
+          - /url: /awaabs-law
+          - text: Awaab's Law - Free Guide
+          - generic [ref=e10]: ▾
+        - link "Social Housing" [ref=e12] [cursor=pointer]:
+          - /url: /housing-associations
+        - link "Landlords" [ref=e14] [cursor=pointer]:
+          - /url: /landlords
+        - link "Agencies" [ref=e16] [cursor=pointer]:
+          - /url: /agents
+        - link "Surveyors" [ref=e18] [cursor=pointer]:
+          - /url: /building-specialists
+        - link "How it works" [ref=e20] [cursor=pointer]:
+          - /url: /how-it-works
+        - link "Pricing" [ref=e22] [cursor=pointer]:
+          - /url: /pricing
+      - link "Order kit — £249" [ref=e23] [cursor=pointer]:
+        - /url: /order
+    - generic [ref=e24]:
+      - generic [ref=e25]: Primary sources only
+      - heading "References & citations" [level=1] [ref=e26]
+      - paragraph [ref=e27]: "Every factual claim on this site traces back to one of the sources below. All are primary: legislation, MHCLG statutory guidance, or Housing Ombudsman publications. No secondary commentary or trade press."
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Legislation & statutory instruments" [level=2] [ref=e30]
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - generic [ref=e33]: "[1]"
+            - generic [ref=e34]:
+              - link "The Hazards in Social Housing (Prescribed Requirements) (England) Regulations 2025" [ref=e35] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/uksi/2025/1042/contents/made
+              - paragraph [ref=e36]: SI 2025 No. 1042. In force 27 October 2025.
+              - generic [ref=e37]: https://www.legislation.gov.uk/uksi/2025/1042/contents/made
+          - listitem [ref=e38]:
+            - generic [ref=e39]: "[2]"
+            - generic [ref=e40]:
+              - link "Social Housing (Regulation) Act 2023, Section 42" [ref=e41] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2023/36/section/42
+              - paragraph [ref=e42]: Inserted sections 10A and 10B into the Landlord and Tenant Act 1985.
+              - generic [ref=e43]: https://www.legislation.gov.uk/ukpga/2023/36/section/42
+          - listitem [ref=e44]:
+            - generic [ref=e45]: "[3]"
+            - generic [ref=e46]:
+              - link "Regulation 3, Hazards in Social Housing Regulations 2025 — Definitions" [ref=e47] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/uksi/2025/1042/regulation/3/made
+              - paragraph [ref=e48]: Definitions of 'significant hazard' and 'emergency hazard'.
+              - generic [ref=e49]: https://www.legislation.gov.uk/uksi/2025/1042/regulation/3/made
+          - listitem [ref=e50]:
+            - generic [ref=e51]: "[4]"
+            - generic [ref=e52]:
+              - link "Renters' Rights Act 2025, Section 60" [ref=e53] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2025/26/section/60
+              - paragraph [ref=e54]: Power to extend Awaab's Law to the private rented sector.
+              - generic [ref=e55]: https://www.legislation.gov.uk/ukpga/2025/26/section/60
+          - listitem [ref=e56]:
+            - generic [ref=e57]: "[5]"
+            - generic [ref=e58]:
+              - link "Regulation 6, Hazards in Social Housing Regulations 2025 — Standard investigations" [ref=e59] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/uksi/2025/1042/regulation/6/made
+              - paragraph [ref=e60]: 10-working-day investigation requirement for significant hazards.
+              - generic [ref=e61]: https://www.legislation.gov.uk/uksi/2025/1042/regulation/6/made
+          - listitem [ref=e62]:
+            - generic [ref=e63]: "[6]"
+            - generic [ref=e64]:
+              - link "Regulation 9, Hazards in Social Housing Regulations 2025 — Written summary" [ref=e65] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/uksi/2025/1042/regulation/9/made
+              - paragraph [ref=e66]: 3-working-day written summary requirement.
+              - generic [ref=e67]: https://www.legislation.gov.uk/uksi/2025/1042/regulation/9/made
+          - listitem [ref=e68]:
+            - generic [ref=e69]: "[7]"
+            - generic [ref=e70]:
+              - link "Landlord and Tenant Act 1985, Section 11" [ref=e71] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/1985/70/section/11
+              - paragraph [ref=e72]: Landlord's repairing obligations — structure and exterior of dwelling.
+              - generic [ref=e73]: https://www.legislation.gov.uk/ukpga/1985/70/section/11
+          - listitem [ref=e74]:
+            - generic [ref=e75]: "[8]"
+            - generic [ref=e76]:
+              - link "Regulation 20, Hazards in Social Housing Regulations 2025 — Right of entry" [ref=e77] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/uksi/2025/1042/regulation/20/made
+              - paragraph [ref=e78]: Implied covenant of entry for landlord, 24 hours' written notice required.
+              - generic [ref=e79]: https://www.legislation.gov.uk/uksi/2025/1042/regulation/20/made
+          - listitem [ref=e80]:
+            - generic [ref=e81]: "[9]"
+            - generic [ref=e82]:
+              - link "Homes (Fitness for Human Habitation) Act 2018" [ref=e83] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2018/34/contents
+              - paragraph [ref=e84]: Amended LTA 1985 to imply a fitness covenant in short leases. Tenants may bring a direct claim.
+              - generic [ref=e85]: https://www.legislation.gov.uk/ukpga/2018/34/contents
+          - listitem [ref=e86]:
+            - generic [ref=e87]: "[10]"
+            - generic [ref=e88]:
+              - link "Housing Act 2004, section 249A — Civil penalties" [ref=e89] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2004/34/section/249A
+              - paragraph [ref=e90]: Civil penalty up to £30,000 for HHSRS Improvement Notice breach, inserted by Housing and Planning Act 2016 s.136.
+              - generic [ref=e91]: https://www.legislation.gov.uk/ukpga/2004/34/section/249A
+          - listitem [ref=e92]:
+            - generic [ref=e93]: "[11]"
+            - generic [ref=e94]:
+              - link "Renters' Rights Act 2025, Part 1 — Assured tenancies and abolition of Section 21" [ref=e95] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2025/26/part/1
+              - paragraph [ref=e96]: Section 21 notices abolished from 1 May 2026. All ASTs converted to assured periodic tenancies. Transitional period for existing notices.
+              - generic [ref=e97]: https://www.legislation.gov.uk/ukpga/2025/26/part/1
+          - listitem [ref=e98]:
+            - generic [ref=e99]: "[12]"
+            - generic [ref=e100]:
+              - link "Renters' Rights Act 2025, Section 13 — Rent increases" [ref=e101] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2025/26/section/7
+              - paragraph [ref=e102]: Rent increases limited to once per 12 months with 2 months' written notice. Tenant right to challenge at First-tier Tribunal.
+              - generic [ref=e103]: https://www.legislation.gov.uk/ukpga/2025/26/section/7
+          - listitem [ref=e104]:
+            - generic [ref=e105]: "[13]"
+            - generic [ref=e106]:
+              - link "Renters' Rights Act 2025, Part 2 — Rent in advance and bidding" [ref=e107] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2025/26/part/2
+              - paragraph [ref=e108]: Rent in advance capped at one month for tenancies starting after 1 May 2026. Rental bidding prohibited.
+              - generic [ref=e109]: https://www.legislation.gov.uk/ukpga/2025/26/part/2
+          - listitem [ref=e110]:
+            - generic [ref=e111]: "[14]"
+            - generic [ref=e112]:
+              - link "Renters' Rights Act 2025, Chapter 2 Part 1 — PRS Landlord Ombudsman" [ref=e113] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2025/26/chapter/2
+              - paragraph [ref=e114]: Establishes the Private Rented Sector Landlord Ombudsman. Mandatory membership for all private landlords once commenced.
+              - generic [ref=e115]: https://www.legislation.gov.uk/ukpga/2025/26/chapter/2
+          - listitem [ref=e116]:
+            - generic [ref=e117]: "[15]"
+            - generic [ref=e118]:
+              - link "Renters' Rights Act 2025, Part 3 — Private Rented Sector Database" [ref=e119] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2025/26/part/3
+              - paragraph [ref=e120]: Mandatory landlord and property register. Required as a prerequisite for serving Section 8 notices once in force.
+              - generic [ref=e121]: https://www.legislation.gov.uk/ukpga/2025/26/part/3
+          - listitem [ref=e122]:
+            - generic [ref=e123]: "[16]"
+            - generic [ref=e124]:
+              - link "Renters' Rights Act 2025, Schedule 4 — Decent Homes Standard" [ref=e125] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukpga/2025/26/schedule/4
+              - paragraph [ref=e126]: Extends the Decent Homes Standard to the private rented sector. Commencement date to be confirmed via secondary legislation.
+              - generic [ref=e127]: https://www.legislation.gov.uk/ukpga/2025/26/schedule/4
+      - generic [ref=e128]:
+        - heading "MHCLG statutory guidance" [level=2] [ref=e129]
+        - list [ref=e130]:
+          - listitem [ref=e131]:
+            - generic [ref=e132]: "[17]"
+            - generic [ref=e133]:
+              - 'link "MHCLG, Awaab''s Law: Guidance for social landlords — Timeframes for repairs in the social rented sector" [ref=e134] [cursor=pointer]':
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector
+              - paragraph [ref=e135]: Published 17 October 2025. Section numbers in body text refer to this guidance.
+              - generic [ref=e136]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector
+          - listitem [ref=e137]:
+            - generic [ref=e138]: "[18]"
+            - generic [ref=e139]:
+              - link "MHCLG guidance, Section 1 — Phased implementation timetable" [ref=e140] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#introduction
+              - paragraph [ref=e141]: "Phase 2: 'In 2026'. Phase 3: 'In 2027'. No specific month confirmed."
+              - generic [ref=e142]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#introduction
+          - listitem [ref=e143]:
+            - generic [ref=e144]: "[19]"
+            - generic [ref=e145]:
+              - link "MHCLG guidance, Section 4.1.1 — Standard investigations" [ref=e146] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#standard-investigations
+              - paragraph [ref=e147]: "Day Zero rule: day of awareness is Day 0; Day 1 is the following working day."
+              - generic [ref=e148]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#standard-investigations
+          - listitem [ref=e149]:
+            - generic [ref=e150]: "[20]"
+            - generic [ref=e151]:
+              - link "MHCLG guidance, Section 6 — Issuing a written summary to tenants" [ref=e152] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#issuing-a-written-summary-to-tenants
+              - paragraph [ref=e153]: Required contents of the written summary.
+              - generic [ref=e154]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#issuing-a-written-summary-to-tenants
+          - listitem [ref=e155]:
+            - generic [ref=e156]: "[21]"
+            - generic [ref=e157]:
+              - link "MHCLG guidance, Section 7.2 — Supplementary preventative works" [ref=e158] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#making-the-property-safe-and-supplementary-preventative-works
+              - paragraph [ref=e159]: 12-week longstop for preventative work that cannot begin within 5 working days.
+              - generic [ref=e160]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#making-the-property-safe-and-supplementary-preventative-works
+          - listitem [ref=e161]:
+            - generic [ref=e162]: "[22]"
+            - generic [ref=e163]:
+              - link "MHCLG guidance, Section 9.1 — Reasonable endeavours defence" [ref=e164] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#defence
+              - paragraph [ref=e165]: Section 10A(5) LTA 1985. Landlord has a defence if they used all reasonable endeavours.
+              - generic [ref=e166]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#defence
+          - listitem [ref=e167]:
+            - generic [ref=e168]: "[23]"
+            - generic [ref=e169]:
+              - link "MHCLG guidance, Section 3 — Awareness, triage and categorisation" [ref=e170] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#awareness-triage-and-categorisation-of-hazards
+              - paragraph [ref=e171]: When the landlord 'becomes aware' — what triggers Day Zero.
+              - generic [ref=e172]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#awareness-triage-and-categorisation-of-hazards
+          - listitem [ref=e173]:
+            - generic [ref=e174]: "[24]"
+            - generic [ref=e175]:
+              - link "MHCLG guidance, Section 3.5 — Information about the tenant" [ref=e176] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#information-about-the-tenant
+              - paragraph [ref=e177]: Vulnerability assessment requirements and GDPR considerations.
+              - generic [ref=e178]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#information-about-the-tenant
+          - listitem [ref=e179]:
+            - generic [ref=e180]: "[25]"
+            - generic [ref=e181]:
+              - link "MHCLG guidance, Section 2.4 — 'Lifestyle' is not a defence" [ref=e182] [cursor=pointer]:
+                - /url: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#scope-of-awaabs-law
+              - paragraph [ref=e183]: "MHCLG: 'It is unacceptable for social landlords to assume that the cause of a hazard, such as damp and mould, is due to the tenant's lifestyle.'"
+              - generic [ref=e184]: https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#scope-of-awaabs-law
+      - generic [ref=e185]:
+        - heading "Impact assessments" [level=2] [ref=e186]
+        - list [ref=e187]:
+          - listitem [ref=e188]:
+            - generic [ref=e189]: "[26]"
+            - generic [ref=e190]:
+              - link "MHCLG, Awaab's Law — Final Stage Impact Assessment" [ref=e191] [cursor=pointer]:
+                - /url: https://www.legislation.gov.uk/ukia/2025/125/pdfs/ukia_20250125_en.pdf
+              - paragraph [ref=e192]: Background to the Awaab Ishak case at paragraphs 1.1–1.4.
+              - generic [ref=e193]: https://www.legislation.gov.uk/ukia/2025/125/pdfs/ukia_20250125_en.pdf
+      - generic [ref=e194]:
+        - heading "Housing Ombudsman" [level=2] [ref=e195]
+        - list [ref=e196]:
+          - listitem [ref=e197]:
+            - generic [ref=e198]: "[27]"
+            - generic [ref=e199]:
+              - 'link "Housing Ombudsman, Spotlight on: Damp and mould — It''s not lifestyle" [ref=e200] [cursor=pointer]':
+                - /url: https://www.housing-ombudsman.org.uk/reports/spotlight-reports/spotlight-on-damp-and-mould/
+              - paragraph [ref=e201]: October 2021. 26 recommendations remain the operational benchmark.
+              - generic [ref=e202]: https://www.housing-ombudsman.org.uk/reports/spotlight-reports/spotlight-on-damp-and-mould/
+          - listitem [ref=e203]:
+            - generic [ref=e204]: "[28]"
+            - generic [ref=e205]:
+              - link "Housing Ombudsman, Annual Complaints Review 2024–25" [ref=e206] [cursor=pointer]:
+                - /url: https://www.housing-ombudsman.org.uk/annual-complaint-review-reports/annual-complaints-review-2024-25/
+              - paragraph [ref=e207]: £5m+ compensation ordered. 40%+ damp/mould. Almost £32k largest single order.
+              - generic [ref=e208]: https://www.housing-ombudsman.org.uk/annual-complaint-review-reports/annual-complaints-review-2024-25/
+    - generic [ref=e210]:
+      - generic [ref=e211]:
+        - generic [ref=e212]: Maple Diagnostics
+        - paragraph [ref=e213]: Awaab's Law-grade evidence through objective environmental data.
+        - paragraph [ref=e214]: Cambridge · Cambridgeshire
+        - generic [ref=e216]: Designed around Ombudsman published expectations.
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: Product
+        - list [ref=e219]:
+          - listitem [ref=e220]:
+            - link "How it works" [ref=e221] [cursor=pointer]:
+              - /url: /how-it-works
+          - listitem [ref=e222]:
+            - link "Pricing" [ref=e223] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e224]:
+            - link "Sample report" [ref=e225] [cursor=pointer]:
+              - /url: /sample-report
+          - listitem [ref=e226]:
+            - link "Sensor specs" [ref=e227] [cursor=pointer]:
+              - /url: /sensor-specs
+      - generic [ref=e228]:
+        - paragraph [ref=e229]: Solutions
+        - list [ref=e230]:
+          - listitem [ref=e231]:
+            - link "Social housing" [ref=e232] [cursor=pointer]:
+              - /url: /social-housing
+          - listitem [ref=e233]:
+            - link "Private landlords" [ref=e234] [cursor=pointer]:
+              - /url: /landlords
+          - listitem [ref=e235]:
+            - link "Letting agents" [ref=e236] [cursor=pointer]:
+              - /url: /agents
+          - listitem [ref=e237]:
+            - link "Surveyors" [ref=e238] [cursor=pointer]:
+              - /url: /building-specialists
+      - generic [ref=e239]:
+        - paragraph [ref=e240]: Resources
+        - list [ref=e241]:
+          - listitem [ref=e242]:
+            - link "Awaab's Law guide" [ref=e243] [cursor=pointer]:
+              - /url: /awaabs-law-guide
+          - listitem [ref=e244]:
+            - link "Compliance checklist" [ref=e245] [cursor=pointer]:
+              - /url: /compliance-checklist
+          - listitem [ref=e246]:
+            - link "Blog" [ref=e247] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e248]:
+            - link "Contact" [ref=e249] [cursor=pointer]:
+              - /url: /contact
+  - button "Open Next.js Dev Tools" [ref=e255] [cursor=pointer]:
+    - img [ref=e256]

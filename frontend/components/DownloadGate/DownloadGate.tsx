@@ -5,11 +5,21 @@ import { ReactNode } from "react";
 import DownloadCard from "@/components/DownloadCard/DownloadCard";
 import DownloadModal from "@/components/DownloadModal/DownloadModal";
 
+export interface GateFormat {
+  format: "pdf" | "word";
+  label: string;
+  meta?: string;
+  primary?: boolean;
+}
+
 interface DownloadGateProps {
   label?: string;
   title: string;
   description: ReactNode;
   guideName: string;
+  /** Multiple gated formats (e.g. PDF + Word). Each button opens the modal for that format. */
+  formats?: GateFormat[];
+  /** Single-button label — used when `formats` is not provided. */
   ctaLabel?: string;
   disclaimer?: string;
   caption?: string;
@@ -21,12 +31,22 @@ export default function DownloadGate({
   title,
   description,
   guideName,
+  formats,
   ctaLabel = "Get free template",
   disclaimer,
   caption,
   icon,
 }: DownloadGateProps) {
-  const [open, setOpen] = useState(false);
+  const [openFormat, setOpenFormat] = useState<"pdf" | "word" | null>(null);
+
+  const downloads = formats
+    ? formats.map((f) => ({
+        label: f.label,
+        meta: f.meta,
+        primary: f.primary,
+        onDownload: () => setOpenFormat(f.format),
+      }))
+    : [{ label: ctaLabel, onDownload: () => setOpenFormat("pdf"), primary: true }];
 
   return (
     <>
@@ -35,15 +55,16 @@ export default function DownloadGate({
         title={title}
         description={description}
         icon={icon}
-        downloads={[{ label: ctaLabel, onDownload: () => setOpen(true), primary: true }]}
+        downloads={downloads}
         disclaimer={disclaimer}
         caption={caption}
       />
-      {open && (
+      {openFormat && (
         <DownloadModal
           title={title}
           guideName={guideName}
-          onClose={() => setOpen(false)}
+          format={openFormat}
+          onClose={() => setOpenFormat(null)}
         />
       )}
     </>

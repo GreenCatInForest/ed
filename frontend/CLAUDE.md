@@ -84,6 +84,16 @@ Two layout variants exist:
 **When adding new refs to `content/references.ts`, also add their IDs to the appropriate group in `app/references/page.tsx`.**  
 If an ID is missing from `groups`, the `id="ref-N"` anchor is never rendered and citation links silently fail to scroll to their target.
 
+**References must be numbered sequentially in page-display order** — the key in `references.ts` is the displayed citation number, so gaps (e.g. keys 1, 3, 5…) cause the references page to show non-sequential labels ([1], [3], [5]…) instead of [1], [2], [3]….
+
+Current number ranges (matches the group order in `app/references/page.tsx`):
+- **1–16** Legislation & statutory instruments
+- **17–25** MHCLG statutory guidance
+- **26** Impact assessments
+- **27–28** Housing Ombudsman
+
+When adding a new reference, assign the next sequential number within the right group (shifting later groups up if needed) and update every `refs` array in all three content files (`awaabs-law-guide.ts`, `private-landlords-guide.ts`, `housing-associations-guide.ts`) that referenced any renumbered ID.
+
 ## Pre-deployment link checklist
 
 Run these before merging any page or content change:

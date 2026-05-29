@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
-import DownloadCard from "@/components/DownloadCard/DownloadCard";
+import DownloadGate from "@/components/DownloadGate/DownloadGate";
 import { SITE_URL, ORG_ID } from "@/lib/seo";
 import { privateLandlordsGuide } from "@/content/private-landlords-guide";
 import { references } from "@/content/references";
@@ -240,9 +240,10 @@ export default function PrivateLandlordsPage() {
               </ol>
             </div>
 
-            <DownloadCard
+            <DownloadGate
               label="Free download"
               title={download.title}
+              guideName={download.title}
               description={
                 <>
                   A printable 24-hour notice of entry meeting the statutory
@@ -259,7 +260,7 @@ export default function PrivateLandlordsPage() {
                   and the MHCLG statutory guidance.
                 </>
               }
-              downloads={[...download.downloads]}
+              formats={[...download.formats]}
               disclaimer={download.disclaimer}
               caption={download.caption}
             />
