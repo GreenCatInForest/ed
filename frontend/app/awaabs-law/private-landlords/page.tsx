@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
-import DownloadCard from "@/components/DownloadCard/DownloadCard";
+import DownloadGate from "@/components/DownloadGate/DownloadGate";
 import { SITE_URL, ORG_ID } from "@/lib/seo";
 import { privateLandlordsGuide } from "@/content/private-landlords-guide";
 import { references } from "@/content/references";
@@ -240,11 +240,12 @@ export default function PrivateLandlordsPage() {
               </ol>
             </div>
 
-            <DownloadCard
+            <DownloadGate
               label="Free download"
               title={download.title}
               description={download.description}
-              cta={download.cta}
+              guideName={download.title}
+              ctaLabel={download.cta.label}
             />
           </div>
         </aside>

@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from "react";
 import { IconFileDownload, IconDownload } from "@tabler/icons-react";
 
@@ -11,6 +13,7 @@ interface ResourceCardProps {
   };
   variant?: "download" | "external" | "internal";
   icon?: ReactNode;
+  onDownload?: () => void;
 }
 
 export default function DownloadCard({
@@ -19,6 +22,7 @@ export default function DownloadCard({
   description,
   cta,
   icon,
+  onDownload,
 }: ResourceCardProps) {
   return (
     <div className="bg-surface border border-(--color-border) rounded-xl p-5 flex flex-col gap-3 max-w-xs">
@@ -28,13 +32,23 @@ export default function DownloadCard({
       </div>
       <h3 className="text-base font-bold leading-snug">{title}</h3>
       <p className="text-sm text-fg-muted leading-relaxed">{description}</p>
-      <a
-        href={cta.href}
-        className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-medium px-4 py-3 rounded-lg transition-colors"
-      >
-        <IconDownload size={16} stroke={2} />
-        {cta.label}
-      </a>
+      {onDownload ? (
+        <button
+          onClick={onDownload}
+          className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-medium px-4 py-3 rounded-lg transition-colors"
+        >
+          <IconDownload size={16} stroke={2} />
+          {cta.label}
+        </button>
+      ) : (
+        <a
+          href={cta.href}
+          className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-medium px-4 py-3 rounded-lg transition-colors"
+        >
+          <IconDownload size={16} stroke={2} />
+          {cta.label}
+        </a>
+      )}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import CtaBanner from "@/components/CtaBanner/CtaBanner";
-import DownloadCard from "@/components/DownloadCard/DownloadCard";
+import DownloadGate from "@/components/DownloadGate/DownloadGate";
 import GuideContents from "@/components/GuideContents/GuideContents";
 import GuideBlocks from "@/components/GuideBlocks/GuideBlocks";
 import { SITE_URL, ORG_ID } from "@/lib/seo";
@@ -126,10 +126,11 @@ export default function AwaabsLawPage() {
 
       <GuideContents
         aside={
-          <DownloadCard
+          <DownloadGate
             title="10-Day Investigation Checklist"
             description="The exact actions to take on day 1, 3, 5, 10 — printable for your compliance team."
-            cta={{ label: "Download PDF", href: "#" }}
+            guideName="10-Day Investigation Checklist"
+            ctaLabel="Download PDF"
           />
         }
         sections={sections.map((section) => ({

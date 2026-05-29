@@ -5,12 +5,14 @@ const TO = "maple-diagnostics@cambridgelogic.com";
 
 const SUBJECTS: Record<string, string> = {
   guide: "New guide download request",
+  "download-guide": "New template download request",
   "social-program": "New Maple Social Program application",
   contact: "New general enquiry",
 };
 
 const TITLES: Record<string, string> = {
   guide: "Guide Download Request",
+  "download-guide": "Template Download Request",
   "social-program": "Maple Social Program Application",
   contact: "General Enquiry",
 };
