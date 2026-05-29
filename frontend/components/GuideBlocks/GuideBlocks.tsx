@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { GuideBlock, GuideListItem } from "@/content/awaabs-law-guide";
 import type { ReferenceId } from "@/content/references";
 
@@ -5,14 +6,14 @@ function Refs({ ids }: { ids: ReferenceId[] }) {
   return (
     <>
       {ids.map((id) => (
-        <a
+        <Link
           key={id}
           href={`/references#ref-${id}`}
           className="font-mono text-[10px] text-accent hover:text-accent-light transition-colors ml-0.5 no-underline"
           title={`Reference [${id}]`}
         >
           <sup>[{id}]</sup>
-        </a>
+        </Link>
       ))}
     </>
   );

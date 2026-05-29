@@ -60,14 +60,14 @@ function Refs({ ids }: { ids: readonly ReferenceId[] }) {
   return (
     <>
       {ids.map((id) => (
-        <a
+        <Link
           key={id}
           href={`/references#ref-${id}`}
           className="font-mono text-[10px] text-accent hover:text-accent-light transition-colors ml-0.5 no-underline"
           title={references[id].label}
         >
           <sup>[{id}]</sup>
-        </a>
+        </Link>
       ))}
     </>
   );

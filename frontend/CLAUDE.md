@@ -72,6 +72,31 @@ Two layout variants exist:
 **When adding new refs to `content/references.ts`, also add their IDs to the appropriate group in `app/references/page.tsx`.**  
 If an ID is missing from `groups`, the `id="ref-N"` anchor is never rendered and citation links silently fail to scroll to their target.
 
+## Pre-deployment link checklist
+
+Run these before merging any page or content change:
+
+```bash
+# 1. Type-check
+npx tsc --noEmit
+
+# 2. Lint
+npm run lint
+
+# 3. Production build (catches broken imports, missing pages, and build-time errors)
+npm run build
+```
+
+Then manually verify:
+
+| Check | How |
+|---|---|
+| Every TOC `anchor` value matches an `id` on a section element | Grep the page file: `anchor:` values → `id="..."` in JSX |
+| Every `ReferenceId` used in content appears in the `groups` array in `app/references/page.tsx` | The anchor `#ref-N` silently doesn't exist otherwise |
+| Cross-page links use `<Link>` not `<a>` | Plain `<a>` causes a hard reload, breaks client-side back/forward |
+| In-page anchor links use `<a href="#anchor">` not `<Link>` | `<Link>` for same-page hashes can interfere with App Router scroll |
+| New route works after `rm -rf .next && npm run dev` | Dev server sometimes doesn't pick up new `app/*/page.tsx` directories without a cache clear |
+
 ## SEO & Page Conventions
 - When adding JSON-LD, define the const AND inject the JSX in the same edit to avoid transient unused-variable/import warnings.
 - Use Next.js <Link> instead of <a> for internal navigation, and reset default browser link styling (color/underline) on logo/nav links.
