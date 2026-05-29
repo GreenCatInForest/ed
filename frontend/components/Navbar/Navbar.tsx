@@ -3,8 +3,19 @@ import { useState } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 
-const links = [
-  { href: "/awaabs-law", label: "Awaab's Law - Free Guide" },
+const links: NavLink[] = [
+  { href: "/awaabs-law", label: "Awaab's Law - Free Guide", 
+    children: [
+      {
+        href: "/awaabs-law/awaabs-law",
+        label: "For housing associations",
+      },
+      {
+        href: "/awaabs-law/private-landlords",
+        label: "For private landlords",
+      },
+    ],
+   },
   { href: "/housing-associations", label: "Social Housing" },
   { href: "/landlords", label: "Landlords" },
   { href: "/agents", label: "Agencies" },
@@ -12,6 +23,12 @@ const links = [
   { href: "/how-it-works", label: "How it works" },
   { href: "/pricing", label: "Pricing" },
 ];
+
+interface NavLink {
+  href: string;
+  label: string;
+  children?: NavLink[];
+}
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,11 +39,34 @@ export default function Navbar() {
         <Link href="/" className={styles.logo}>Maple Diagnostics</Link>
         <div className="hidden md:flex items-center gap-6 text-fg-muted text-sm">
           {links.map((link) => (
-            <Link key={link.label} href={link.href} className="hover:text-fg transition-colors">
-              {link.label}
-            </Link>
+            <div key={link.label} className="relative group">
+              <Link
+                href={link.href}
+                className="hover:text-fg transition-colors inline-flex items-start gap-1"
+              >
+                {link.label}
+                {link.children && <span className="text-xs">▾</span>}
+              </Link>
+
+              {link.children && (
+                <div className="absolute md:left-[-30px] top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                  <div className="min-w-56 rounded-xl border border-(--color-border) bg-surface shadow-lg p-2">
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.label}
+                        href={child.href}
+                        className="before:content-['▹'] before:text-accent before:absolute before:-translate-x-4 block text-center rounded-lg px-3 py-2 text-sm text-fg-muted hover:text-fg hover:bg-surface-2 transition-colors"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </div>
+
         <Link
           href="/order"
           className="hidden md:inline-flex items-center bg-accent hover:bg-accent-hover text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors shrink-0"
