@@ -129,7 +129,7 @@ const workflow = [
   {
     step: "05",
     title: "Issue written findings",
-    body: "Use the report to issue written findings to the tenant within 3 days of investigation — as required under Awaab's Law for social housing clients, and best practice for all managed properties.",
+    body: "Use the report to issue written findings to the tenant within 3 working days of completing the investigation — as required under Awaab's Law for social housing clients, and best practice for all managed properties.",
   },
   {
     step: "06",

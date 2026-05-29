@@ -54,12 +54,23 @@ Each component lives in its own folder: `components/ComponentName/ComponentName.
 
 ## Guide page pattern
 
-Used by `/awaabs-law` and any future guide pages:
+All guide pages follow the same data convention: content lives in `content/<guide-name>.ts` as a typed TypeScript object (no JSX). Every factual claim has a `refs` field with `ReferenceId[]` values pointing to entries in `content/references.ts`. The page file wires metadata, JSON-LD, and rendering together.
 
-1. **Content** lives in `content/<guide-name>.ts` as a typed TypeScript object — no JSX. Every factual claim has a `refs` field with `ReferenceId[]` values pointing to entries in `content/references.ts`.
-2. **`GuideBlocks`** (`components/GuideBlocks/GuideBlocks.tsx`) renders the typed content: `para`, `quote`, `list`, and `definition` block types. Inline `<Refs>` components render superscript citation links to `/references#ref-N`.
-3. **`GuideContents`** (`components/GuideContents/GuideContents.tsx`) is the tabbed shell — left TOC, right content panel.
-4. The page file just wires metadata, JSON-LD, and the two components together.
+Two layout variants exist:
+
+**Variant A — tabbed shell** (`/awaabs-law`, social housing):
+- Uses `GuideBlocks` (`components/GuideBlocks/GuideBlocks.tsx`) for typed block rendering: `para`, `quote`, `list`, `definition`.
+- Uses `GuideContents` (`components/GuideContents/GuideContents.tsx`) — left TOC tabs, right content panel, section switching via `useState`.
+
+**Variant B — scrollable with sticky sidebar** (`/awaabs-law/private-landlords`):
+- Layout: sticky left sidebar (TOC + DownloadCard) + right scrollable content, both in one flex row.
+- Page-specific block types (`AlertBanner`, `StatuteDuty`, `ReformCard`) defined in `content/private-landlords-guide.ts`.
+- Inline render components (`StatuteBox`, `LiveReformCard`, `PendingReformCard`) defined at the top of the page file — no shared component needed.
+- Supports a context bar (page-specific label strip below Navbar) and alert banners above the hero.
+
+### References rule
+**When adding new refs to `content/references.ts`, also add their IDs to the appropriate group in `app/references/page.tsx`.**  
+If an ID is missing from `groups`, the `id="ref-N"` anchor is never rendered and citation links silently fail to scroll to their target.
 
 ## SEO & Page Conventions
 - When adding JSON-LD, define the const AND inject the JSX in the same edit to avoid transient unused-variable/import warnings.

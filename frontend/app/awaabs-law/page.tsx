@@ -57,7 +57,7 @@ const jsonLd = [
         name: "What is Awaab's Law?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Awaab's Law (Social Housing Regulation Act, Phase 1) came into force in October 2025. It creates legally enforceable timeframes for social landlords to investigate, communicate, and remediate damp and mould hazards. It applies to registered social housing providers in England.",
+          text: "Awaab's Law came into force on 27 October 2025 under the Hazards in Social Housing (Prescribed Requirements) (England) Regulations 2025, enabled by the Social Housing (Regulation) Act 2023. It creates legally enforceable timeframes for social landlords to investigate, communicate, and remediate damp and mould hazards. It applies to registered social housing providers in England.",
         },
       },
       {
@@ -65,7 +65,7 @@ const jsonLd = [
         name: "What is the 10-day investigation deadline under Awaab's Law?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "From the moment a tenant makes a complaint about damp or mould, the social landlord has 10 working days to complete a formal investigation. Missing this deadline is evidence of maladministration in front of the Housing Ombudsman, regardless of whether a repair was eventually completed.",
+          text: "From the moment a social landlord becomes aware of a potential damp or mould issue — whether through a tenant report, contractor visit, inspection, or any other means — they have 10 working days to complete a formal investigation. This includes gathering evidence, assessing the hazard, and determining the appropriate response. The clock starts ticking on the next working day after awareness (Day 1).",
         },
       },
       {
@@ -73,7 +73,7 @@ const jsonLd = [
         name: "What must written findings include under Awaab's Law?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Within 3 working days of completing the investigation, landlords must issue written findings to the tenant. This must include the hazard identified, the proposed action, and a target timeframe for completion. A verbal update or informal email is not sufficient.",
+          text: "Within 3 working days of completing the investigation, landlords must issue written findings to the tenant. This must include the hazard identified, the proposed action, and a target timeframe for completion. A verbal update alone is not sufficient. An email is accepted, but only if it is a formal written summary containing all required information — hazard identified, proposed action, and target timeframe.",
         },
       },
       {

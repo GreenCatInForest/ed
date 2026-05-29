@@ -201,7 +201,7 @@ export default function BuildingSpecialistsPage() {
           </div>
           <div className="flex flex-col gap-1">
             <p className="font-semibold text-fg">Homes Act 2018 &amp; HHSRS</p>
-            <p className="text-fg-muted text-xs">Applies to <strong className="text-fg">all landlords</strong>. Property must be fit for habitation. HHSRS hazard scoring used by councils for enforcement. Sensor data is admissible in appeal proceedings.</p>
+            <p className="text-fg-muted text-xs">Homes (Fitness for Human Habitation) Act 2018 & HHSRS applies to <strong className="text-fg">all landlords</strong>. Property must be fit for habitation. HHSRS hazard scoring used by councils for enforcement. Sensor data is admissible in appeal proceedings.</p>
           </div>
         </div>
       </section>

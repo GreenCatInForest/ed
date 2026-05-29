@@ -114,6 +114,46 @@ export const references = {
     url: "https://www.gov.uk/government/publications/awaabs-law-guidance-for-social-landlords/awaabs-law-guidance-for-social-landlords-timeframes-for-repairs-in-the-social-rented-sector#scope-of-awaabs-law",
     note: "MHCLG: 'It is unacceptable for social landlords to assume that the cause of a hazard, such as damp and mould, is due to the tenant's lifestyle.'",
   },
+  21: {
+    label: "Homes (Fitness for Human Habitation) Act 2018",
+    url: "https://www.legislation.gov.uk/ukpga/2018/34/contents",
+    note: "Amended LTA 1985 to imply a fitness covenant in short leases. Tenants may bring a direct claim.",
+  },
+  22: {
+    label: "Housing Act 2004, section 249A — Civil penalties",
+    url: "https://www.legislation.gov.uk/ukpga/2004/34/section/249A",
+    note: "Civil penalty up to £30,000 for HHSRS Improvement Notice breach, inserted by Housing and Planning Act 2016 s.136.",
+  },
+  23: {
+    label: "Renters' Rights Act 2025, Part 1 — Assured tenancies and abolition of Section 21",
+    url: "https://www.legislation.gov.uk/ukpga/2025/26/part/1",
+    note: "Section 21 notices abolished from 1 May 2026. All ASTs converted to assured periodic tenancies. Transitional period for existing notices.",
+  },
+  24: {
+    label: "Renters' Rights Act 2025, Section 13 — Rent increases",
+    url: "https://www.legislation.gov.uk/ukpga/2025/26/section/7",
+    note: "Rent increases limited to once per 12 months with 2 months' written notice. Tenant right to challenge at First-tier Tribunal.",
+  },
+  25: {
+    label: "Renters' Rights Act 2025, Part 2 — Rent in advance and bidding",
+    url: "https://www.legislation.gov.uk/ukpga/2025/26/part/2",
+    note: "Rent in advance capped at one month for tenancies starting after 1 May 2026. Rental bidding prohibited.",
+  },
+  26: {
+    label: "Renters' Rights Act 2025, Chapter 2 Part 1 — PRS Landlord Ombudsman",
+    url: "https://www.legislation.gov.uk/ukpga/2025/26/chapter/2",
+    note: "Establishes the Private Rented Sector Landlord Ombudsman. Mandatory membership for all private landlords once commenced.",
+  },
+  27: {
+    label: "Renters' Rights Act 2025, Part 3 — Private Rented Sector Database",
+    url: "https://www.legislation.gov.uk/ukpga/2025/26/part/3",
+    note: "Mandatory landlord and property register. Required as a prerequisite for serving Section 8 notices once in force.",
+  },
+  28: {
+    label: "Renters' Rights Act 2025, Schedule 4 — Decent Homes Standard",
+    url: "https://www.legislation.gov.uk/ukpga/2025/26/schedule/4",
+    note: "Extends the Decent Homes Standard to the private rented sector. Commencement date to be confirmed via secondary legislation.",
+  },
 } as const;
 
 export type ReferenceId = keyof typeof references;

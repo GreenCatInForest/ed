@@ -192,7 +192,7 @@ export const awaabsLawGuide = {
         },
         {
           type: "quote",
-          text: "A 'significant risk of harm' is defined in the regulations as 'a risk of harm to the occupier's health or safety that a reasonable lessor with the relevant knowledge would take steps to make safe as a matter of urgency.'",
+          text: "A 'significant risk of harm' is defined in the regulations as 'a risk of harm to the occupier's health or safety that a reasonable lessor with the relevant knowledge would take steps to make safe as a matter of urgency.' Note: the full Regulation 3 definition adds '(but not within 24 hours)' — the qualifier that distinguishes significant hazards from emergency hazards, which require action within 24 hours.",
           source: "MHCLG guidance, Section 3.2",
           sourceRef: 2,
         },
