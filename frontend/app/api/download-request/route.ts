@@ -46,7 +46,7 @@ async function emailFallback(body: Record<string, unknown>): Promise<NextRespons
   try {
     await transporter.sendMail({
       from: `Maple Diagnostics <${process.env.SMTP_FROM ?? process.env.SMTP_USER}>`,
-      to: "maple-diagnostics@cambridgelogic.com",
+      to: "maple@cambridgelogic.com",
       subject: `Template download request — ${body.guide_name ?? "unknown"}`,
       text: `Download Request (email fallback)\n${"─".repeat(40)}\n\n${rows}\n`,
     });

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const TO = "maple-diagnostics@cambridgelogic.com";
+const TO = "maple@cambridgelogic.com";
 
 interface Address {
   line1: string;

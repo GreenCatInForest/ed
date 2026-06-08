@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const TO = "maple-diagnostics@cambridgelogic.com";
+const TO = "maple@cambridgelogic.com";
 
 const SUBJECTS: Record<string, string> = {
   guide: "New guide download request",
@@ -45,6 +45,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `Maple Diagnostics <${process.env.SMTP_FROM ?? process.env.SMTP_USER}>`,
       to: TO,
+      replyTo: data.email,
       subject: SUBJECTS[type] ?? "New contact form submission",
       text: formatText(data),
     });
