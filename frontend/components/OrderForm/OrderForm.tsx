@@ -469,8 +469,8 @@ export default function OrderForm({ defaultKit = "professional" }: { defaultKit?
             {status === "error" && (
               <p className="text-sm text-danger-text">
                 Something went wrong. Please try again or email us directly at{" "}
-                <a href="mailto:maple-diagnostics@cambridgelogic.com" className="underline">
-                  maple-diagnostics@cambridgelogic.com
+                <a href="mailto:maple@cambridgelogic.com" className="underline">
+                  maple@cambridgelogic.com
                 </a>
               </p>
             )}

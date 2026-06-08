@@ -25,7 +25,7 @@ export const orgSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer support",
-    email: "maple-diagnostics@cambridgelogic.com",
+    email: "maple@cambridgelogic.com",
   },
 };
 
