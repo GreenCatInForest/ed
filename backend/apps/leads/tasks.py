@@ -18,7 +18,7 @@ def send_download_email(self, lead_id: str) -> None:
         return
 
     download_url = (
-        f"{settings.SITE_URL}/api/downloads/{lead.download_token}"
+        f"{settings.SITE_URL}/api/leads/downloads/{lead.download_token}/"
     )
 
     subject = f"Your download: {lead.guide_name}"
