@@ -8,13 +8,8 @@ from django.contrib.auth.models import (
     Permission,
 )
 
-from django.core.exceptions import ValidationError
-from django.core.files.storage import default_storage
 from django.conf import settings
 from django.db import models
-
-from legal.models import LegalConsentLog, DocumentType
-from organisations.models import Organisation
 
 logger = logging.getLogger(__name__)
 

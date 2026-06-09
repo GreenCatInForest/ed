@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class LegalConfig(AppConfig):
-    name = 'legal'
+    name = 'apps.legal'
+    label = 'legal'
