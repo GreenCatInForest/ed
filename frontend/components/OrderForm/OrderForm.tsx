@@ -267,24 +267,17 @@ export default function OrderForm({ defaultKit = "professional" }: { defaultKit?
     e.preventDefault();
     setStatus("loading");
 
-    const kit = KITS.find((k) => k.id === selectedKit)!;
     const propertyAddress = sameAddress ? delivery : property;
 
     try {
-      const res = await fetch("/api/order", {
+      const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          kit: kit.name,
-          kitPrice: kit.price,
-          ...contact,
-          delivery,
-          propertyAddress,
-          notes,
-        }),
+        body: JSON.stringify({ kitId: selectedKit, contact, delivery, propertyAddress, notes }),
       });
       if (!res.ok) throw new Error();
-      setStatus("success");
+      const { url } = await res.json();
+      window.location.href = url;
     } catch {
       setStatus("error");
     }

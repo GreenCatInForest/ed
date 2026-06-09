@@ -127,15 +127,31 @@ Then manually verify:
 
 ## Forms and email
 
-Three Next.js API routes handle form submissions:
+All notification emails go to `maple@cambridgelogic.com`. Every route sets `replyTo` to the submitter's email so replies go back to the user.
 
 | Route | Handler | Backend |
 |---|---|---|
 | `/api/contact` | Contact, guide download, social program forms | nodemailer only |
-| `/api/order` | Kit order form | nodemailer only |
+| `/api/checkout` | Kit order — creates Stripe Checkout Session, returns `{ url }` | Stripe API |
+| `/api/webhook/stripe` | `checkout.session.completed` — records order in Django, falls back to nodemailer | Django `POST /api/orders/record/` |
 | `/api/download-request` | Download gate (template/PDF requests) | Proxies to Django `POST /api/leads/download-request/`; falls back to nodemailer if Django is down |
 
-All nodemailer routes share SMTP env vars: `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`.
+`/api/order` is kept but no longer used by the form — orders go through Stripe Checkout.
+
+All nodemailer routes share SMTP env vars: `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`. Production: `mail.cambridgelogic.com`, port 465, `SMTP_SECURE=true`.
+
+Stripe env vars: `STRIPE_SECRET_KEY` (server-only), `STRIPE_WEBHOOK_SECRET` (server-only). Kit prices defined in `app/api/checkout/route.ts` (`KIT_CONFIG`).
+
+## Stripe Checkout flow
+
+1. `OrderForm` POSTs `{ kitId, contact, delivery, propertyAddress, notes }` to `/api/checkout`
+2. Route creates Stripe Checkout Session with order data in `metadata`, returns `{ url }`
+3. Form redirects to Stripe-hosted payment page
+4. On success, Stripe redirects to `/order/success`
+5. Stripe also fires `checkout.session.completed` webhook → `/api/webhook/stripe`
+6. Webhook calls Django to record order (idempotent by `stripe_session_id`) — Django fires email via Celery
+
+Webhook must be registered in Stripe dashboard pointing to `https://<domain>/api/webhook/stripe`, event: `checkout.session.completed`.
 
 ## Download gate pattern
 
