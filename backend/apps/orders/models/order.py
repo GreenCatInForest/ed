@@ -32,8 +32,8 @@ class Order(models.Model):
         app_label = "orders"
         ordering = ["-created_at"]
         indexes = [
-            models.Index(fields=["email"]),
-            models.Index(fields=["stripe_session_id"]),
+            models.Index(fields=["email"], name="orders_order_email_idx"),
+            models.Index(fields=["stripe_session_id"], name="orders_order_session_idx"),
         ]
 
     def __str__(self):
