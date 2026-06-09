@@ -71,6 +71,12 @@ CORS_ALLOWED_ORIGINS = config(
     cast=lambda v: [h.strip() for h in v.split(',')],
 )
 
+CSRF_TRUSTED_ORIGINS = config(
+    'CSRF_TRUSTED_ORIGINS',
+    default='http://localhost:3000,http://localhost:8000',
+    cast=lambda v: [h.strip() for h in v.split(',')],
+)
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
